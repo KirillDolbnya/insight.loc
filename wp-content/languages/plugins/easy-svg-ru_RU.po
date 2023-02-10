@@ -1,0 +1,32 @@
+# Translation of Plugins - Easy SVG Support - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Easy SVG Support - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-01-05 10:14:24+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Easy SVG Support - Stable (latest release)\n"
+
+#. Author URI of the plugin
+msgid "https://www.benjamin-zekavica.de"
+msgstr "https://www.benjamin-zekavica.de"
+
+#. Author of the plugin
+msgid "Benjamin Zekavica"
+msgstr "Benjamin Zekavica"
+
+#. Description of the plugin
+msgid "Add SVG Support for WordPress."
+msgstr "Поддержка SVG для WordPress."
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/easy-svg/"
+msgstr "https://wordpress.org/plugins/easy-svg/"
+
+#. Plugin Name of the plugin
+msgid "Easy SVG Support"
+msgstr "Easy SVG Support"

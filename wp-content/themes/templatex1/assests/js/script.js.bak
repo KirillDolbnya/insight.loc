@@ -1,0 +1,13 @@
+  function changePic(newAddr)
+  {
+  document.getElementById('mypic').src=newAddr;
+  }
+  function resetPic()
+  {
+  document.getElementById('mypic').src='/assests/images/usluga_vyezd.png';
+  }
+  
+  
+ document.addEventListener( 'wpcf7mailsent', function( event ) {
+  $('.modal').show();
+}, false );

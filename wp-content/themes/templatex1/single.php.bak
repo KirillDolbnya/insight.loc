@@ -1,0 +1,120 @@
+<?php
+/**
+ * The template for displaying all single posts.
+ *
+ * @package storefront
+ */
+
+get_header();
+global $post;
+$category = reset(get_the_category($post->ID));
+$category_id = $category->cat_ID;
+$cat_link = get_category_link( $category_id );
+
+?>
+ <div class="otstup"></div> 
+<section class="site">
+<?php
+	if ( is_active_sidebar( 'bread_widget' ) ) : 
+	dynamic_sidebar( 'bread_widget' );
+	endif;
+?>
+
+
+    <div class="screen adaptivFirst">
+        <div class="rightscreen">
+
+<div class="projectTitle ">
+	<img class="iconSon" src="<?=get_template_directory_uri()?>/assests/images/star.svg">
+	<?php 
+		the_title( '<h1 class="woo_h1">', '</h1>' );
+	?>
+	
+	<p><?php the_field('subtitle'); ?></p>
+	<a href="#zayavka" class="button zayavka pro adap">Заявка</a>
+
+</div>
+   </div>
+   <div class="leftscreen">
+ <img class="foton" src="<?=get_field('big_image')['url']?>" alt="<?php the_field('subtitle'); ?>">
+   </div>
+   </div>
+   <div class="otstup"></div> 
+   <div class="screen">
+    <div class="rightscreen">
+
+<div class="projectTitle ">
+
+  
+ <?php if(get_field('project_param')): ?>
+	<?php while(has_sub_field('project_param')): ?>
+		<p style="color: #C2C2C2;"><?php the_sub_field('name'); ?></p>
+		<p><?php the_sub_field('value'); ?></p>
+	<?php endwhile; ?>
+<?php endif; ?>	 
+  
+
+</div>
+
+</div>
+<div class="leftscreen">
+<div class="projectTextTwo">
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php the_content(); ?>
+<?php endwhile; endif; ?>
+</div>
+</div>
+</div>
+
+<div class="screen">
+
+<?php 
+$count = 0;
+$images = get_field('gallery'); 
+$imagese_count = count($images)+1;
+if( $images ): ?>
+    <?php foreach( $images as $image ): $count++; ?>
+	<?php if($count == 1) { ?>
+	<div class="rightscreen rightscreen_item_gallery_1">
+		<img class="projectAdaptiv leftAdaptiv" src="<?php echo esc_url($image['sizes']['large']); ?>">
+	</div>
+	<?php } ?>
+	<?php if($count == 2) { ?>
+	<div class="leftscreen">
+	<?php } ?>	
+	<?php if($count == 2 or $count == 3) { ?>
+		<img class="projectAdaptiv leftAdaptiv item_gallery_2" src="<?php echo esc_url($image['sizes']['large']); ?>">
+		<div class="otstup"></div>
+	<?php } ?>	
+<?php if($count == 4) { ?>
+	<div class="projectBottom">
+<?php } ?>
+<?php if($count >= 4) { ?>
+<div class="item_gallery_3_wrap">
+	  <img class="projectAdaptiv item_gallery_3" src="<?php echo esc_url($image['sizes']['large']); ?>">
+<?php } ?>
+	
+<?php if($imagese_count == $count and $count >= 2) { ?>
+	</div>
+<?php } ?>	
+<?php if($imagese_count == $count and $count >= 4) { ?>
+	</div>
+<?php } ?>				
+		
+	 <?php endforeach; ?>
+<?php endif; ?>
+
+
+ 
+</div>
+
+</div>
+
+
+</div>
+
+		
+</section>
+<div class="otstup"></div>
+<div class="otstup"></div>
+<?php get_footer();

@@ -1,0 +1,33 @@
+2022-11-19T13:04:32+00:00 CRITICAL Uncaught Error: Call to undefined function add_compare_link() in C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php:689
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): linkci_before_after_btn()
+#1 C:\OpenServer\domains\smarty.local\wp-includes\plugin.php(205): WP_Hook->apply_filters()
+#2 C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\woocommerce\loop\add-to-cart.php(50): apply_filters()
+#3 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\OpenServer\\d...')
+#4 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1369): wc_get_template()
+#5 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): woocommerce_template_loop_add_to_cart()
+#6 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 C:\OpenServer\domains\smarty.local\wp-includes\plugin.php(517): WP_H в C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php на строке 689
+
+2022-11-19T15:12:14+00:00 CRITICAL Uncaught Error: Call to undefined function get_attribute() in C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php:929
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): woocommerce_template_loop_product_title()
+#1 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 C:\OpenServer\domains\smarty.local\wp-includes\plugin.php(517): WP_Hook->do_action()
+#3 C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\woocommerce\content-product.php(49): do_action()
+#4 C:\OpenServer\domains\smarty.local\wp-includes\template.php(785): require('C:\\OpenServer\\d...')
+#5 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template()
+#6 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-products.php(660): wc_get_template_part()
+#7 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includ в C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php на строке 929
+
+2022-11-19T16:35:20+00:00 CRITICAL Uncaught TypeError: Return value of Valued\WordPress\API::getReviews() must be an instance of SimpleXMLElement, null returned in C:\OpenServer\domains\smarty.local\wp-content\plugins\webwinkelkeur\common\src\API.php:30
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-content\plugins\webwinkelkeur\common\src\WooCommerce.php(348): Valued\WordPress\API->getReviews()
+#1 C:\OpenServer\domains\smarty.local\wp-content\plugins\webwinkelkeur\common\src\WooCommerce.php(327): Valued\WordPress\WooCommerce->doSyncReviews()
+#2 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): Valued\WordPress\WooCommerce->syncReviews()
+#3 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters()
+#4 C:\OpenServer\domains\smarty.local\wp-includes\plugin.php(565): WP_Hook->do_action()
+#5 C:\OpenServer\domains\smarty.local\wp-cron.php(188): do_action_ref_array()
+#6 {main}
+  thrown в C:\OpenServer\domains\smarty.local\wp-content\plugins\webwinkelkeur\common\src\API.php на строке 30
+

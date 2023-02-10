@@ -1,0 +1,517 @@
+# Translation of Plugins - Яндекс.Касса 2.0 для Woocommerce - Development (trunk) in Russian
+# This file is distributed under the same license as the Plugins - Яндекс.Касса 2.0 для Woocommerce - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-04-01 15:11:09+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Яндекс.Касса 2.0 для Woocommerce - Development (trunk)\n"
+
+#: gateway/YandexMoneyGatewayTinkoffBank.php:32
+#: gateway/YandexMoneyGatewayTinkoffBank.php:33
+#: gateway/YandexMoneyGatewayTinkoffBank.php:34
+msgid "Интернет-банк Тинькофф"
+msgstr "Интернет-банк Тинькофф"
+
+#: includes/YandexMoneyCheckoutHandler.php:62
+msgid "Доставка"
+msgstr "Доставка"
+
+#: gateway/YandexMoneyCheckoutGateway.php:102
+msgid "Признак способа расчёта"
+msgstr "Признак способа расчёта"
+
+#: gateway/YandexMoneyCheckoutGateway.php:100
+msgid "Признак предмета расчета"
+msgstr "Признак предмета расчета"
+
+#: admin/partials/admin-settings-view.php:441
+msgid "Способ расчёта"
+msgstr "Способ расчёта"
+
+#: admin/partials/admin-settings-view.php:423
+msgid "Предмет расчёта"
+msgstr "Предмет расчёта"
+
+#: admin/partials/admin-settings-view.php:416
+msgid "Для товаров, у которых значения этих атрибутов не заданы, будем применять значения по умолчанию:"
+msgstr "Для товаров, у которых значения этих атрибутов не заданы, будем применять значения по умолчанию:"
+
+#: admin/partials/admin-settings-view.php:413
+msgid "Признаки предмета расчёта и способа расчёта берутся из атрибутов товара payment_subject и payment_mode. Их значения можно задать отдельно в карточке товара, если это потребуется. <a href=\"https://kassa.yandex.ru/docs/guides/#perehod-na-ffd-1-05\">Подробнее.</a>"
+msgstr "Признаки предмета расчёта и способа расчёта берутся из атрибутов товара payment_subject и payment_mode. Их значения можно задать отдельно в карточке товара, если это потребуется. <a href=\"https://kassa.yandex.ru/docs/guides/#perehod-na-ffd-1-05\">Подробнее.</a>"
+
+#: admin/partials/admin-settings-view.php:405
+msgid "Предмет расчёта и способ расчёта (ФФД 1.05)"
+msgstr "Предмет расчёта и способ расчёта (ФФД 1.05)"
+
+#: admin/partials/admin-settings-view.php:229
+msgid "Это описание транзакции, которое пользователь увидит при оплате, а вы — в личном кабинете Яндекс.Кассы. Например, «Оплата заказа №72».<br>Чтобы в описание подставлялся номер заказа (как в примере), поставьте на его месте %order_number% (Оплата заказа №%order_number%).<br>Ограничение для описания — 128 символов."
+msgstr "Это описание транзакции, которое пользователь увидит при оплате, а вы — в личном кабинете Яндекс.Кассы. Например, «Оплата заказа №72».<br>Чтобы в описание подставлялся номер заказа (как в примере), поставьте на его месте %order_number% (Оплата заказа №%order_number%).<br>Ограничение для описания — 128 символов."
+
+#: gateway/YandexMoneyGatewayB2bSberbank.php:37
+#: gateway/YandexMoneyGatewayB2bSberbank.php:38
+#: gateway/YandexMoneyGatewayB2bSberbank.php:39
+msgid "Сбербанк Бизнес Онлайн"
+msgstr "Сбербанк Бизнес Онлайн"
+
+#: admin/partials/admin-settings-view.php:297
+msgid "Ставка НДС для Сбербанк Бизнес Онлайн"
+msgstr "Ставка НДС для Сбербанк Бизнес Онлайн"
+
+#: admin/partials/admin-settings-view.php:295
+msgid "Ставка НДС в вашем магазине"
+msgstr "Ставка НДС в вашем магазине"
+
+#: admin/partials/admin-settings-view.php:288
+msgid "Сопоставьте ставки НДС в вашем магазине со ставками для Сбербанка Бизнес Онлайн"
+msgstr "Сопоставьте ставки НДС в вашем магазине со ставками для Сбербанка Бизнес Онлайн"
+
+#: admin/partials/admin-settings-view.php:279
+msgid "Эта ставка передаётся в Сбербанк Бизнес Онлайн, если в карточке товара не указана другая ставка."
+msgstr "Эта ставка передаётся в Сбербанк Бизнес Онлайн, если в карточке товара не указана другая ставка."
+
+#: admin/partials/admin-settings-view.php:263
+msgid "Это назначение платежа будет в платёжном поручении."
+msgstr "Это назначение платежа будет в платёжном поручении."
+
+#: admin/partials/admin-settings-view.php:260
+msgid "Шаблон для назначения платежа"
+msgstr "Шаблон для назначения платежа"
+
+#: admin/partials/admin-settings-view.php:245
+msgid "на сайте Кассы"
+msgstr "на сайте Кассы"
+
+#: admin/partials/admin-settings-view.php:244
+msgid "https://kassa.yandex.ru"
+msgstr "https://kassa.yandex.ru"
+
+#: admin/partials/admin-settings-view.php:243
+msgid "Если эта опция включена, вы можете принимать онлайн-платежи от юрлиц. Подробнее — "
+msgstr "Если эта опция включена, вы можете принимать онлайн-платежи от юрлиц. Подробнее — "
+
+#: admin/partials/admin-settings-view.php:239
+msgid "Включить платежи через Сбербанк Бизнес Онлайн"
+msgstr "Включить платежи через Сбербанк Бизнес Онлайн"
+
+#: admin/partials/admin-settings-view.php:152
+msgid "Добавить блок «Заплатить по частям» в карточки товаров"
+msgstr "Добавить блок «Заплатить по частям» в карточки товаров"
+
+#: includes/YandexMoneyCheckoutPayment.php:323
+#: includes/YandexMoneyCheckoutPayment.php:327
+msgid "Платёж не отменился. Попробуйте ещё раз."
+msgstr "Платёж не отменился. Попробуйте ещё раз."
+
+#: includes/YandexMoneyCheckoutPayment.php:320
+msgid "Вы отменили платёж в Яндекс.Кассе. Деньги вернутся клиенту."
+msgstr "Вы отменили платёж в Яндекс.Кассе. Деньги вернутся клиенту."
+
+#: includes/YandexMoneyCheckoutPayment.php:287
+#: includes/YandexMoneyCheckoutPayment.php:290
+#: includes/YandexMoneyCheckoutPayment.php:294
+msgid "Платёж не подтвердился. Попробуйте ещё раз."
+msgstr "Платёж не подтвердился. Попробуйте ещё раз."
+
+#: includes/YandexMoneyCheckoutPayment.php:284
+msgid "Вы подтвердили платёж в Яндекс.Кассе."
+msgstr "Вы подтвердили платёж в Яндекс.Кассе."
+
+#: includes/YandexMoneyCheckoutHandler.php:201
+msgid "Поступил новый платёж. Он ожидает подтверждения до %1$s, после чего автоматически отменится"
+msgstr "Поступил новый платёж. Он ожидает подтверждения до %1$s, после чего автоматически отменится"
+
+#: includes/YandexMoneyCheckoutHandler.php:196
+msgid "Платеж ждет подтверждения. Id заказа - %1$s. Данные платежа - %2$s."
+msgstr "Платеж ждет подтверждения. Id заказа - %1$s. Данные платежа - %2$s."
+
+#: includes/YandexMoneyCheckoutHandler.php:183
+msgid "Платеж в ожидании оплаты. Id заказа - %1$s. Данные платежа - %2$s."
+msgstr "Платеж в ожидании оплаты. Id заказа - %1$s. Данные платежа - %2$s."
+
+#: admin/partials/admin-settings-view.php:224
+msgid "Описание платежа"
+msgstr "Описание платежа"
+
+#: admin/partials/admin-settings-view.php:218
+msgid "Если опция включена, платежи с карт проходят в 2 этапа: у клиента сумма замораживается, и вам вручную нужно подтвердить её списание – через панель администратора"
+msgstr "Если опция включена, платежи с карт проходят в 2 этапа: у клиента сумма замораживается, и вам вручную нужно подтвердить её списание – через панель администратора"
+
+#: admin/partials/admin-settings-view.php:213
+msgid "Включить отложенную оплату"
+msgstr "Включить отложенную оплату"
+
+#: gateway/YandexMoneyCheckoutGateway.php:409
+#: gateway/YandexMoneyGatewayB2bSberbank.php:127
+#: admin/YandexMoneyCheckoutAdmin.php:158
+#: admin/YandexMoneyCheckoutAdmin.php:168
+msgid "Оплата заказа №%order_number%"
+msgstr "Оплата заказа №%order_number%"
+
+#: includes/YandexMoneyCheckoutInstallments.php:80
+msgid " (%s ₽ в месяц)"
+msgstr " (%s ₽ в месяц)"
+
+#: gateway/YandexMoneyGatewayInstallments.php:31
+#: gateway/YandexMoneyGatewayInstallments.php:32
+#: gateway/YandexMoneyGatewayInstallments.php:33
+msgid "Заплатить по частям"
+msgstr "Заплатить по частям"
+
+#: admin/partials/admin-settings-view.php:131
+msgid "Добавить метод «Заплатить по частям» на страницу оформления заказа"
+msgstr "Добавить метод «Заплатить по частям» на страницу оформления заказа"
+
+#: includes/YandexMoneyCheckoutHandler.php:212
+msgid "Статус заказа. %1$s"
+msgstr "Статус заказа. %1$s"
+
+#: gateway/YandexMoneyGatewayWebmoney.php:32
+#: gateway/YandexMoneyGatewayWebmoney.php:33
+#: gateway/YandexMoneyGatewayWebmoney.php:34
+msgid "Webmoney"
+msgstr "Webmoney"
+
+#: gateway/YandexMoneyGatewayWallet.php:36
+msgid "Яндекс.Деньги"
+msgstr "Яндекс.Деньги"
+
+#: gateway/YandexMoneyGatewayWallet.php:31
+#: gateway/YandexMoneyGatewayWallet.php:35 includes/WC_Payment_Token_YM.php:15
+#: includes/YandexMoneyCheckoutPayment.php:336
+msgid "Кошелек Яндекс.Деньги"
+msgstr "Кошелек Яндекс.Деньги"
+
+#: gateway/YandexMoneyGatewaySberbank.php:32
+#: gateway/YandexMoneyGatewaySberbank.php:33
+msgid "Сбербанк Онлайн"
+msgstr "Сбербанк Онлайн"
+
+#: gateway/YandexMoneyGatewaySberbank.php:31
+msgid "Оплата через Сбербанк"
+msgstr "Оплата через Сбербанк"
+
+#: gateway/YandexMoneyGatewayQiwi.php:61
+msgid "Поле телефон заполнено неверно."
+msgstr "Поле телефон заполнено неверно."
+
+#: gateway/YandexMoneyGatewayQiwi.php:47
+msgid "Телефон, который привязан к Qiwi Wallet"
+msgstr "Телефон, который привязан к Qiwi Wallet"
+
+#: gateway/YandexMoneyGatewayQiwi.php:33 gateway/YandexMoneyGatewayQiwi.php:34
+#: gateway/YandexMoneyGatewayQiwi.php:35
+msgid "QIWI Wallet"
+msgstr "QIWI Wallet"
+
+#: gateway/YandexMoneyGatewayEPL.php:29 gateway/YandexMoneyGatewayEPL.php:30
+#: gateway/YandexMoneyGatewayEPL.php:31
+msgid "Яндекс.Касса (банковские карты, электронные деньги и другое)"
+msgstr "Яндекс.Касса (банковские карты, электронные деньги и другое)"
+
+#: gateway/YandexMoneyGatewayCash.php:32 gateway/YandexMoneyGatewayCash.php:33
+#: gateway/YandexMoneyGatewayCash.php:34
+msgid "Наличные"
+msgstr "Наличные"
+
+#: gateway/YandexMoneyGatewayCard.php:38
+msgid "Банковские карты — Visa, Mastercard и Maestro, «Мир»"
+msgstr "Банковские карты — Visa, Mastercard и Maestro, «Мир»"
+
+#: gateway/YandexMoneyGatewayCard.php:37
+msgid "Банковские карты"
+msgstr "Банковские карты"
+
+#: gateway/YandexMoneyGatewayCard.php:36
+msgid "Оплата с произвольной банковской карты"
+msgstr "Оплата с произвольной банковской карты"
+
+#: gateway/YandexMoneyGatewayAlfabank.php:62
+msgid "Поле логин заполнено неверно."
+msgstr "Поле логин заполнено неверно."
+
+#: gateway/YandexMoneyGatewayAlfabank.php:48
+msgid "Укажите логин, и мы выставим счет в Альфа-Клике. После этого останется подтвердить платеж на сайте интернет-банка."
+msgstr "Укажите логин, и мы выставим счет в Альфа-Клике. После этого останется подтвердить платеж на сайте интернет-банка."
+
+#: gateway/YandexMoneyGatewayAlfabank.php:35
+#: gateway/YandexMoneyGatewayAlfabank.php:36
+msgid "Альфа-Клик"
+msgstr "Альфа-Клик"
+
+#: gateway/YandexMoneyGatewayAlfabank.php:34
+msgid "Оплата через Альфа банк"
+msgstr "Оплата через Альфа банк"
+
+#: gateway/YandexMoneyCheckoutGateway.php:271
+#: gateway/YandexMoneyCheckoutGateway.php:281
+msgid "Неудалось создать платеж. Для заказа %1$s"
+msgstr "Неудалось создать платеж. Для заказа %1$s"
+
+#: gateway/YandexMoneyCheckoutGateway.php:243
+#: gateway/YandexMoneyCheckoutGateway.php:273
+#: gateway/YandexMoneyCheckoutGateway.php:283
+msgid "Платеж не прошел. Попробуйте еще или выберите другой способ оплаты"
+msgstr "Платеж не прошел. Попробуйте еще или выберите другой способ оплаты"
+
+#: includes/YandexMoneyCheckoutHandler.php:153
+msgid "Успешный платеж. Id заказа - %1$s. Данные платежа - %2$s."
+msgstr "Успешный платеж. Id заказа - %1$s. Данные платежа - %2$s."
+
+#: includes/YandexMoneyCheckoutHandler.php:170
+msgid "Неуспешный платеж. Id заказа - %1$s. Данные платежа - %2$s."
+msgstr "Неуспешный платеж. Id заказа - %1$s. Данные платежа - %2$s."
+
+#: includes/YandexMoneyCheckoutHandler.php:158
+msgid "Номер транзакции в Яндекс.Кассе: %1$s. Сумма: %2$s"
+msgstr "Номер транзакции в Яндекс.Кассе: %1$s. Сумма: %2$s"
+
+#: gateway/YandexMoneyCheckoutGateway.php:168
+msgid "Пользователь вернулся с формы оплаты. Id заказа - %1$s. Идентификатор платежа - %2$s."
+msgstr "Пользователь вернулся с формы оплаты. Id заказа - %1$s. Идентификатор платежа - %2$s."
+
+#: admin/partials/admin-settings-view.php:511
+msgid "Сохранить изменения"
+msgstr "Сохранить изменения"
+
+#: admin/partials/admin-settings-view.php:497
+msgid "Скачать лог"
+msgstr "Скачать лог"
+
+#: admin/partials/admin-settings-view.php:490
+msgid "Настройку нужно будет поменять, только если попросят специалисты Яндекс.Денег"
+msgstr "Настройку нужно будет поменять, только если попросят специалисты Яндекс.Денег"
+
+#: admin/partials/admin-settings-view.php:486
+msgid "Запись отладочной информации"
+msgstr "Запись отладочной информации"
+
+#: admin/partials/admin-settings-view.php:477
+msgid "Удалить товары из корзины, когда покупатель переходит к оплате."
+msgstr "Удалить товары из корзины, когда покупатель переходит к оплате."
+
+#: admin/partials/admin-settings-view.php:464
+msgid "Этот адрес понадобится, только если его попросят специалисты Яндекс.Кассы"
+msgstr "Этот адрес понадобится, только если его попросят специалисты Яндекс.Кассы"
+
+#: admin/partials/admin-settings-view.php:462
+msgid "Url для уведомлений"
+msgstr "Url для уведомлений"
+
+#: admin/partials/admin-settings-view.php:376
+msgid "Ставка для чека в налоговую"
+msgstr "Ставка для чека в налоговую"
+
+#: admin/partials/admin-settings-view.php:372
+msgid "Ставка в вашем магазине"
+msgstr "Ставка в вашем магазине"
+
+#: admin/partials/admin-settings-view.php:366
+msgid "Сопоставьте ставки"
+msgstr "Сопоставьте ставки"
+
+#: admin/partials/admin-settings-view.php:357
+msgid "Ставка по умолчанию будет в чеке, если в карточке товара не указана другая ставка."
+msgstr "Ставка по умолчанию будет в чеке, если в карточке товара не указана другая ставка."
+
+#: admin/partials/admin-settings-view.php:271
+#: admin/partials/admin-settings-view.php:347
+msgid "Ставка по умолчанию"
+msgstr "Ставка по умолчанию"
+
+#: admin/partials/admin-settings-view.php:334
+msgid "Отправлять в Яндекс.Кассу данные для чеков (54-ФЗ)"
+msgstr "Отправлять в Яндекс.Кассу данные для чеков (54-ФЗ)"
+
+#: admin/partials/admin-settings-view.php:208
+msgid "Эту страницу увидит покупатель, если что-то пойдет не так: например, если ему не хватит денег на карте"
+msgstr "Эту страницу увидит покупатель, если что-то пойдет не так: например, если ему не хватит денег на карте"
+
+#: admin/partials/admin-settings-view.php:197
+msgid "Страница оплаты заказа от WooCommerce"
+msgstr "Страница оплаты заказа от WooCommerce"
+
+#: admin/partials/admin-settings-view.php:182
+msgid "Эту страницу увидит покупатель, когда оплатит заказ"
+msgstr "Эту страницу увидит покупатель, когда оплатит заказ"
+
+#: admin/partials/admin-settings-view.php:170
+#: admin/partials/admin-settings-view.php:192
+msgid "Страница оформления заказа от WooCommerce"
+msgstr "Страница оформления заказа от WooCommerce"
+
+#: admin/partials/admin-settings-view.php:165
+msgid "Страница \"Заказ принят\" от WooCommerce"
+msgstr "Страница \"Заказ принят\" от WooCommerce"
+
+#: admin/partials/admin-settings-view.php:159
+msgid "Страница успеха платежа"
+msgstr "Страница успеха платежа"
+
+#: admin/partials/admin-settings-view.php:142
+msgid "Подробнее о сценариях оплаты"
+msgstr "Подробнее о сценариях оплаты"
+
+#: admin/partials/admin-settings-view.php:138
+msgid "Выбор оплаты на стороне магазина"
+msgstr "Выбор оплаты на стороне магазина"
+
+#: admin/partials/admin-settings-view.php:125
+msgid "Выбор оплаты на стороне сервиса Яндекс.Касса"
+msgstr "Выбор оплаты на стороне сервиса Яндекс.Касса"
+
+#: admin/partials/admin-settings-view.php:119
+msgid "Сценарий оплаты"
+msgstr "Сценарий оплаты"
+
+#: admin/partials/admin-settings-view.php:116
+msgid "Настройка сценария оплаты"
+msgstr "Настройка сценария оплаты"
+
+#: admin/partials/admin-settings-view.php:111
+msgid "Выпустите и активируйте секретный ключ в личном кабинете Яндекс.Кассы. Потом скопируйте его сюда."
+msgstr "Выпустите и активируйте секретный ключ в личном кабинете Яндекс.Кассы. Потом скопируйте его сюда."
+
+#: admin/partials/admin-settings-view.php:107
+msgid ""
+"Такого секретного ключа нет. Если вы уверены, что скопировали ключ правильно, значит, он по какой-то причине не работает. Выпустите и активируйте ключ заново — <a\n"
+"                                    href=\"https://money.yandex.ru/joinups\">в личном кабинете Яндекс.Кассы</a>"
+msgstr ""
+"Такого секретного ключа нет. Если вы уверены, что скопировали ключ правильно, значит, он по какой-то причине не работает. Выпустите и активируйте ключ заново — <a\n"
+"                                    href=\"https://money.yandex.ru/joinups\">в личном кабинете Яндекс.Кассы</a>"
+
+#: admin/partials/admin-settings-view.php:102
+msgid "Секретный ключ"
+msgstr "Секретный ключ"
+
+#: admin/partials/admin-settings-view.php:96
+msgid "Скопируйте shopId из личного кабинета Яндекс.Кассы"
+msgstr "Скопируйте shopId из личного кабинета Яндекс.Кассы"
+
+#: admin/partials/admin-settings-view.php:92
+msgid ""
+"Такого shopId нет. Пожалуйста, скопируйте параметр в <a\n"
+"                                    href=\"https://money.yandex.ru/joinups\">личном кабинете Яндекс.Кассы</a>  (наверху любой страницы)"
+msgstr ""
+"Такого shopId нет. Пожалуйста, скопируйте параметр в <a\n"
+"                                    href=\"https://money.yandex.ru/joinups\">личном кабинете Яндекс.Кассы</a>  (наверху любой страницы)"
+
+#: admin/partials/admin-settings-view.php:83
+msgid "Параметры из личного кабинета Яндекс.Кассы"
+msgstr "Параметры из личного кабинета Яндекс.Кассы"
+
+#: admin/partials/admin-settings-view.php:71
+msgid "Для работы с модулем необходимо подключить магазин к <a target=\"_blank\" href=\"https://kassa.yandex.ru/\">Яндекс.Кассе</a>"
+msgstr "Для работы с модулем необходимо подключить магазин к <a target=\"_blank\" href=\"https://kassa.yandex.ru/\">Яндекс.Кассе</a>"
+
+#: admin/partials/admin-settings-view.php:70
+msgid "Версия модуля"
+msgstr "Версия модуля"
+
+#: admin/partials/admin-settings-view.php:66
+msgid ""
+"<p>Работая с модулем, вы автоматически соглашаетесь с <a href='https://money.yandex.ru/doc.xml?id=527132'\n"
+"                                                             target='_blank'>условиями его использования</a>.</p>"
+msgstr ""
+"<p>Работая с модулем, вы автоматически соглашаетесь с <a href='https://money.yandex.ru/doc.xml?id=527132'\n"
+"                                                             target='_blank'>условиями его использования</a>.</p>"
+
+#: admin/partials/admin-settings-view.php:53
+msgid ""
+"Проверьте shopId и Секретный ключ — где-то есть ошибка. А лучше скопируйте их прямо из\n"
+"            <a href=\"https://kassa.yandex.ru/my\" target=\"_blank\">личного кабинета Яндекс.Кассы</a>"
+msgstr ""
+"Проверьте shopId и Секретный ключ — где-то есть ошибка. А лучше скопируйте их прямо из\n"
+"            <a href=\"https://kassa.yandex.ru/my\" target=\"_blank\">личного кабинета Яндекс.Кассы</a>"
+
+#: admin/partials/admin-settings-view.php:40
+msgid ""
+"Вы включили тестовый режим приема платежей. Проверьте, как проходит оплата, и напишите менеджеру Кассы.\n"
+"            Он выдаст рабочие shopId и Секретный ключ.\n"
+"            <a href=\"https://yandex.ru/support/checkout/payments/api.html#api__04\">Инструкция</a>."
+msgstr ""
+"Вы включили тестовый режим приема платежей. Проверьте, как проходит оплата, и напишите менеджеру Кассы.\n"
+"            Он выдаст рабочие shopId и Секретный ключ.\n"
+"            <a href=\"https://yandex.ru/support/checkout/payments/api.html#api__04\">Инструкция</a>."
+
+#: admin/partials/admin-settings-view.php:29
+msgid "Список платежей через модуль Кассы"
+msgstr "Список платежей через модуль Кассы"
+
+#: admin/partials/admin-settings-view.php:25
+#: admin/partials/admin-settings-view.php:33
+msgid "Настройки модуля Яндекс.Касса для WooCommerce"
+msgstr "Настройки модуля Яндекс.Касса для WooCommerce"
+
+#: admin/YandexMoneyCheckoutAdmin.php:93 admin/YandexMoneyCheckoutAdmin.php:94
+msgid "Настройки Яндекс.Касса 2.0"
+msgstr "Настройки Яндекс.Касса 2.0"
+
+#: admin/TransactionsListTable.php:99
+msgid "Провести платежи"
+msgstr "Провести платежи"
+
+#: admin/TransactionsListTable.php:57
+msgid "Описание заказа"
+msgstr "Описание заказа"
+
+#: admin/TransactionsListTable.php:56
+msgid "Статус"
+msgstr "Статус"
+
+#: admin/TransactionsListTable.php:55
+msgid "ID платежа"
+msgstr "ID платежа"
+
+#: admin/TransactionsListTable.php:54
+msgid "ID заказа"
+msgstr "ID заказа"
+
+#. Author URI of the plugin
+msgid "http://kassa.yandex.ru"
+msgstr "http://kassa.yandex.ru"
+
+#. Author of the plugin
+msgid "Yandex.Money"
+msgstr "Yandex.Money"
+
+#. Description of the plugin
+msgid "Платежный модуль для работы с сервисом Яндекс.Касса через плагин WooCommerce"
+msgstr "Платежный модуль для работы с сервисом Яндекс.Касса через плагин WooCommerce"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/yandexcheckout/"
+msgstr "https://wordpress.org/plugins/yandexcheckout/"
+
+#. Plugin Name of the plugin
+msgid "Яндекс.Касса 2.0 для Woocommerce"
+msgstr "Яндекс.Касса 2.0 для Woocommerce"
+
+#: gateway/YandexMoneyCheckoutGateway.php:132
+msgid "Для работы с модулем необходимо <a href=\"https://money.yandex.ru/joinups/\">подключить магазин к Яндек.Кассе</a>. После подключения вы получите параметры для приема платежей (идентификатор магазина — shopId  и секретный ключ)."
+msgstr "Для работы с модулем необходимо <a href=\"https://money.yandex.ru/joinups/\">подключить магазин к Яндек.Кассе</a>. После подключения вы получите параметры для приема платежей (идентификатор магазина — shopId  и секретный ключ)."
+
+#: gateway/YandexMoneyCheckoutGateway.php:124
+msgid "Описание, которое пользователь видит во время оплаты"
+msgstr "Описание, которое пользователь видит во время оплаты"
+
+#: gateway/YandexMoneyCheckoutGateway.php:122
+msgid "Описание"
+msgstr "Описание"
+
+#: gateway/YandexMoneyCheckoutGateway.php:118
+msgid "Название, которое пользователь видит во время оплаты"
+msgstr "Название, которое пользователь видит во время оплаты"
+
+#: gateway/YandexMoneyCheckoutGateway.php:116
+msgid "Заголовок"
+msgstr "Заголовок"
+
+#: gateway/YandexMoneyCheckoutGateway.php:110
+msgid "Включить/Выключить"
+msgstr "Включить/Выключить"

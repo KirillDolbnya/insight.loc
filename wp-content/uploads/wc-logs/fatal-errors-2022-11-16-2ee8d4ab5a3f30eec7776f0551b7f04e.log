@@ -1,0 +1,16 @@
+2022-11-16T17:13:37+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\main.php:156
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-includes\template-loader.php(106): include()
+#1 C:\OpenServer\domains\smarty.local\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#2 C:\OpenServer\domains\smarty.local\index.php(17): require('C:\\OpenServer\\d...')
+#3 {main}
+  thrown в C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\main.php на строке 156
+
+2022-11-16T17:14:56+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\main.php:156
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-includes\template-loader.php(106): include()
+#1 C:\OpenServer\domains\smarty.local\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#2 C:\OpenServer\domains\smarty.local\index.php(17): require('C:\\OpenServer\\d...')
+#3 {main}
+  thrown в C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\main.php на строке 156
+

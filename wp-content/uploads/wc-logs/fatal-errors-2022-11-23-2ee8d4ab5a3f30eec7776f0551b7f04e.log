@@ -1,0 +1,4 @@
+2022-11-23T18:00:22+00:00 CRITICAL syntax error, unexpected ')' в C:\OpenServer\domains\smarty.local\wp-content\plugins\twist\inc\public\templates\default.php на строке 86
+
+2022-11-23T18:48:23+00:00 CRITICAL syntax error, unexpected '}', expecting end of file в C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\woocommerce\content-single-product.php на строке 137
+

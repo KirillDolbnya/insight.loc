@@ -1,0 +1,321 @@
+# BEGIN LSCACHE
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+<IfModule LiteSpeed>
+RewriteEngine on
+CacheLookup on
+RewriteRule .* - [E=Cache-Control:no-autoflush]
+RewriteRule \.litespeed_conf\.dat - [F,L]
+
+### marker MOBILE start ###
+RewriteCond %{HTTP_USER_AGENT} Mobile|Android|Silk/|Kindle|BlackBerry|Opera\ Mini|Opera\ Mobi [NC]
+RewriteRule .* - [E=Cache-Control:vary=%{ENV:LSCACHE_VARY_VALUE}+ismobile]
+### marker MOBILE end ###
+
+### marker CACHE RESOURCE start ###
+RewriteRule wp-content/.*/[^/]*(responsive|css|js|dynamic|loader|fonts)\.php - [E=cache-control:max-age=3600]
+### marker CACHE RESOURCE end ###
+
+### marker FAVICON start ###
+RewriteRule favicon\.ico$ - [E=cache-control:max-age=86400]
+### marker FAVICON end ###
+
+### marker WEBP start ###
+RewriteCond %{HTTP_ACCEPT} "image/webp"
+RewriteRule .* - [E=Cache-Control:vary=%{ENV:LSCACHE_VARY_VALUE}+webp]
+RewriteCond %{HTTP_USER_AGENT} iPhone.*Version/(\d{2}).*Safari
+RewriteCond %1 >13
+RewriteRule .* - [E=Cache-Control:vary=%{ENV:LSCACHE_VARY_VALUE}+webp]
+### marker WEBP end ###
+
+### marker DROPQS start ###
+CacheKeyModify -qs:fbclid
+CacheKeyModify -qs:gclid
+CacheKeyModify -qs:utm*
+CacheKeyModify -qs:_ga
+### marker DROPQS end ###
+
+</IfModule>
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+# END LSCACHE
+# BEGIN NON_LSCACHE
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+### marker BROWSER CACHE start ###
+<IfModule mod_expires.c>
+ExpiresActive on
+ExpiresByType application/pdf A31557600
+ExpiresByType image/x-icon A31557600
+ExpiresByType image/vnd.microsoft.icon A31557600
+ExpiresByType image/svg+xml A31557600
+
+ExpiresByType image/jpg A31557600
+ExpiresByType image/jpeg A31557600
+ExpiresByType image/png A31557600
+ExpiresByType image/gif A31557600
+ExpiresByType image/webp A31557600
+
+ExpiresByType video/ogg A31557600
+ExpiresByType audio/ogg A31557600
+ExpiresByType video/mp4 A31557600
+ExpiresByType video/webm A31557600
+
+ExpiresByType text/css A31557600
+ExpiresByType text/javascript A31557600
+ExpiresByType application/javascript A31557600
+ExpiresByType application/x-javascript A31557600
+
+ExpiresByType application/x-font-ttf A31557600
+ExpiresByType application/x-font-woff A31557600
+ExpiresByType application/font-woff A31557600
+ExpiresByType application/font-woff2 A31557600
+ExpiresByType application/vnd.ms-fontobject A31557600
+ExpiresByType font/ttf A31557600
+ExpiresByType font/otf A31557600
+ExpiresByType font/woff A31557600
+ExpiresByType font/woff2 A31557600
+
+</IfModule>
+### marker BROWSER CACHE end ###
+
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+# END NON_LSCACHE
+
+
+
+
+
+# BEGIN WordPress
+# Директивы (строки) между `BEGIN WordPress` и `END WordPress`
+# созданы автоматически и подлежат изменению только через фильтры WordPress.
+# Сделанные вручную изменения между этими маркерами будут перезаписаны.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+Redirect 301 /products/aksessuaryi-dla-falshpolov-perfaten /product/aksessuary-dlya-falshpolov-perfaten/
+Redirect 301 /products/33391066 /
+Redirect 301 /products/33391187 /
+Redirect 301 /products/33391197 /
+Redirect 301 /products/33391208 /
+Redirect 301 /products/33391203 /
+Redirect 301 /products/category/fasadnie-sistemi-perfaten-i-albes-v-kazani /catalog/fasadnye-sistemy/
+Redirect 301 /products/category/vzryvozashchishchenniye-svetodiodnie-svetilniki-ex /catalog/osveshhenie/vzryvozashhishhennye-svetilniki-ex/
+Redirect 301 /products/kedr-sku-ex-led-effect-sku-ex-100 /product/kedr-sku-eh-100-vt-vzryvozashhishhennyj-svetilnik/
+Redirect 301 /products/kedr-sku-ex-led-effect-sku-ex-150 /product/kedr-sku-eh-150-vt-vzryvozashhishhennyj-svetilnik/
+Redirect 301 /products/vzrivozachita-svetodiodnii-svetilnik-kedr-ex-200-vt /product/kedr-sku-eh-200-vt-vzryvozashhishhennyj-svetilnik/
+Redirect 301 /products/kedr-sku-ex-led-effect-sku-ex-50 /product/kedr-sku-eh-50-vt-vzryvozashhishhennyj-svetilnik/
+Redirect 301 /products/kedr-sku-ex-led-effect-sku-ex-75 /product/kedr-sku-eh-75-vt-vzryvozashhishhennyj-svetilnik/
+Redirect 301 /products/led-effect-sbu-ex-200vt /product/kedr-sbu-eh-200-vt-vzryvozashhishhennyj-svetilnik/
+Redirect 301 /products/svetilnik-griliato-gl15-domino-le-svo-17-050-1257-20d /product/grilyato-gl15-domino-1257-20d/
+Redirect 301 /products/svetilnik-griliato-gl15-domino-le-svo-17-050-1258-20d /product/grilyato-gl15-domino-1258-20t/
+Redirect 301 /products/svetilnik-griliato-gl15-domino-le-svo-17-050-1259-20d /product/grilyato-gl15-domino-1259-20d/
+Redirect 301 /products/svetilnik-griliato-gl15-domino-le-svo-17-050-1260-20t /product/grilyato-gl15-domino-1260-20t/
+Redirect 301 /products/svetilnik-griliato-domino-le-svo-17-050-0662-20d /product/grilyato-domino-0662-20d/
+Redirect 301 /products/svetilnik-griliato-domino-le-svo-17-050-0663-20t /product/grilyato-domino-0663-20t/
+Redirect 301 /products/svetilnik-griliato-domino-le-svo-17-050-0691-20x /product/grilyato-domino-0691-20h/
+Redirect 301 /products/svetilnik-downlight-ip40-le-svo-16-022-1183-40x /product/grilyato-daunlajt-ip40-1183-40h/
+Redirect 301 /products/svetilnik-downlight-ip40-le-svo-16-022-1184-40d /product/grilyato-daunlajt-ip40-1184-40d/
+Redirect 301 /products/svetilnik-downlight-ip54-le-svo-16-022-1276-54x /product/grilyato-daunlajt-ip54-1276-54h/
+Redirect 301 /products/svetilnik-downlight-ip54-le-svo-16-022-1277-54d /product/grilyato-daunlajt-ip54-1277-54d/
+Redirect 301 /products/svetilnik-downlight-ip65-le-svo-16-022-1181-65x /product/grilyato-daunlajt-ip40-1183-40h/
+Redirect 301 /products/svetilnik-downlight-ip65-le-svo-16-022-1182-65d /product/grilyato-daunlajt-ip40-1184-40d/
+Redirect 301 /products/category/podvesnoi-alyminievii-potolok-griliato-gl15-h37-b15 /product/grilyato-gl15/
+Redirect 301 /products/category/podvesnoi-alyminievii-potolok-griliato-standart-h40-b10-04mm /product/grilyato-yachejka-2/
+Redirect 301 /products/category/podvesnoi-alyminievii-potolok-griliato-econom-h40-b10-032mm /product/grilyato-ekonom/
+Redirect 301 /products/category/dizajnerskie-svetodiodnyie-svetilniki-dlya-potolka-grilyato /catalog/osveshhenie/svetilniki-dlya-potolka-grilyato/dizajnerskie-potolki-grilyato/
+Redirect 301 /delivery /dostavka/
+Redirect 301 /products/svetilnik-svetodiodni-podvesnoi-xl-20-ls-st-700-2000 /product/svetilnik-svetodiodnyj-podvesnoj-xl20-ls-st-700-2000/
+Redirect 301 /products/category/848604 /catalog/osveshhenie/interernoe-osveshhenie/
+Redirect 301 /products/fasad-sistema-perfaten-akf1000-rpo-albes /product/kassetnaya-fasadnaya-sistema-albes-perfaten-akf-1000/
+Redirect 301 /products/fasad-sistema-perfaten-akf2000-rpo-albes /
+Redirect 301 /products /
+Redirect 301 /products/category/napolnie-pokritia-kazan /catalog/napolnye-pokrytiya/
+Redirect 301 /products/stypen-estima-loft-04-600x300-sr /product/stupen-estima-loft-04-600h300-sr/
+Redirect 301 /products/category/2098288 /
+Redirect 301 /contacts /kontakty-2/
+Redirect 301 /products/kuboobraznii-reechnii-potolok-himmel-st015-sosna /product/kuboobraznyj-reechnyj-potolok-himmel-tsvet-st015/
+Redirect 301 /products/svetilnik-interernii-strela-30-vt-ledeffect-le-sso-23-030 /product/svetilnik-strela-30-vt/
+Redirect 301 /products/svetilnik-lineynyi-strela-40-vt-led-effect-le-sso-23-040 /product/svetilnik-strela-40-vt/
+Redirect 301 /products/svetilnik-lineynyi-strela-60-vt-led-effect-le-sso-23-060 /product/svetilnik-strela-60-vt/
+Redirect 301 /products/svetilnik-lineynyi-strela-80-vt-led-effect-le-sso-23-080 /product/svetilnik-strela-80-vt/
+Redirect 301 /products/33391392 /
+Redirect 301 /products/33391419 /
+Redirect 301 /products/33391423 /
+Redirect 301 /products/33391427 /
+Redirect 301 /products/33391437 /
+Redirect 301 /products/33391432 /
+Redirect 301 /products/33391434 /
+Redirect 301 /products/33391458 /
+Redirect 301 /products/33391440 /
+Redirect 301 /products/42249859 /
+Redirect 301 /products/category/modylnie-podvesnie-potolki-rockfon /catalog/potolochnye-sistemy/podvesnye-sistemy/potolki-rockfon-daniya/modulnye-podvesnye-potolki-rockfon/
+Redirect 301 /products/category/keramogranit-estima-loft /catalog/napolnye-pokrytiya/keramogranit-estima-loft/
+Redirect 301 /photoalbums/69364 /primery-potolkov-grilyato/
+Redirect 301 /photoalbums/179286 /alyuminievye-potolki-raznogo-tipa/
+Redirect 301 /photoalbums /category/proekty/
+Redirect 301 /products/22255440 /product/sistema-oblitsovki-kolonn/
+Redirect 301 /products/svetilnik-meridian-led-effect-le-spo /product/vandalozashhishhennyj-svetilnik-dlya-zhkh-meridian/
+Redirect 301 /products/panel-lp-02-eco-standart-36vt-4000k-595x595-ip40 /product/panel-lp-02-eco-standart-36vt-4000k-595x595-ip40/
+Redirect 301 /products/panel-lp-02-eco-standart-36vt-6500k-595x595-ip40 /product/panel-lp-02-eco-standart-36vt-6500k-595x595-ip40/
+Redirect 301 /products/panel-lp-02-premium-40vt-4000k-595x595-ip40 /product/panel-lp-02-premium-40vt-4000k-595x595-ip40/
+Redirect 301 /products/panel-lp-02-premium-40vt-6500k-595x595-ip40 /product/panel-lp-02-premium-40vt-6500k-595x595-ip40/
+Redirect 301 /products/panel-lp-eco-prizma-36vt-4000k-595x595-ip20 /product/panel-lp-eco-prizma-36vt-4000k-595x595-ip20/
+Redirect 301 /products/profil-poperechnyi-t-24-29-standart-usilenyi-1200-mm /product/profil-poperechnyi-t-24-29-standart-usilenyi-1200-mm/
+Redirect 301 /products/profil-osnovnoi-t-24-29-standart-usilenyi-3600-mm /product/profil-osnovnoi-t-24-29-standart-usilenyi-3600-mm/
+Redirect 301 /products/profil-poperechnyi-t-24-29-standart-usilenyi-600-mm /product/profil-poperechnyj-t24-29-standart-usilennyj-600-mm/
+Redirect 301 /products/potolok-griliato-gl-15-iz-aluminum-yachejka-50x50-h37-b15 /product/grilyato-gl15/
+Redirect 301 /products/potolok-albes-griliato-gl-15-iz-stali /product/grilyato-gl15/
+Redirect 301 /products/potolok-albes-griliato-standart /product/grilyato-yachejka-2/
+Redirect 301 /products/category/potolki-rockfon-dania-v-kazani /catalog/potolochnye-sistemy/podvesnye-sistemy/potolki-rockfon-daniya/
+Redirect 301 /products/category/2417989 /catalog/potolochnye-sistemy/podvesnye-sistemy/potolki-ecophon-shvetsiya/
+Redirect 301 /products/22255370 /catalog/potolochnye-sistemy/kassetnyj-potolok/
+Redirect 301 /products/category/katalog-potolkov-griliato /catalog/potolochnye-sistemy/grilyato/
+Redirect 301 /products/category/2399903 /catalog/potolochnye-sistemy/podvesnye-sistemy/podvesnye-sistemy-profil-t24-t15/
+Redirect 301 /products/category/2399864 /catalog/potolochnye-sistemy/kassetnyj-potolok/
+Redirect 301 /products/category/2399887 /catalog/potolochnye-sistemy/podvesnye-sistemy/potolki-armstrong-germaniya/
+Redirect 301 /products/category/2399863 /catalog/potolochnye-sistemy/reechnyj-potolok/
+Redirect 301 /products/category/podvesnie-potolki-i-sistemi-v-kazani /catalog/potolochnye-sistemy/podvesnye-sistemy/
+Redirect 301 /products/podvesnaia-sistema-albes-euro-t-24 /product/t-24-albes-evro/
+Redirect 301 /products/potolochnaya-panel-retail-armstrong /
+Redirect 301 /products/category/potolki-ecophon-focus-e /catalog/potolochnye-sistemy/podvesnye-sistemy/potolki-ecophon-shvetsiya/potolki-ecophon-focus-e-t24-t15/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-1200x100x20 /product/potolochnaya-panel-ecophon-focus-e-1200x100x20/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-1200x100x20-ral /product/potolochnaya-panel-ecophon-focus-e-1200x100x20-ral/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-1200x150x20 /product/potolochnaya-panel-ecophon-focus-e-1200x150x20/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-1200x150x20-ral /product/potolochnaya-panel-ecophon-focus-e-1200x150x20-ral/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-1200x300x20 /product/potolochnaya-panel-ecophon-focus-e-1200x300x20/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-1200x450x20 /product/potolochnaya-panel-ecophon-focus-e-1200x450x20/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-1200x450x20-ral /product/potolochnaya-panel-ecophon-focus-e-1200x450x20-ral/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-1200x600x20 /product/potolochnaya-panel-ecophon-focus-e-1200x600x20/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-1200x600x20-ral /product/potolochnaya-panel-ecophon-focus-e-1200x600x20-ral/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-600x100x20 /product/potolochnaya-panel-ecophon-focus-e-600x100x20/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-600x100x20-ral /product/potolochnaya-panel-ecophon-focus-e-600x100x20-ral/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-600x150x20 /product/potolochnaya-panel-ecophon-focus-e-600x150x20/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-600x150x20-ral /product/potolochnaya-panel-ecophon-focus-e-600x150x20-ral/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-600x300x20 /product/potolochnaya-panel-ecophon-focus-e-600x300x20/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-600x450x20 /product/potolochnaya-panel-ecophon-focus-e-600x450x20/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-600x450x20-ral /product/potolochnaya-panel-ecophon-focus-e-600x450x20-ral/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-600x600x20 /product/potolochnaya-panel-ecophon-focus-e-600x600x20/
+Redirect 301 /products/potolochnaya-panel-ecophon-focus-e-600x600x20-ral /product/potolochnaya-panel-ecophon-focus-e-600x600x20-ral/
+Redirect 301 /products/category/modylnie-dizainerskie-podvesnie-potolki-rockfon-v-kazani /
+Redirect 301 /products/category/stenovie-akusticheskie-paneli-rockfon-v-kazani /
+Redirect 301 /products/potolok-albes-griliato-econom-yachejka-30x30-h40-b10-mm-ral-9003 /product/potolok-albes-griliato-econom-yachejka-30x30-h40-b10-mm-ral-9003/
+Redirect 301 /products/potolok-albes-griliato-econom-yachejka-30x30-h40-b10-mm-ral-9006 /product/potolok-albes-griliato-econom-yachejka-30x30-h40-b10-mm-ral-9006/
+Redirect 301 /products/potolok-albes-griliato-econom-yachejka-30x30-h40-b10-mm-ral-9007 /product/potolok-albes-griliato-econom-yachejka-30x30-h40-b10-mm-ral-9007/
+Redirect 301 /products/potolok-albes-griliato-econom-yachejka-30x30-h40-b10-mm-ral-9011 /product/potolok-albes-griliato-econom-yachejka-30x30-h40-b10-mm-ral-9011/
+Redirect 301 /products/potolok-albes-griliato-econom-yachejka-30x30-h40-b10-mm /product/potolok-albes-griliato-econom-yachejka-30x30-h40-b10-mm/
+Redirect 301 /products/potolok-griliato-econom-yacheika-50x50-h40-b10-mm-ral-9003 /product/potolok-griliato-econom-yacheika-50x50-h40-b10-mm-ral-9003/
+Redirect 301 /products/potolok-griliato-econom-yacheika-50x50-h40-b10-mm-ral-9006 /product/potolok-griliato-econom-yacheika-50x50-h40-b10-mm-ral-9006/
+Redirect 301 /products/potolok-griliato-econom-yacheika-50x50-h40-b10-mm-ral-9007 /product/potolok-griliato-econom-yacheika-50x50-h40-b10-mm-ral-9007/
+Redirect 301 /products/potolok-griliato-econom-yachejka-50x50-h40-b10-mm-cvetnoi /product/potolok-griliato-econom-yachejka-50x50-h40-b10-mm-cvetnoi/
+Redirect 301 /products/potolok-griliato-econom-yacheika-50x50-h40-b10-mm-ral-9011 /product/potolok-griliato-econom-yacheika-50x50-h40-b10-mm-ral-9011/
+Redirect 301 /products/potolok-albes-griliato-econom-yachejka-50x50-h40-b10-mm /product/potolok-albes-griliato-econom-yachejka-50x50-h40-b10-mm/
+Redirect 301 /products/potolok-griliato-econom-yacheika-60x60-h40-b10-mm-ral-9003 /product/potolok-griliato-econom-yacheika-60x60-h40-b10-mm-ral-9003/
+Redirect 301 /products/potolok-griliato-econom-yacheika-60x60-h40-b10-mm-ral-9006 /product/potolok-griliato-econom-yacheika-60x60-h40-b10-mm-ral-9006/
+Redirect 301 /products/potolok-griliato-econom-yacheika-60x60-h40-b10-mm-ral-9007 /product/grilyato-yachejka-60h60mm-h40mm-b10mm-metallik-serebristyj-9007/
+Redirect 301 /products/33746132 /product/grilyato-ekonom/
+Redirect 301 /products/potolok-griliato-econom-yachejka-60x60-h40-b10-mm /product/potolok-griliato-econom-yachejka-60x60-h40-b10-mm/
+Redirect 301 /products/potolok-griliato-econom-yachejka-60x60-h40-b10-mm-cvetnoi /product/potolok-griliato-econom-yachejka-60x60-h40-b10-mm-cvetnoi/
+Redirect 301 /products/potolok-griliato-econom-yacheika-60x60-h40-b10-mm-ral-9011 /product/potolok-griliato-econom-yacheika-60x60-h40-b10-mm-ral-9011/
+Redirect 301 /products/potolok-albes-griliato-econom-yachejka-30x30-h40-b10-mm-cvetnoi /product/potolok-albes-griliato-econom-yachejka-30x30-h40-b10-mm-cvetnoi/
+Redirect 301 /products/plita-rockfon-artic-15-mm /product/plita-rockfon-artic-15-mm/
+Redirect 301 /products/potolochnaya-plita-rockfon-koral-tenor-v-kazani /
+Redirect 301 /products/potolochnaya-plita-rockfon-koral-v-kazani /
+Redirect 301 /products/plita-rockfon-lilia-12-mm /product/plita-rockfon-lilia-12-mm/
+Redirect 301 /products/plita-rockfon-lilia-15-mm /product/plita-rockfon-lilia-15-mm/
+Redirect 301 /products/potolochnaya-plita-rockfon-tropik-v-kazani /
+Redirect 301 /products/plita-rockfon-solut-15-mm /product/plita-rockfon-solut-15-mm/
+Redirect 301 /products/category/akusticheskie-ostrova-i-ekrani-baffle-rockfon-v-kazani /
+Redirect 301 /products/reguliruemaya-opornaya-konstrukcziya-rok-perfaten /product/reguliruemaya-opornaya-konstrukcziya-rok-perfaten/
+Redirect 301 /products/category/kuboobraznii-reechnii-potolok-himmel /catalog/potolochnye-sistemy/reechnyj-potolok/kuboobraznyj-reechnyj-potolok-himmel/
+Redirect 301 /products/grilyato-25vt-led-effect-le-svo-04-030-006 /product/grilyato-25vt-led-effect-le-svo-04-030-006/
+Redirect 301 /products/grilyato-33vt-led-effect-le-svo-04-040-007 /product/grilyato-33vt-led-effect-le-svo-04-040-007/
+Redirect 301 /products/grilyato-33vt-led-effect-le-svo-04-00 /product/grilyato-33vt-led-effect-le-svo-04-00/
+Redirect 301 /products/svetilnik-ofis-griliato-33vt-led-effect-le-svo-03-040-05 /product/svetilnik-ofis-griliato-33vt-led-effect-le-svo-03-040-05/
+Redirect 301 /products/svetilnik-ofis-griliato-40vt-led-effect-le-svo-03-050-05 /product/svetilnik-ofis-griliato-40vt-led-effect-le-svo-03-050-05/
+Redirect 301 /products/svetilnik-ofis-griliato-25vt-led-effect-le-svo-03-030-0538-20d /product/svetilnik-ofis-griliato-25vt-led-effect-le-svo-03-030-0538-20d/
+Redirect 301 /products/svetilnik-ofis-griliato-25vt-led-effect-le-svo-03-030-0539-20t /product/svetilnik-ofis-griliato-25vt-led-effect-le-svo-03-030-0539-20t/
+Redirect 301 /products/svetilnik-ofis-griliato-25vt-led-effect-le-svo-03-030-0595-20x /product/svetilnik-ofis-griliato-25vt-led-effect-le-svo-03-030-0595-20x/
+Redirect 301 /products/svetilnik-ofis-komfort-grilyato-40vt-le-svo-03-040-0673-20d /product/svetilnik-ofis-komfort-grilyato-40vt-le-svo-03-040-0673-20d/
+Redirect 301 /products/category/2136216 /catalog/osveshhenie/zhkh-osveshhenie/
+Redirect 301 /products/category/2136219 /catalog/osveshhenie/ulichnoe-osveshhenie/
+Redirect 301 /products/category/2136211 /catalog/osveshhenie/torgovoe-osveshhenie/
+Redirect 301 /products/category/ofisnie-svetodiodnyie-svetilniki-dlya-potolka-grilyato /catalog/osveshhenie/svetilniki-dlya-potolka-grilyato/ofisnye-svetilniki-grilyato/
+Redirect 301 /products/category/svetilniki-svetodiodnye-dlya-potolka-grilyato /catalog/osveshhenie/svetilniki-dlya-potolka-grilyato/
+Redirect 301 /products/category/2190404 /catalog/osveshhenie/ultratonkie-svetodiodnye-paneli/
+Redirect 301 /products/category/svetilniki-downlight-svetodiodnyie-dla-potolka-griliato /catalog/osveshhenie/svetilniki-dlya-potolka-grilyato/daunlajt-grilyato/
+Redirect 301 /products/category/svetodiodnie-svetilniki-v-kazani /catalog/osveshhenie/
+Redirect 301 /products/category/2098285 /catalog/oblitsovka-kolonn/
+Redirect 301 /page/1252561 /category/dokumenty/
+Redirect 301 /page/1252557 /category/dokumenty/
+Redirect 301 /page/1252562 /category/dokumenty/
+Redirect 301 /page/1252269 /category/uslugi/
+Redirect 301 /page/1252264 /category/uslugi/
+Redirect 301 /page/1252265 /category/uslugi/
+Redirect 301 /page/1252268 /category/uslugi/
+Redirect 301 /page/1252266 /category/uslugi/
+Redirect 301 /page/1252274 /category/uslugi/
+Redirect 301 /confidential /politika-konfidentsialnosti/
+Redirect 301 /agreement /polzovatelskoe-soglashenie/
+Redirect 301 /page/1252275 /category/uslugi/
+Redirect 301 /page/1252560 /category/dokumenty/
+Redirect 301 /page/1252585 /category/dokumenty/
+Redirect 301 /page/1252271 /category/uslugi/
+Redirect 301 /products/33391115 /
+Redirect 301 /products/33391150 /
+Redirect 301 /products/33391180 /
+Redirect 301 /products/33391137 /
+Redirect 301 /products/33391145 /
+Redirect 301 /products/33391144 /
+Redirect 301 /products/svetodiodnii-svetilnik-ledeffect-riteil-svo-le-svo-14-040-06 /product/svetodiodnii-svetilnik-ledeffect-riteil-svo-le-svo-14-040-06/
+Redirect 301 /products/led-effect-le-sky-kedr-50-vt /product/led-effect-le-sky-kedr-50-vt/
+Redirect 301 /products/led-effect-kedr-kronshteyn-romashka /product/led-effect-kedr-kronshteyn-romashka/
+Redirect 301 /products/ledeffect-kedr-azs-led-effect-le-0512 /product/ledeffect-kedr-azs-led-effect-le-0512/
+Redirect 301 /products/ledeffect-kedr-azs-led-effect-le-0513 /product/ledeffect-kedr-azs-led-effect-le-0513/
+Redirect 301 /products/ledeffect-kedr-azs-led-effect-le-0511 /product/ledeffect-kedr-azs-led-effect-le-0511/
+Redirect 301 /products/falshpol-perfaten-atlant-airvent /product/falshpol-perfaten-atlant-airvent/
+Redirect 301 /products/falshpol-perfaten-atlant-eco /product/falshpol-perfaten-atlant-eco/
+Redirect 301 /products/falshpol-perfaten-atlant-solid /product/falshpol-perfaten-atlant-solid/
+Redirect 301 /products/category/falshpol-perfaten-atlant /catalog/falshpoly-perfaten/
+Redirect 301 /products/fasad-sistema-perfaten-afs-cerama-rpo-albes /
+Redirect 301 /products/34095977 /
+Redirect 301 /catalog/potolochnye-sistemy/category/2098285 /catalog/potolochnye-sistemy/
+Redirect 301 /catalog/potolochnye-sistemy/kedr-sku-ex-led-effect-sku-ex-50 /product/kedr-sku-eh-50-vt-vzryvozashhishhennyj-svetilnik/
+Redirect 301 /catalog/potolochnye-sistemy/svetodiodnii-svetilnik-ledeffect-riteil-svo-le-svo-14-040-06 /product/svetodiodnii-svetilnik-ledeffect-riteil-svo-le-svo-14-040-06/
+Redirect 301 /catalog/potolochnye-sistemy/category/podvesnoi-alyminievii-potolok-griliato-gl15-h37-b15 /catalog/potolochnye-sistemy/grilyato/podvesnoi-alyminievii-potolok-griliato-gl15-h37-b15/
+Redirect 301 /catalog/potolochnye-sistemy/22255440 /catalog/potolochnye-sistemy/
+Redirect 301 /catalog/potolochnye-sistemy/ledeffect-kedr-azs-led-effect-le-0513 /product/ledeffect-kedr-azs-led-effect-le-0513/
+Redirect 301 /catalog/potolochnye-sistemy/33746132 /catalog/potolochnye-sistemy/
+Redirect 301 /catalog/potolochnye-sistemy/kedr-sku-ex-led-effect-sku-ex-150 /product/kedr-sku-eh-150-vt-vzryvozashhishhennyj-svetilnik/
+Redirect 301 /catalog/potolochnye-sistemy/potolok-albes-griliato-econom-yachejka-30x30-h40-b10-mm-cvetnoi /product/potolok-albes-griliato-econom-yachejka-30x30-h40-b10-mm-cvetnoi/
+Redirect 301 /catalog/potolochnye-sistemy/category/fasadnie-sistemi-perfaten-i-albes-v-kazani /catalog/fasadnye-sistemy/
+Redirect 301 /catalog/potolochnye-sistemy/profil-osnovnoi-t-24-29-standart-usilenyi-3600-mm /product/profil-osnovnoi-t-24-29-standart-usilenyi-3600-mm/
+Redirect 301 /catalog/potolochnye-sistemy/category/potolki-ecophon-focus-e /catalog/potolochnye-sistemy/podvesnye-sistemy/potolki-ecophon-shvetsiya/potolki-ecophon-focus-e-t24-t15/
+Redirect 301 /catalog/potolochnye-sistemy/22255370 /catalog/potolochnye-sistemy/
+Redirect 301 /catalog/potolochnye-sistemy/42249859 /catalog/potolochnye-sistemy/
+Redirect 301 /catalog/potolochnye-sistemy/33391437 /catalog/potolochnye-sistemy/
+Redirect 301 /catalog/potolochnye-sistemy/aksessuaryi-dla-falshpolov-perfaten /product/aksessuary-dlya-falshpolov-perfaten/
+Redirect 301 /catalog/potolochnye-sistemy/potolok-griliato-gl-15-iz-aluminum-yachejka-50x50-h37-b15 /product/grilyato-gl15/
+Redirect 301 /catalog/potolochnye-sistemy/led-effect-kedr-kronshteyn-romashka /product/led-effect-kedr-kronshteyn-romashka/
+Redirect 301 /catalog/potolochnye-sistemy/potolochnaya-panel-ecophon-focus-e-1200x600x20 /product/potolochnaya-panel-ecophon-focus-e-1200x600x20/
+Redirect 301 /catalog/potolochnye-sistemy/grilyato-33vt-led-effect-le-svo-04-00 /product/grilyato-33vt-led-effect-le-svo-04-00/
+Redirect 301 /catalog/potolochnye-sistemy/33391419 /catalog/potolochnye-sistemy/
+Redirect 301 /catalog/potolochnye-sistemy/33391432 /catalog/potolochnye-sistemy/
+Redirect 301 /kasetnipotolok /catalog/potolochnye-sistemy/kassetnyj-potolok/
+Redirect 301 /catalog/potolochnye-sistemy/potolochnaya-plita-rockfon-koral-v-kazani /catalog/potolochnye-sistemy/
+Redirect 301 /catalog/potolochnye-sistemy/33391180 /catalog/potolochnye-sistemy/
+Redirect 301 /catalog/potolochnye-sistemy/category/2136219 /catalog/potolochnye-sistemy/
+Redirect 301 /catalog/potolochnye-sistemy/panel-lp-02-premium-40vt-4000k-595x595-ip40 /product/panel-lp-02-premium-40vt-4000k-595x595-ip40/
+Redirect 301 /catalog/potolochnye-sistemy/panel-lp-eco-prizma-36vt-4000k-595x595-ip20 /product/panel-lp-eco-prizma-36vt-4000k-595x595-ip20/
+Redirect 301 /catalog/potolochnye-sistemy/falshpol-perfaten-atlant-solid /product/falshpol-perfaten-atlant-solid
+Redirect 301 /static/000/000/188/062/doc/7e/29/7498b0276e13acd71b17cfc304fac9fe28f4.pdf /category/dokumenty/
+Redirect 301 /catalog/potolochnye-sistemy/category/2399887 /catalog/potolochnye-sistemy/
+Redirect 301 /catalog/potolochnye-sistemy/33391115 /catalog/potolochnye-sistemy/
+Redirect 301 /products/category/2399903 /product/plita-ritejl-retail-armstrong/
+Redirect 301 /o-kompanii/o-nas/ /o-kompanii/

@@ -1,0 +1,100 @@
+2022-11-27T14:03:40+00:00 CRITICAL syntax error, unexpected '<', expecting case (T_CASE) or default (T_DEFAULT) or '}' в C:\OpenServer\domains\smarty.local\wp-content\plugins\yith-woocommerce-compare-premium\templates\yith-compare-table.php на строке 158
+
+2022-11-27T17:40:38+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_checkout_shipping_options() in C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php:2114
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): filter_update_order_review_fragments()
+#1 C:\OpenServer\domains\smarty.local\wp-includes\plugin.php(205): WP_Hook->apply_filters()
+#2 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(405): apply_filters()
+#3 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): WC_AJAX::update_order_review()
+#4 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters()
+#5 C:\OpenServer\domains\smarty.local\wp-includes\plugin.php(517): WP_Hook->do_action()
+#6 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(94): do_action()
+#7 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#8 C:\OpenServer\d в C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php на строке 2114
+
+2022-11-27T17:41:26+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_checkout_shipping_options() in C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php:2114
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): filter_update_order_review_fragments()
+#1 C:\OpenServer\domains\smarty.local\wp-includes\plugin.php(205): WP_Hook->apply_filters()
+#2 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(405): apply_filters()
+#3 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): WC_AJAX::update_order_review()
+#4 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters()
+#5 C:\OpenServer\domains\smarty.local\wp-includes\plugin.php(517): WP_Hook->do_action()
+#6 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(94): do_action()
+#7 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#8 C:\OpenServer\d в C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php на строке 2114
+
+2022-11-27T17:43:07+00:00 CRITICAL syntax error, unexpected '', 1, 3);' (T_ENCAPSED_AND_WHITESPACE), expecting ')' в C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php на строке 2152
+
+2022-11-27T17:43:08+00:00 CRITICAL syntax error, unexpected '', 1, 3);' (T_ENCAPSED_AND_WHITESPACE), expecting ')' в C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php на строке 2152
+
+2022-11-27T17:47:37+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_checkout_shipping_options() in C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php:2114
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): filter_update_order_review_fragments()
+#1 C:\OpenServer\domains\smarty.local\wp-includes\plugin.php(205): WP_Hook->apply_filters()
+#2 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(405): apply_filters()
+#3 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): WC_AJAX::update_order_review()
+#4 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters()
+#5 C:\OpenServer\domains\smarty.local\wp-includes\plugin.php(517): WP_Hook->do_action()
+#6 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(94): do_action()
+#7 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#8 C:\OpenServer\d в C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php на строке 2114
+
+2022-11-27T17:47:51+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_checkout_shipping_options() in C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php:2114
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): filter_update_order_review_fragments()
+#1 C:\OpenServer\domains\smarty.local\wp-includes\plugin.php(205): WP_Hook->apply_filters()
+#2 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(405): apply_filters()
+#3 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): WC_AJAX::update_order_review()
+#4 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters()
+#5 C:\OpenServer\domains\smarty.local\wp-includes\plugin.php(517): WP_Hook->do_action()
+#6 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(94): do_action()
+#7 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#8 C:\OpenServer\d в C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php на строке 2114
+
+2022-11-27T17:48:04+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_checkout_shipping_options() in C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php:2114
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): filter_update_order_review_fragments()
+#1 C:\OpenServer\domains\smarty.local\wp-includes\plugin.php(205): WP_Hook->apply_filters()
+#2 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(405): apply_filters()
+#3 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): WC_AJAX::update_order_review()
+#4 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters()
+#5 C:\OpenServer\domains\smarty.local\wp-includes\plugin.php(517): WP_Hook->do_action()
+#6 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(94): do_action()
+#7 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#8 C:\OpenServer\d в C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php на строке 2114
+
+2022-11-27T17:48:16+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_checkout_shipping_options() in C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php:2114
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): filter_update_order_review_fragments()
+#1 C:\OpenServer\domains\smarty.local\wp-includes\plugin.php(205): WP_Hook->apply_filters()
+#2 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(405): apply_filters()
+#3 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): WC_AJAX::update_order_review()
+#4 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters()
+#5 C:\OpenServer\domains\smarty.local\wp-includes\plugin.php(517): WP_Hook->do_action()
+#6 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(94): do_action()
+#7 C:\OpenServer\domains\smarty.local\wp-includes\class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#8 C:\OpenServer\d в C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php на строке 2114
+
+2022-11-27T18:04:44+00:00 CRITICAL Uncaught Error: Call to undefined function get_current_shipping_method() in C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\woocommerce\checkout\form-checkout.php:119
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(316): wc_get_template()
+#2 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#3 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output()
+#4 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper()
+#5 C:\OpenServer\domains\smarty.local\wp-includes\shortcodes.php(355): WC_Shortcodes::checkout()
+#6 [internal function]: do_sh в C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\woocommerce\checkout\form-checkout.php на строке 119
+
+2022-11-27T18:07:43+00:00 CRITICAL syntax error, unexpected '<', expecting end of file в C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php на строке 2109
+
+2022-11-27T18:07:53+00:00 CRITICAL syntax error, unexpected '<', expecting end of file в C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php на строке 2109
+
+2022-11-27T18:41:28+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_Cart::get_coupon_discount_amount(), 0 passed in C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\woocommerce\checkout\form-checkout.php on line 118 and at least 1 expected in C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart.php:1827
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\woocommerce\checkout\form-checkout.php(118): WC_Cart->get_coupon_discount_amount()
+#1 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\OpenServer\\d...')
+#2 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(316): wc_get_template()
+#3 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#4 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce в C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart.php на строке 1827
+

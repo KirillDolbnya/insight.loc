@@ -1,0 +1,18 @@
+# запретить доступ ко всем файлам
+<FilesMatch ".*">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+ 
+# Разрешить доступ только к файлам определенного расшерения
+<FilesMatch "\.(jpg|png|gif|doc|docx|pdf|ppt|pptx)$|^$">
+  Order deny,allow
+  Allow from all
+</FilesMatch>
+ 
+# Выключим php
+php_flag engine 0	
+ 
+# для все стремных файлов сделаем тип html
+RemoveHandler .*
+AddType "text/html" .php .cgi .pl .fcgi .fpl .phtml .shtml .php2 .php3 .php4 .php5 .asp .jsp

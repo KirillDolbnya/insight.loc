@@ -1,0 +1,189 @@
+.wpcf7-not-valid-tip{
+	display:none !important;
+}
+
+.wpcf7 form .wpcf7-response-output{
+	margin-top:0 !important;
+	display:none !important;
+}
+
+.wpcf7-not-valid{
+	border:1px solid red !important;
+}
+
+ul.nomargin{
+	margin:0px;
+	padding:0px;
+}
+
+.breadcrumbs a{
+	text-decoration:none;
+	color:inherit;
+}
+
+.separator_bread{
+	margin-left:3px;
+	margin-right:3px;
+}
+
+.leftscreen.leftscreen_visible{
+	overflow:visible;
+}
+
+
+.projectsAdapt{
+	display:block;
+	text-decoration:none !important;
+	color:inherit !important;
+}
+
+@media (min-width: 768px){
+
+.projectBig{
+	min-height:696px;
+	object-fit:cover;
+}
+
+.leftscreen{
+	overflow:hidden;
+}
+
+.projectSmall_img {
+	max-width:251px;
+	max-height:251px;
+	object-fit:cover;
+}
+
+.projectMiddle_img {
+	max-width:251px;
+	max-height:351px;
+	object-fit:cover;
+}
+
+
+.projectsAdapt{
+	text-align:left;
+	width:100%;
+}
+
+.fotoAdaptiv_1{
+	max-width:449px;
+}
+
+.fotoAdaptiv_1 img.fotoAdaptiv{
+	height:346px;
+	width:100%;
+	object-fit:cover;
+}
+
+.fotoAdaptiv_3 {
+	max-width:651px;
+}
+
+.fotoAdaptiv_3 img.fotoAdaptiv{
+	height:434px;
+	object-fit:cover;
+	width:100%;
+}
+
+.fotoAdaptiv_2{
+}
+
+.fotoAdaptiv_2 img.fotoAdaptiv{
+	height:408px;
+	object-fit:cover;
+	width:100%;
+}
+
+.left_object_fix{
+	width:55.61%;
+	padding-right:183px;
+	position:relative;
+	padding-left:2%;
+	box-sizing:border-box;
+}
+
+.left_object_fix .leftscreen{
+	width:100%;
+}
+
+.object_menu_fix{
+	max-width:160px;
+	position:absolute;
+	right:0px;
+	height:100%;
+}
+
+.object_menu_fix .proMenu{
+	padding-left:0px;
+}
+
+.left_object_fix .secondProj {
+  position: relative;
+  left: 0px;
+}
+
+.left_object_fix2{
+	box-sizing:border-box;
+	width:55.61%;
+	padding-left:17%;
+	padding-right: 183px;
+}
+
+.left_object_fix2 img.fotoAdaptiv{
+	height:434px;
+	width:100%;
+}
+
+.left_object_fix2 .leftscreen{
+	width:100%;
+	box-sizing:border-box;
+}
+
+.left_object_fix2 .projectFour{
+	margin-left:0px;
+}
+
+.projectBottom{
+	flex-wrap:wrap;
+}
+
+.projectBottom .projectAdaptiv{
+	margin-bottom:30px;
+}
+
+.rightscreen_item_gallery_1{
+	box-sizing:border-box;
+	padding-right: 11%;
+}
+
+.rightscreen_item_gallery_1 img{
+	max-width:100%;
+	max-height:100%;
+}
+
+.item_gallery_2{
+	width:100%;
+}
+
+.projectBottom{
+	margin-left:-3%;
+	margin-right:-3%;
+}
+
+.item_gallery_3_wrap{
+	width:33.33333333333333%;
+	padding-left:3%;
+	box-sizing:border-box;
+	padding-right:3%;
+}
+
+.item_gallery_3_wrap img{
+	width:100%;
+	object-fit:cover;
+	height:400px;
+}
+
+}
+
+

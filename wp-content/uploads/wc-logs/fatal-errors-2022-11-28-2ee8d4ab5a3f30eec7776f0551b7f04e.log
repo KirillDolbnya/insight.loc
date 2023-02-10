@@ -1,0 +1,50 @@
+2022-11-28T12:00:47+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct()
+#4 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php(2047): WC_Cart->set_quantity()
+#6 C:\OpenServer\domains\smar в C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php на строке 225
+
+2022-11-28T12:00:55+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct()
+#4 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php(2047): WC_Cart->set_quantity()
+#6 C:\OpenServer\domains\smar в C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php на строке 225
+
+2022-11-28T12:01:00+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct()
+#4 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php(2047): WC_Cart->set_quantity()
+#6 C:\OpenServer\domains\smar в C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php на строке 225
+
+2022-11-28T12:01:00+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct()
+#4 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php(2047): WC_Cart->set_quantity()
+#6 C:\OpenServer\domains\smar в C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php на строке 225
+
+2022-11-28T12:01:06+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct()
+#4 C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 C:\OpenServer\domains\smarty.local\wp-content\themes\templatex1\functions.php(2047): WC_Cart->set_quantity()
+#6 C:\OpenServer\domains\smar в C:\OpenServer\domains\smarty.local\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php на строке 225
+

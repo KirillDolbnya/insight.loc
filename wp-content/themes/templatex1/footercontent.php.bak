@@ -1,0 +1,147 @@
+<div class="modal">
+  <img class="close" src="<?=get_template_directory_uri()?>/assests/images/close.svg">
+  <div class="modalText">
+    <h3>Зарос успешно отправлен!</h3>
+    <p>Наш специалист свяжется с вами в ближайшее время</p>
+    <div class="button modalBtn">ОК</div>
+  </div>
+</div>
+<footer>
+<div class="newFon">
+<section class="site" id="contact">
+  <div class="otstup"></div>
+  <div class="footerZagolovokWrapper">
+<div class="footerZagolovok">
+  <h2><?=get_field('title_contact', 'option')?></h2>
+</div>
+<div class="footerZagolovokText">
+  <p><?=get_field('subtitle_contact', 'option')?></p>
+</div>
+  </div>
+<div class="adressList">
+<div class="adress">
+<div class="adressItemWrapper">
+<img class="itemIcon" src="<?=get_template_directory_uri()?>/assests/images/adress.svg">
+<div class="itemText"><p><?=get_field('adres', 'option')?></p></div>
+</div>
+
+
+
+  <div class="adressItemWrapper">
+  <img class="itemIcon" src="<?=get_template_directory_uri()?>/assests/images/phone.svg">
+  <div class="itemText"><p><?=get_field('phone', 'option')?></p></div>
+  </div>
+
+
+  
+    <div class="adressItemWrapper">
+    <img class="itemIcon" src="<?=get_template_directory_uri()?>/assests/images/phone.svg">
+    <div class="itemText"><p><?=get_field('phone2', 'option')?></p></div>
+    </div>
+    
+
+    
+      <div class="adressItemWrapper">
+      <img class="itemIcon" src="<?=get_template_directory_uri()?>/assests/images/mail.svg">
+      <div class="itemText"><p><?=get_field('mail', 'option')?></p></div>
+      </div>
+</div>
+
+<?php if(get_field('social', 'option')): $i= 0; ?>
+	<?php while(has_sub_field('social', 'option')): $i++; ?>
+		<a class="adress inlineSocial" href="<?=get_sub_field('soc_link')?>">
+			<span class="adressBtn">
+				<span class="textAdressBtn">
+					<?=get_sub_field('soc_name')?>
+				</span>
+			</span>
+		</a>
+<?php endwhile; ?>
+<?php endif; ?>	
+
+
+</div>
+</section>
+<section class="site" id="zayavka">
+  <div class="screen">
+    <div class="leftscreen">
+      <div class="otstup"></div>
+     
+    <button class="zakazhite"><div class="lastBtnText"><h3><?=get_field('offer_contact_title', 'option')?></h3></div><div class="lastBtnText short"><p><?=get_field('offer_contact_text', 'option')?></p></div></button>
+  
+    </div>
+    
+      <div class="rightscreen">
+        <div class="center">
+<h2>Оставить заявку</h2>
+<div class="textSlider">
+</div>
+<form class="form-site" id="usrform">
+  
+  <input type="text" id="fname" name="fname" placeholder="Ваше имя"><br>
+ 
+  <input type="text" id="tel" name="tel" placeholder="Телефон"><br>
+  
+  <textarea id="text" rows="10" cols="77" placeholder="Пожелания"></textarea>
+  
+  <br>
+  <p>Нажимая кнопку отправить, я соглашаюсь с политикой конфиденциальности и пользовательским соглашением</p>
+  <br>
+  <button class="button zayavka" type="submit" >Отправить</button>
+</form> 
+</div>
+      </div>
+      </div>
+
+
+
+      <div class="otstup"></div>
+      <div class="line"></div>
+      <div class="otstup"></div>
+      <img class="bottomLogo" src="<?=get_template_directory_uri()?>/assests/images/insight.svg">
+      <div class="bottomAdress">
+        <div class="adressItemWrapper bottomShi">
+          <img class="itemIcon" src="<?=get_template_directory_uri()?>/assests/images/phone.svg">
+          <div class="itemText"><p><?=get_field('phone', 'option')?></p></div>
+          </div>
+        
+        
+          
+            <div class="adressItemWrapper bottomShi">
+            <img class="itemIcon" src="<?=get_template_directory_uri()?>/assests/images/phone.svg">
+            <div class="itemText"><p><?=get_field('phone2', 'option')?></p></div>
+            </div>
+            
+        
+            
+              <div class="adressItemWrapper bottomShi">
+              <img class="itemIcon" src="<?=get_template_directory_uri()?>/assests/images/mail.svg">
+              <div class="itemText"><p><?=get_field('mail', 'option')?></p></div>
+              </div>
+      </div>
+      <div class="line"></div>
+      <p></p>
+      <p align="center"><?=get_field('copyright', 'option')?></p>
+</section>
+
+
+</div>
+</footer>
+<div class="overlay">
+  <div class="modal-wrapper">
+  <img class="close" src="<?=get_template_directory_uri()?>/assests/images/close.svg">
+  <div class="modal-review">
+    <div class="otzyv">
+      <div class="site">
+        <div class="otzyvAvatar">
+          <img class="avatarIMG" id="reviewAvatar" src="">
+        </div>
+        <div class="nameOtzyv" id="reviewName"></div>
+        <div class="otzyvText" id="reviewText">
+          <p></p></div>
+        <div class="otzyvDate" id="reviewDate"><p></p></div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
