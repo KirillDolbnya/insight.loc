@@ -643,7 +643,7 @@ svg {
 .hide + label,
 .hide:checked + label {
   padding: 0;
-  top: 70px;
+  top: 95px;
   /* color: green; */
   cursor: pointer;
   /* border-bottom: 1px dotted; */
@@ -1692,12 +1692,6 @@ left: 70%;
         display: flex;
         padding: 0 20px;
         align-items: flex-end;
-    }
-    .hide+label, .hide:checked+label{
-        padding: 0;
-        top: 95px;
-        cursor: pointer;
-        position: relative;
     }
 }
 
