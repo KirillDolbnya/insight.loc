@@ -1606,7 +1606,7 @@ color: #757472;
               box-sizing: border-box;
               width: 350.98px;
               height: 189.98px;
-              right: 300px;
+              right: 525px;
               padding: 30px 30px 60px 90px;
 
             }
@@ -1692,6 +1692,12 @@ left: 70%;
         display: flex;
         padding: 0 20px;
         align-items: flex-end;
+    }
+    .hide+label, .hide:checked+label{
+        padding: 0;
+        top: 120px;
+        cursor: pointer;
+        position: relative;
     }
 }
 
