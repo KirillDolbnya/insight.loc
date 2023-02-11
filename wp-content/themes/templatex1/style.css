@@ -2563,7 +2563,8 @@ top:-15px;
 }
 .bottomPics {
   display: flex;
-  flex-direction:row
+  flex-direction:row;
+    margin-left: 105px;
 }
 .smallIzg {
   width: 150px;
@@ -2636,6 +2637,8 @@ width: auto;
 margin-top: auto;
 margin-left: 0;
 }
+
+
 .commandWoman {
   width: 100%;
 }
@@ -2679,6 +2682,8 @@ display: block;
 .adress {
   width: auto;
 }
+
+
 .inlineSocial {
   display: inline-block;
   width: 40%;
@@ -2747,7 +2752,7 @@ width:auto;
                 margin: 0 auto;
                 display: block;
             }
-}
+        }
 
 @media screen and (max-width: 550px){
     h1 {
@@ -2935,6 +2940,9 @@ height: 180px;
         margin: 0 auto;
         display: block;
     }
+    .textAdressBtn{
+        margin: 33px 0 0 0;
+    }
 }
 
 
@@ -2954,6 +2962,9 @@ height: 180px;
         width: 100%;
         margin: 0 auto;
         display: block;
+    }
+    .bottomPics{
+        margin-left: 53px;
     }
 }
 @media screen and (max-width: 500px) {
@@ -3055,6 +3066,7 @@ height: 180px;
     padding: 0px 70px 20px 0px;
   }
   .smallIzg {
+      margin-right: 55px;
     width: 160px;
     height: 130px;
   }
@@ -3164,6 +3176,10 @@ height: 180px;
         margin: 0 auto;
         display: block;
     }
+    .textAdressBtn{
+        font-size: 14px;
+        padding: 5px 0px 20px 20px;
+    }
   }
 
   @media screen and (max-width: 360px){
@@ -3181,5 +3197,12 @@ top: -180px;
           width: 100%;
           margin: 0 auto;
           display: block;
+      }
+      .bottomPics{
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .smallIzg2{
+          margin-left: 66px;
       }
   }
