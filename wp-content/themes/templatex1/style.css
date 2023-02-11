@@ -1695,7 +1695,7 @@ left: 70%;
     }
     .hide+label, .hide:checked+label{
         padding: 0;
-        top: 120px;
+        top: 95px;
         cursor: pointer;
         position: relative;
     }
