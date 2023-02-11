@@ -2966,6 +2966,9 @@ height: 180px;
     .bottomPics{
         margin-left: 53px;
     }
+    .textAdressBtn{
+        margin-top: 35px;
+    }
 }
 @media screen and (max-width: 500px) {
     h1 {
@@ -3203,6 +3206,6 @@ top: -180px;
           flex-wrap: wrap;
       }
       .smallIzg2{
-          margin-left: 66px;
+          margin-left: 15px;
       }
   }
