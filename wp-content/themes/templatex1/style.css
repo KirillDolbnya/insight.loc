@@ -861,7 +861,7 @@ width: 713px;
 height: 155px;
 padding-top: 10px;
 padding-bottom: 10px;
-letter-spacing: 0.3;
+letter-spacing: 0.3px;
 line-height: 1.5;
 padding-left: 5px;
 }
@@ -2963,7 +2963,7 @@ height: 180px;
 }
   .subZagolovok {
     margin-top: -50px;
-      line-height: ;
+      /*line-height: ;*/
   }
   .titleSubtitle {
     margin-top: -20px;
