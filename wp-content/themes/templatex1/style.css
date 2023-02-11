@@ -2323,11 +2323,10 @@ left: 70%;
             margin-right: 15px;
         }
         iframe{
-            width: 465px !important;
-            height: 270px !important;
+            margin: 0 auto;
+            display: block;
+            max-width: 550px;
         }
-
-
     }
 
         @media screen and (max-width: 768px) {
@@ -2743,6 +2742,11 @@ width:auto;
   .poCentru {
     margin-right: 0px;
   }
+            iframe{
+                width: 100%;
+                margin: 0 auto;
+                display: block;
+            }
 }
 
 @media screen and (max-width: 550px){
@@ -2926,7 +2930,11 @@ height: 180px;
 .mobile-slider {
     display: none;
 }
-
+    iframe{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
 }
 
 
@@ -2941,6 +2949,11 @@ height: 180px;
       font-size: 36px;
       margin-left: 20px;
       margin-top: 50px;
+    }
+    iframe{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
     }
 }
 @media screen and (max-width: 500px) {
@@ -3146,7 +3159,11 @@ height: 180px;
     .menu__btn.active ~ .menu__box {
       margin-top: -43px;
     }
-  
+    iframe{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
   }
 
   @media screen and (max-width: 360px){
@@ -3160,4 +3177,9 @@ top: -180px;
     .modal-review {
       width: 80%;
     }
+      iframe{
+          width: 100%;
+          margin: 0 auto;
+          display: block;
+      }
   }
