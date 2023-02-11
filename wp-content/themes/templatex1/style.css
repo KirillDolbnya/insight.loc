@@ -2329,7 +2329,7 @@ left: 70%;
         }
     }
 
-        @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
    
   }
@@ -2695,7 +2695,7 @@ display: block;
   padding: 0 0 0 0;
 }
 .textAdressBtn {
-  margin: 0 0 0 0;
+    margin: 38px 40px 20px 20px;
 }
 .bottomAdress {
 display: block;
@@ -2943,54 +2943,56 @@ height: 180px;
     .textAdressBtn{
         margin: 33px 0 0 0;
     }
+    .bottomPics {
+        display: flex;
+        flex-direction: row;
+         flex-wrap: wrap;
+        }
 }
 
 
-@media screen and (max-width: 650px) {
-    .mobile-slider {
-        display: block;
+    @media screen and (max-width: 650px) {
+        .mobile-slider {
+            display: block;
+        }
+        .pc-slider {
+            display: none;
+        }
+        .woo_h1 {
+          font-size: 36px;
+          margin-left: 20px;
+          margin-top: 50px;
+        }
+        iframe{
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+        .bottomPics{
+            margin-left: 53px;
+        }
     }
-    .pc-slider {
-        display: none;
+    @media screen and (max-width: 500px) {
+        h1 {
+          font-size: 38px;
+          line-height: 1.2;
+        }
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 15px;
     }
-    .woo_h1 {
-      font-size: 36px;
-      margin-left: 20px;
-      margin-top: 50px;
+    .interier {
+      margin-top: -20px;
+      margin-bottom: 20px;
     }
-    iframe{
-        width: 100%;
-        margin: 0 auto;
-        display: block;
+    .comandaSubtitle {
+      margin-top: -10px;
     }
-    .bottomPics{
-        margin-left: 53px;
-    }
-    .textAdressBtn{
-        margin-top: 35px;
-    }
-}
-@media screen and (max-width: 500px) {
-    h1 {
-      font-size: 38px;
-      line-height: 1.2;
-    }
-  h2 {
-    font-size: 30px;
-  }
-  p {
-    font-size: 15px;
-}
-.interier {
-  margin-top: -20px;
-  margin-bottom: 20px;
-}
-.comandaSubtitle {
-  margin-top: -10px;
-}
-  .subZagolovok {
-    margin-top: -50px;
-      /*line-height: ;*/
+      .subZagolovok {
+        margin-top: -50px;
+          /*line-height: ;*/
   }
   .titleSubtitle {
     margin-top: -20px;
@@ -3184,6 +3186,13 @@ height: 180px;
         padding: 5px 0px 20px 20px;
     }
   }
+
+/*@media screen and (max-width: 390px){*/
+/*    .bottomPics{*/
+/*        display: flex;*/
+/*        flex-wrap: wrap;*/
+/*    }*/
+/*}*/
 
   @media screen and (max-width: 360px){
     h1 {
