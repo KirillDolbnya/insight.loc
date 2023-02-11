@@ -926,8 +926,10 @@ margin-top: 20px;
 width: 30%;
 margin-bottom: -100px;
 }
+
+
 .borderBottom {
-  margin-top:33%;
+  margin-top: 19%;
   justify-content: space-between;
     display: flex;
     padding: 0 20px;
@@ -943,7 +945,7 @@ margin-bottom: -100px;
   float: right;
 }
 .shirina {
-  width: 453px;
+  width: 450px;
 }
 
 .smallsquare {
@@ -1839,7 +1841,7 @@ left: 70%;
         box-sizing: border-box;
         width: 350.98px;
         height: 189.98px;
-        right: 390px;
+        right: 210px;
         padding: 20px 20px 30px 0px;
     }
 

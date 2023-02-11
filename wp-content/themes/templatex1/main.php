@@ -631,7 +631,7 @@ $terms = get_field('rev_cat', 'option'); ?>
 	<?php while(has_sub_field('do', 'option')): $i++; ?>
 	
 		
-<p class="<?php if($i == 1) echo 'active'; ?>" data-cont="item<?=$i?>">
+<p class="<? if($i == 1) echo 'active'; ?>" data-cont="item<?=$i?>">
 	<?=get_sub_field('text')?>
 </p>
 		
