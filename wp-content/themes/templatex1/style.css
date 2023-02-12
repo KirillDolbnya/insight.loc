@@ -1616,7 +1616,7 @@ color: #757472;
             
             .feature {
 
-            width: 613px;
+            width: 530px;
             }
             
 .RightServices {
@@ -2295,7 +2295,7 @@ left: 70%;
         }
 
         .feature {
-            width: 523px;
+            width: 432px;
         }
         .projectMiddle {
             height: 399px;
@@ -2325,7 +2325,8 @@ left: 70%;
         iframe{
             margin: 0 auto;
             display: block;
-            max-width: 550px;
+            max-width: 520px;
+            object-fit: contain;
         }
     }
 
@@ -2753,6 +2754,7 @@ width:auto;
                 width: 100%;
                 margin: 0 auto;
                 display: block;
+                object-fit: contain;
             }
         }
 
@@ -2941,6 +2943,7 @@ height: 180px;
         width: 100%;
         margin: 0 auto;
         display: block;
+        object-fit: contain;
     }
     .textAdressBtn{
         margin: 33px 0 0 0;
@@ -2969,6 +2972,7 @@ height: 180px;
             width: 100%;
             margin: 0 auto;
             display: block;
+            object-fit: contain;
         }
         .bottomPics{
             margin-left: 53px;
@@ -3182,19 +3186,13 @@ height: 180px;
         width: 100%;
         margin: 0 auto;
         display: block;
+        object-fit: contain;
     }
     .textAdressBtn{
         font-size: 14px;
         padding: 5px 0px 20px 20px;
     }
   }
-
-/*@media screen and (max-width: 390px){*/
-/*    .bottomPics{*/
-/*        display: flex;*/
-/*        flex-wrap: wrap;*/
-/*    }*/
-/*}*/
 
   @media screen and (max-width: 360px){
     h1 {
@@ -3211,6 +3209,7 @@ top: -180px;
           width: 100%;
           margin: 0 auto;
           display: block;
+          object-fit: contain;
       }
       .bottomPics{
           display: flex;
