@@ -417,7 +417,7 @@ if( $images ): ?>
 
 <div class="otstup"></div>
 <div class="otstup"></div>
-<section class="site _anim-items _anim-no-hide">
+<section class="site individuality _anim-items  _anim-no-hide">
 <div class="screen">
   <div class="rightscreen">
     <div class="shirina">
@@ -444,7 +444,7 @@ if( $images ): ?>
 </div>
 <div class="otstup"></div>
 <div class="otstupSmall"></div>
-<div class="screen">
+<div class="screen block_images">
   <div class="leftscreen dopLeft">
     <div class="secondFlex">
     <img class="smallInter" src="<?=get_template_directory_uri()?>/assests/images/smaillinter.png">

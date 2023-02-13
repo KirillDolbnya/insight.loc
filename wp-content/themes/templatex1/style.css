@@ -85,10 +85,11 @@ body {
    }
 .site {
     width: 1620px;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
       margin-left: auto;
       margin-right: auto;
    }
+
    .dostavkaNav-item {
     cursor: pointer;
     opacity: 0.6;
@@ -1202,9 +1203,13 @@ text-align: left;
 .otzyvText {
   margin-bottom: 65px;
   line-height: 25.2px;
-  width: 33%;
+  width: 520px;
+    padding: 10px;
   text-align: left;
   max-height: 178.2px !important;
+}
+.otzyvDate{
+    margin-left: 15px
 }
 .dostavka {
   text-align: center;
@@ -1551,8 +1556,7 @@ left: 32%;
 @media screen and (max-width: 1650px) {
     .site {
         width: 960px;
-        outline: 1px solid green;
-        padding: 0 10px;
+        /*outline: 1px solid green;*/
     }
     .tel {
         position: relative;
@@ -1564,6 +1568,31 @@ left: 32%;
     }
     .menu__btn {
         top: 55px;
+    }
+    .menu__btn.active ~ .menu__box {
+        visibility: visible;
+        left: 0;
+        margin-top: 0;
+    }
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        right: 100%;
+        width: 84%;
+        height: 1000px;
+        margin: 0;
+        padding: 25px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #C9CCCC;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        margin-left: 8%;
+        margin-right: auto;
+        z-index: 999999;
+    }
+    .navigate {
+         padding-bottom: 10px;
     }
     .logo {
         margin-left: 8px;
@@ -1679,19 +1708,58 @@ left: 32%;
 
 
 
-
+    .individuality{
+        overflow: hidden;
+    }
     .smallsquare {
-        width: 80%;
-        margin-left: 60px;
-        margin-top: 150%;
+        width: 51%;
+        margin-left: -39px;
+        margin-top: 68%;
     }
 
      iframe{
-        margin-left: 130px;
-        margin-top: 150px;
-        width: 450px;
+         margin-left: 160px;
+         margin-top: 222px;
+        width: 370px;
+         height: 220px;
     }
-
+    .interier{
+        margin-top: -30px;
+        margin-bottom: 0;
+    }
+    block_images{
+        margin-top: 304px;
+    }
+    .secondFlex {
+        display: block;
+        margin-top: 59%;
+        margin-left: 326px;
+    }
+    .smallInter {
+        margin-left: 65px;
+        margin-bottom: 117px;
+    }
+    .textLe {
+        width: 485px;
+    }
+    .textLe p {
+        margin-top: 0px;
+        width: 75%;
+        margin-left: 15%;
+        margin-bottom: 104px;
+    }
+    .parent {
+        margin-left: -150px;
+        margin-top: 0px;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .middleWall {
+        float: right;
+        margin-top: 4%;
+        margin-right: 230px;
+    }
     .swiper-wrapper {
         position: relative;
         width: 100%;
@@ -1726,11 +1794,11 @@ left: 32%;
         float: right;
         width: 198px;
         display: block;
-        margin-left: 50px;
+        margin-left: 115px;
     }
     .smallWomanText p {
         margin-top: 0px;
-        width: 126px;
+        width: 276px;
     }
 
 
@@ -1745,11 +1813,18 @@ left: 32%;
         color: rgb(117 116 114);
         margin-bottom: 20px;
         text-align: left;
+        margin-left: 15px;
     }
     .otzyvText {
         overflow: hidden;
         text-overflow: ellipsis;
         width: 275px;
+        margin-left: 15px;
+    }
+    .otzyvDate p {
+        text-align: left;
+        font-size: 15px;
+        margin-left: 15px;
     }
 
 
@@ -1764,12 +1839,20 @@ left: 32%;
         text-decoration: none !important;
         margin-left: 55px;
     }
+    .dostavkaNav{
+        display: flex;
+        width: 48%;
+        justify-content: space-evenly;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -40px;
+    }
 
 
 
     .zakazhite {
         border-radius: 50%;
-        margin-left: -5%;
+        margin-left: -4%;
         box-sizing: border-box;
         width: 607.98px;
         height: 328.98px;
@@ -2429,892 +2512,903 @@ left: 32%;
     /*    }*/
     /*}*/
 
-/*@media screen and (max-width: 768px) {*/
-/*  body {*/
+@media screen and (max-width: 768px) {
+    body {
 
-/*  }*/
+    }
 
-/*  .modal {*/
-/*      width: 95%;*/
-/*      height: auto;*/
-/*  }*/
-/*    .modal .modalBtn {*/
-/*        width: 150px;*/
-/*        margin-bottom: 30px;*/
-/*        box-sizing: border-box;*/
+    .modal {
+        width: 95%;
+        height: auto;
+    }
+    .modal .modalBtn {
+        width: 150px;
+        margin-bottom: 30px;
+        box-sizing: border-box;
 
-/*    }*/
-/*    .modal p{*/
-/*      font-size: 12px;*/
-/*    }*/
-/*    .modalTitle {*/
-/*      font-size: 20px;*/
-/*      margin-top: 80px;*/
-/*    }*/
+    }
+    .modal p{
+        font-size: 12px;
+    }
+    .modalTitle {
+        font-size: 20px;
+        margin-top: 80px;
+    }
 
-/*    .navigate {*/
-/*    width: auto;*/
-/*  }*/
-/* .menu__btn{*/
-/*  margin-left: 88%;*/
-/* }*/
-/*  .screen {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*  }*/
-/*  .site {*/
-/*    width:90%;*/
-/*  }*/
-/*  .hamburger-menu {*/
-/*    width: 120%;*/
-/*    height: 80px;*/
-/*    box-shadow: 0px 2px 10px 0px #0000000d;*/
-/*    padding-left: 5%;*/
-/*    margin-left: -8%;*/
-/*  }*/
-/*.leftscreen {*/
-/*  width: 100%;*/
-/*}*/
-/*.rightscreen {*/
-/*    padding-top: 30px;*/
-/*    !*margin-top: 50px;*!*/
-/*  width: 100%;*/
-/*}*/
-/*.screen {*/
-/*  display: block;*/
-/*}*/
-/*.tel {*/
-/*  visibility: hidden;*/
-/*}*/
-/*#fname, .fname {*/
-/*  width: 85%;*/
-/*  margin-bottom: -5px;*/
-/*  font-size: 13px;*/
-/*  height: 21px*/
-/*}*/
-/*#tel, .ftelbox {*/
-/*  height: 21px;*/
-/*  width: 85%;*/
-/*  margin-bottom: 15px;*/
-/*  font-size: 13px;*/
-/*}*/
-/*#text, .ftext {*/
-/*  font-size: 13px;*/
-/*  width: 85%;*/
-/*  }*/
+    .navigate {
+        width: auto;
+    }
+    .menu__btn{
+        margin-left: 88%;
+    }
+    .screen {
+        display: flex;
+        flex-direction: column;
+    }
+    .site {
+        width:90%;
+    }
+    .hamburger-menu {
+        width: 120%;
+        height: 80px;
+        box-shadow: 0px 2px 10px 0px #0000000d;
+        padding-left: 5%;
+        margin-left: -8%;
+    }
+    .leftscreen {
+        width: 100%;
+    }
+    .rightscreen {
+        padding-top: 30px;
+        /*margin-top: 50px;*/
+        width: 100%;
+    }
+    .screen {
+        display: block;
+    }
+    .tel {
+        visibility: hidden;
+    }
+    #fname, .fname {
+        width: 85%;
+        margin-bottom: -5px;
+        font-size: 13px;
+        height: 21px
+    }
+    #tel, .ftelbox {
+        height: 21px;
+        width: 85%;
+        margin-bottom: 15px;
+        font-size: 13px;
+    }
+    #text, .ftext {
+        font-size: 13px;
+        width: 85%;
+    }
 
-/*.RightServices {*/
-/*  width: auto;*/
-/*  height: auto;*/
-/*}*/
-/*.bolshe {*/
-/*width: 100%;*/
-/*}*/
-/*.sliderControl {*/
-/*  display: none;*/
-/*}*/
-/*.adress{*/
-/*width: 100%;*/
-/*}*/
-/*.adressList {*/
-/*display: block;*/
-/*}*/
-/*.persona {*/
-/*width: 100%;*/
-/*float: none;*/
-/*}*/
-/*.topSmall {*/
-/*  position: static;*/
-/*  width: auto;*/
-/*  height: auto;*/
-/*  margin-top: 150px;*/
-/*  margin-bottom: 150px;*/
-/*}*/
+    .RightServices {
+        width: auto;
+        height: auto;
+    }
+    .bolshe {
+        width: 100%;
+    }
+    .sliderControl {
+        display: none;
+    }
+    .adress{
+        width: 100%;
+    }
+    .adressList {
+        display: block;
+    }
+    .persona {
+        width: 100%;
+        float: none;
+    }
+    .topSmall {
+        position: static;
+        width: auto;
+        height: auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
 
-/*.hide:checked + label + div {*/
-/*width: auto;*/
-/*top: 440px;*/
-/*}*/
-/*.hide:checked + label {*/
-/*  top: 440px;*/
-/*}*/
-/*.foton {*/
-/*  width: 100%;*/
-/*}*/
-/*.adaptivFirst {*/
-/*  display: flex;*/
-/*    flex-direction: column-reverse;*/
-/*}*/
-/*.button {*/
-/*  margin-top: 40px;*/
-/*width: 100%;*/
-/*}*/
+    .hide:checked + label + div {
+        width: auto;
+        top: 440px;
+    }
+    .hide:checked + label {
+        top: 440px;
+    }
+    .foton {
+        width: 100%;
+    }
+    /*.adaptivFirst {*/
+    /*    display: flex;*/
+    /*    flex-direction: column-reverse;*/
+    /*}*/
+    .button {
+        margin-top: 40px;
+        width: 100%;
+    }
 
-/*.projectMiddle {*/
-/*  display: none;*/
-/*}*/
-/*.poCentru {*/
-/*  width:auto;*/
-/*}*/
-/*.projectSmall {*/
-/*  display: none;*/
-/*}*/
-/*.strelka {*/
-/*  display: none;*/
-/*}*/
-/*.proMenu {*/
-/*  margin-left: 0px;*/
-/*  float: none;*/
-/*  text-align: center;*/
-/*}*/
+    .projectMiddle {
+        display: none;
+    }
+    .poCentru {
+        width:auto;
+    }
+    .projectSmall {
+        display: none;
+    }
+    .strelka {
+        display: none;
+    }
+    .proMenu {
+        margin-left: 0px;
+        float: none;
+        text-align: center;
+    }
 
-/*.menu__item {*/
-/*font-family: 'Raleway' !important;*/
-/*font-style: normal;*/
-/*font-weight: 200;*/
-/*font-size: 20px;*/
-/*line-height: 120%;*/
-/*color: #6D6960;*/
-/*}*/
-/*.menu__box {*/
-/*  margin-left: 0px;*/
-/*  width: 55%;*/
-/*  height: auto;*/
-/*  margin-top:-100px;*/
-/*}*/
-/*.center {*/
-/*margin: 0 !important;*/
-/*}*/
-/*.formIMG {*/
-/*  margin-top: 10px;*/
-/*  margin-bottom: 30px;*/
-/*}*/
-/*.textSlider {*/
-/*  width: 100%;*/
-/*  font-size:15px;*/
-/*}*/
-/*.swiper-slide {*/
-/*  width: 350px;*/
-/*}*/
-/*.boxPriv {*/
-/*width: 300px;*/
-/*margin-bottom: 90px;*/
-/*}*/
-/*.adaptivUslugi {*/
-/*  display: flex;*/
-/*  flex-direction: column-reverse;*/
-/*}*/
-/*.big {*/
-/*  height: 100px;*/
-/*}*/
-/*.textServices {*/
-/*font-family: 'Raleway';*/
-/*font-style: normal;*/
-/*font-weight: 200;*/
-/*font-size: 18px;*/
-/*line-height: 110%;*/
-/*width: 60%;*/
-/*margin-left: 17px;*/
-/*}*/
-/*.smile {*/
-/*  width: 130%;*/
-/*  margin-bottom: 50px;*/
-/*  font-size: 16px;*/
-/*}*/
-/*.textLogo {*/
-/*  font-size: 16px;*/
-/*  width:90%;*/
+    .menu__item {
+        font-family: 'Raleway' !important;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 120%;
+        color: #6D6960;
+    }
+    .menu__box {
+        margin-left: 0px;
+        width: 55%;
+        height: auto;
+        margin-top:-100px;
+    }
+    .center {
+        margin: 0 !important;
+    }
+    .formIMG {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .textSlider {
+        width: 100%;
+        font-size:15px;
+    }
+    .swiper-slide {
+        width: 350px;
+    }
+    .boxPriv {
+        width: 300px;
+        margin-bottom: 90px;
+    }
+    .adaptivUslugi {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .big {
+        height: 100px;
+    }
+    .textServices {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 110%;
+        width: 60%;
+        margin-left: 17px;
+    }
+    .smile {
+        width: 130%;
+        margin-bottom: 50px;
+        font-size: 16px;
+    }
+    .textLogo {
+        font-size: 16px;
+        width:90%;
 
-/*}*/
-/*.feature {*/
-/*display: block;*/
-/*}*/
-/*.text_bolshe {*/
-/*width: 100%;*/
-/*}*/
-/*.bolshe {*/
-/*  margin-bottom: 30px;*/
-/*}*/
-/*.text_v_btn {*/
-/*display: block;*/
-/*}*/
-/*.spisok_vtor {*/
-/*  margin-top: 60px;*/
-/*  transform: rotate(0deg);*/
-/*  float: none;*/
-/*  margin-left: 0px;*/
-/*  line-height: 200%;*/
-/*  margin-bottom: -80px;*/
-/*}*/
-/*.dlyaVas {*/
-/*  display:none;*/
-/*}*/
-/*.dlyaVasAdaptiv {*/
-/*  display:block;*/
-/*}*/
-/*.izgotovim {*/
-/*margin-top: 30px;*/
-/*margin-bottom: 50px;*/
-/*}*/
-/*.spisok_per {*/
-/*position: relative;*/
-/*left: -30px;*/
-/*top:-15px;*/
-/*}*/
-/*.bottomPics {*/
-/*  display: flex;*/
-/*  flex-direction:row;*/
-/*    margin-left: 105px;*/
-/*}*/
-
-
-/*.smallIzg {*/
-/*  width: 150px;*/
-/*  float: none;*/
-/*  margin-left:0px;*/
-/*}*/
-/*.smallIzg2 {*/
-/*  width: 150px;*/
-/*  float: none;*/
-/*  margin-left: 20px;*/
-/*}*/
-/*.shirina {*/
-/*width: auto;*/
-/*}*/
-/*.individualOne {*/
-/*  width: 100%;*/
-/*  margin-bottom: 20px;*/
-/*}*/
-/*.individualTwo {*/
-/*  width: 100%;*/
-/*}*/
-/*.smallsquare {*/
-/*  display: flex;*/
-/*  flex-direction: row-reverse;*/
-/*  margin-left: 60px;*/
-/*  margin-top: 20%;*/
-/*}*/
-/*.krivaya {*/
-/*  transform: rotate(90deg);*/
-/*  margin-top: -70px;*/
-/*  margin-right: 20px;*/
-/*}*/
-/*.secondFlex {*/
-/*  display: block;*/
-/*}*/
-/*.smallInter {*/
-/*  width: 318px;*/
-/*}*/
-/*.textLe {*/
-/*  margin-top: 30px;*/
-/*}*/
-/*.middleTable {*/
-/*  width: 100%;*/
-/*}*/
-/*.middleWall {*/
-/*  margin-top: 30px;*/
-/*  margin-bottom: 50px;*/
-/*}*/
-/*.wrapperComfort {*/
-/*display: block;*/
-/*}*/
-/*.firstScreen {*/
-/*width: auto;*/
-/*}*/
-/*.secondScreen {*/
-/*width: auto;*/
-/*}*/
-/*.thirdScreen {*/
-/*width: auto;*/
-/*}*/
-/*.smallWomanText {*/
-/*  width: auto;*/
-/*  margin-right: 35%;*/
-/*}*/
-/*.commandInsight {*/
-/*  display: flex;*/
-/*  flex-direction: column-reverse;*/
-/*}*/
-/*.comandSmallText {*/
-/*margin-top: auto;*/
-/*margin-left: 0;*/
-/*}*/
+    }
+    .feature {
+        display: block;
+    }
+    .text_bolshe {
+        width: 100%;
+    }
+    .bolshe {
+        margin-bottom: 30px;
+    }
+    .text_v_btn {
+        display: block;
+    }
+    .spisok_vtor {
+        margin-top: 60px;
+        transform: rotate(0deg);
+        float: none;
+        margin-left: 0px;
+        line-height: 200%;
+        margin-bottom: -80px;
+    }
+    .dlyaVas {
+        display:none;
+    }
+    .dlyaVasAdaptiv {
+        display:block;
+    }
+    .izgotovim {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .spisok_per {
+        position: relative;
+        left: -30px;
+        top:-15px;
+    }
+    .bottomPics {
+        display: flex;
+        flex-direction:row;
+        margin-left: 105px;
+    }
 
 
-/*.commandWoman {*/
-/*  width: 100%;*/
-/*}*/
-/*.dostavkaNav {*/
-/*width: auto;*/
-/*margin-top:-20px;*/
-/*}*/
-/*.textDostavka {*/
-/*width: auto;*/
-/*}*/
-/*.zagolovokWrapper {*/
-/*display: block;*/
-/*}*/
-/*.zagolovokOtzyv {*/
-/*  width: auto;*/
-/*}*/
-/*.textZagolovok {*/
-/*  width: auto;*/
-/*  font-size: 15px;*/
-/*}*/
-/*.footerZagolovok {*/
-/*  width: auto;*/
-/*}*/
-/*.footerZagolovokWrapper {*/
-/*  display: block;*/
-/*}*/
-/*.zakazhite {*/
-/*  display: none;*/
-/*}*/
-/*.itemText {*/
-/*  width: auto;*/
-/*}*/
-/*.footerZagolovokText {*/
-/*  width: auto;*/
-/*  margin-bottom:30px;*/
-/*}*/
-/*.adressBtn {*/
-/*  width: 166px;*/
-/*  height: 100px;*/
-/*}*/
-/*.adress {*/
-/*  width: auto;*/
-/*}*/
+    .smallIzg {
+        width: 150px;
+        float: none;
+        margin-left:0px;
+    }
+    .smallIzg2 {
+        width: 150px;
+        float: none;
+        margin-left: 20px;
+    }
+    .shirina {
+        width: auto;
+    }
+    .individualOne {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .individualTwo {
+        width: 100%;
+    }
+    .smallsquare {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: 60px;
+        margin-top: 20%;
+    }
+    .krivaya {
+        transform: rotate(90deg);
+        margin-top: -70px;
+        margin-right: 20px;
+    }
+    .secondFlex {
+        display: block;
+    }
+    .smallInter {
+        width: 318px;
+    }
+    .textLe {
+        margin-top: 30px;
+    }
+    .middleTable {
+        width: 100%;
+    }
+    .middleWall {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .wrapperComfort {
+        display: block;
+    }
+    .firstScreen {
+        width: auto;
+    }
+    .secondScreen {
+        width: auto;
+    }
+    .thirdScreen {
+        width: auto;
+    }
+    .smallWomanText {
+        width: auto;
+        margin-right: 35%;
+    }
+    .commandInsight {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .comandSmallText {
+        margin-top: auto;
+        margin-left: 0;
+    }
 
 
-/*.inlineSocial {*/
-/*  display: inline-block;*/
-/*  width: 40%;*/
-/*  margin-right: 20px;*/
-/*  margin-bottom: 30px;*/
-/*  margin-top: 30px;*/
-/*}*/
-/*.adressBtn {*/
-/*  padding: 0 0 0 0;*/
-/*}*/
-/*.textAdressBtn {*/
-/*    margin: 38px 40px 20px 20px;*/
-/*}*/
-/*.bottomAdress {*/
-/*display: block;*/
-/*margin-left: 25%;*/
-/*}*/
-/*.navigate {*/
-/*  position: fixed;*/
-/*  width: 100%;*/
-/*  z-index: 10001;*/
-/*  background-color: #F5F5F5;*/
-/*  margin-top: -10px;*/
-/*  padding-left: 10px;*/
-/*  }*/
-/*  .textLe {*/
-/*width:auto;*/
-/*  }*/
-/*  .secondFlex {*/
-/*    width: auto;*/
-/*  }*/
-/*  .dopEsciz {*/
-/*    margin-top: auto;*/
-/*    width: 90%;*/
-/*    height: 90%;*/
-/*  }*/
-/*  .breacrumbs {*/
-/*    margin-top: 30px;*/
-/*    margin-bottom: 20px;*/
-/*  }*/
-/*  .iconSon {*/
-/*    margin-top: 30px;*/
-/*  }*/
-/*  .projectTextTwo {*/
-/*    margin-top: 50px;*/
-/*    width: 100%;*/
-/*  }*/
-/*  .adap {*/
-/*    margin-top:70px;*/
-/*  }*/
-/*  .projectTitle {*/
-/*    margin-top: 0px;*/
-/*  }*/
-/*  .projectBottom{*/
-/*    display: block;*/
-/*  }*/
-/*  .projectAdaptiv {*/
-/*    width:100%;*/
-/*    margin-top: 30px;*/
-/*  }*/
-/*  .poCentru {*/
-/*    margin-right: 0px;*/
-/*  }*/
-/*            iframe{*/
-/*                width: 100%;*/
-/*                margin: 0 auto;*/
-/*                display: block;*/
-/*                object-fit: contain;*/
-/*            }*/
-/*        }*/
-
-/*@media screen and (max-width: 550px){*/
-/*    h1 {*/
-/*      line-height: 1.5;*/
-/*    }*/
-/*    .hide + label, .hide:checked + label {*/
-/*top: -200px;*/
-/*    }*/
-/*    .topSmall {*/
-/*    width: 350px;*/
-/*    height: 200px;*/
-/*    padding: 55px 0px 70px 60px;*/
-/*      margin-top: -100px;*/
-/*    }*/
-/*    .textServices {*/
-/*      width: auto;*/
-/*      font-size: 18px;*/
-/*    }*/
-/*    .feature {*/
-/*height: 180px;*/
-/*    }*/
-/*.persona {*/
-/*  margin-bottom: 100px;*/
-/*}*/
-/*.bolshe {*/
-/*  margin-top: 40px;*/
-/*}*/
-/*.subuslugi {*/
-/*  margin-top:-20px;*/
-/*}*/
-/*.uslugiSpisok li {*/
-/*  font-size: 15px;*/
-/*}*/
+    .commandWoman {
+        width: 100%;
+    }
+    .dostavkaNav {
+        width: auto;
+        margin-top:-20px;
+    }
+    .textDostavka {
+        width: auto;
+    }
+    .zagolovokWrapper {
+        display: block;
+    }
+    .zagolovokOtzyv {
+        width: auto;
+    }
+    .textZagolovok {
+        width: auto;
+        font-size: 15px;
+    }
+    .footerZagolovok {
+        width: auto;
+    }
+    .footerZagolovokWrapper {
+        display: block;
+    }
+    .zakazhite {
+        display: none;
+    }
+    .itemText {
+        width: auto;
+    }
+    .footerZagolovokText {
+        width: auto;
+        margin-bottom:30px;
+    }
+    .adressBtn {
+        width: 166px;
+        height: 100px;
+    }
+    .adress {
+        width: auto;
+    }
 
 
-/*    .textAdressBtn {*/
-/*      font-size: 14px;*/
-/*      padding: 40px 0px 20px 20px;*/
-/*    }*/
-/*    .bottomShi {*/
-/*      width: auto;*/
-/*    }*/
-/*    .bottomAdress {*/
-/*      align-items: center;*/
-/*      margin-bottom: 20px;*/
-/*      flex-direction: column;*/
-/*    }*/
-/*    .comfortFeature {*/
-/*      width: 120%;*/
-/*    }*/
-/*    .iconSon {*/
-/*      margin-top: 30px;*/
-/*    }*/
-/*    .breadcrumbs {*/
-/*      margin-top: 50px;*/
-/*      margin-bottom: 10px;*/
-/*      font-size: 12px;*/
-/*    }*/
-/*    .smallWomanText {*/
-/*      margin-right: auto;*/
-/*    }*/
-/*    .hide:checked + label + div {*/
-/*      display: block;*/
-/*      width: 380px;*/
-/*      margin-top: -110px;*/
-/*    }*/
-/*    .hide:checked + label {*/
-/*      top:220px;*/
-/*      background-color:  #F5F5F5;*/
-/*      ;*/
-/*    }*/
-/* .zagolovok {*/
-/*  margin-top: 10%;*/
-/* }*/
+    .inlineSocial {
+        display: inline-block;
+        width: 40%;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .adressBtn {
+        padding: 0 0 0 0;
+    }
+    .textAdressBtn {
+        margin: 38px 40px 20px 20px;
+    }
+    .bottomAdress {
+        display: block;
+        margin-left: 25%;
+    }
+    .navigate {
+        position: fixed;
+        width: 100%;
+        z-index: 10001;
+        background-color: #F5F5F5;
+        margin-top: -10px;
+        padding-left: 10px;
+    }
+    .textLe {
+        width:auto;
+    }
+    .secondFlex {
+        width: auto;
+    }
+    .dopEsciz {
+        margin-top: auto;
+        width: 90%;
+        height: 90%;
+    }
+    .breacrumbs {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .iconSon {
+        margin-top: 30px;
+    }
+    .projectTextTwo {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .adap {
+        margin-top:70px;
+    }
+    .projectTitle {
+        margin-top: 0px;
+    }
+    .projectBottom{
+        display: block;
+    }
+    .projectAdaptiv {
+        width:100%;
+        margin-top: 30px;
+    }
+    .poCentru {
+        margin-right: 0px;
+    }
+    iframe{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        object-fit: contain;
+    }
+}
 
-/*  .feature {*/
-/*        display: block;*/
-/*        text-align: left;*/
-/*        height: 220px;*/
-/*    }*/
-
-/*.swiper-paginations,.pagin-wrapp {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*}*/
-/*.pagin-wrapp {*/
-/*    position: relative;*/
-/*    top: 30px;*/
-/*    left: auto;*/
-/*    right: auto;*/
-/*    bottom: auto;*/
-/*    padding-bottom: 30px;*/
-/*}*/
-/*.swiper-pagination-bullet-active {*/
-/*    width: 10px!important;*/
-/*    height: 10px!important;*/
-/*    border: 1.6px solid #C9CCCC;*/
-/*    border-radius: 50%;*/
-/*    background: none!important;*/
-/*}*/
-/*.swiper-pagination-rev .swiper-pagination-bullet-active,*/
-/*.swiper-pagination-mobile .swiper-pagination-bullet-active{*/
-/*    border: 1.6px solid #757472;*/
-/*}*/
-
-/*.overlay {*/
-/*    position: fixed;*/
-/*    left: 0;*/
-/*    top: 0;*/
-/*    width: 100%;*/
-/*    height: 100vh;*/
-/*    background: rgba(0, 0, 0, 0.25);*/
-/*    mix-blend-mode: normal;*/
-/*    z-index: 99999;*/
-/*    display: none;*/
-/*}*/
-/*.modal-wrapper {*/
-/*    position: fixed;*/
-/*    left: 50%;*/
-/*    top: 50%;*/
-/*    transform: translate(-50%,-50%);*/
-/*    max-width: 1075px;*/
-/*    width: 100%;*/
-/*    margin: 0 20px;*/
-/*    max-height: 772px;*/
-/*    background: #F0F0F3;*/
-/*    display: block;*/
-/*}*/
-/*.overlay.active,*/
-/*.overlay.active .modal-wrapper{*/
-/*    display: block;*/
-/*}*/
-/*.modal-wrapper .close {*/
-/*    display: block;*/
-/*    margin: 35px 35px 0 auto;*/
-/*    cursor: pointer;*/
-/*}*/
-/*.dostavkaNav-item {*/
-/*    cursor: pointer;*/
-/*    opacity: 0.6;*/
-/*}*/
-/*.dostavkaNav-item.active {*/
-/*    opacity: 1;*/
-/*    position: relative;*/
-/*}*/
-/*.dostavkaNav-item.active:before {*/
-/*    content: '';*/
-/*    width: 40px;*/
-/*    height: 2px;*/
-/*    background: #757472;*/
-/*    position: absolute;*/
-/*    bottom: -13px;*/
-/*    left: 0;*/
-/*}*/
-/*.textDostavka p {*/
-/*    display: none;*/
-/*    text-align: left;*/
-/*}*/
-/*.itemIcon {*/
-/*  margin-right:10px;*/
-/*}*/
-/*.textDostavka p.active {*/
-/*    display: block;*/
-/*}*/
-/*.mobile-swiper .screen {*/
-/*    max-width: 450px;*/
-/*}*/
-/*.mobile-swiper .screen .img-project {*/
-/*    width: 100%;*/
-/*}*/
-/*.mobile-swiper .screen .plusArrow {*/
-/*    right: 0;*/
-/*}*/
-/*.copyright {*/
-/*  margin-top: 30px;*/
-/*  margin-bottom: -30px;*/
-/*  padding-bottom: 40px;*/
-/*}*/
-/*.mobile-slider {*/
-/*    display: none;*/
-/*}*/
-/*    iframe{*/
-/*        width: 100%;*/
-/*        margin: 0 auto;*/
-/*        display: block;*/
-/*        object-fit: contain;*/
-/*    }*/
-/*    .textAdressBtn{*/
-/*        margin: 33px 0 0 0;*/
-/*    }*/
-/*    .bottomPics {*/
-/*        display: flex;*/
-/*        flex-direction: row;*/
-/*         flex-wrap: wrap;*/
-/*        }*/
-/*}*/
+@media screen and (max-width: 550px){
+    h1 {
+        line-height: 1.5;
+    }
+    .hide + label, .hide:checked + label {
+        top: -200px;
+    }
+    .topSmall {
+        width: 350px;
+        height: 200px;
+        padding: 55px 0px 70px 60px;
+        margin-top: -100px;
+    }
+    .textServices {
+        width: auto;
+        font-size: 18px;
+    }
+    .feature {
+        height: 180px;
+    }
+    .persona {
+        margin-bottom: 100px;
+    }
+    .bolshe {
+        margin-top: 40px;
+    }
+    .subuslugi {
+        margin-top:-20px;
+    }
+    .uslugiSpisok li {
+        font-size: 15px;
+    }
 
 
-/*    @media screen and (max-width: 650px) {*/
-/*        .mobile-slider {*/
-/*            display: block;*/
-/*        }*/
-/*        .pc-slider {*/
-/*            display: none;*/
-/*        }*/
-/*        .woo_h1 {*/
-/*          font-size: 36px;*/
-/*          margin-left: 20px;*/
-/*          margin-top: 50px;*/
-/*        }*/
-/*        iframe{*/
-/*            width: 100%;*/
-/*            margin: 0 auto;*/
-/*            display: block;*/
-/*            object-fit: contain;*/
-/*        }*/
-/*        .bottomPics{*/
-/*            margin-left: 53px;*/
-/*        }*/
-/*    }*/
-/*    @media screen and (max-width: 500px) {*/
-/*        h1 {*/
-/*          font-size: 38px;*/
-/*          line-height: 1.2;*/
-/*        }*/
-/*      h2 {*/
-/*        font-size: 30px;*/
-/*      }*/
-/*      p {*/
-/*        font-size: 15px;*/
-/*    }*/
-/*    .interier {*/
-/*      margin-top: -20px;*/
-/*      margin-bottom: 20px;*/
-/*    }*/
-/*    .comandaSubtitle {*/
-/*      margin-top: -10px;*/
-/*    }*/
-/*      .subZagolovok {*/
-/*        margin-top: -50px;*/
-/*          !*line-height: ;*!*/
-/*  }*/
-/*  .titleSubtitle {*/
-/*    margin-top: -20px;*/
-/*    margin-bottom: 30px;*/
-/*  }*/
-/*  .boxPriv {*/
-/*    width: 97%;*/
-/*    height: 450px;*/
-/*  }*/
-/*  .logo {*/
-/*    width: 80px;*/
-/*    margin-top: 30px;*/
-/*    margin-left: 10px;*/
-/*  }*/
-/*  .hamburger-menu {*/
-/*    padding-top: 10px;*/
-/*  }*/
-/*  .otzyvyNav {*/
-/*    margin-top: 20px;*/
-/*    margin-bottom: 20px;*/
-/*  }*/
+    .textAdressBtn {
+        font-size: 14px;
+        padding: 40px 0px 20px 20px;
+    }
+    .bottomShi {
+        width: auto;
+    }
+    .bottomAdress {
+        align-items: center;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    .comfortFeature {
+        width: 120%;
+    }
+    .iconSon {
+        margin-top: 30px;
+    }
+    .breadcrumbs {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .smallWomanText {
+        margin-right: auto;
+    }
+    .hide:checked + label + div {
+        display: block;
+        width: 380px;
+        margin-top: -110px;
+    }
+    .hide:checked + label {
+        top:220px;
+        background-color:  #F5F5F5;
+    ;
+    }
+    .zagolovok {
+        margin-top: 10%;
+    }
 
-/*  .proMenu {*/
-/*    margin-left: -30px;*/
-/*    float: none;*/
-/*    display: inline;*/
-/*    width: 130%;*/
-/*    margin-top: 15px;;*/
-/*    line-height: 2.5;*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*    align-content: flex-start;*/
-/*  }*/
-/*  .proMenu a {*/
-/*    margin-right:20px;*/
-/*  }*/
-/*  .dopSl {*/
-/*    width: auto !important;*/
-/*  }*/
-/*  .soglasie {*/
-/*    width: auto;*/
-/*  }*/
-/*  .uslugi {*/
-/*    width: auto;*/
-/*  }*/
-/*  .smile {*/
-/*  width: auto;*/
-/*  font-size: 15px;*/
-/*  }*/
-/*  .uslugiTextDop {*/
-/*    margin-bottom: 40px;*/
-/*    margin-top: -10px;*/
-/*  }*/
-/*  .featureIcon {*/
-/*    margin-top:20px;*/
-/*  }*/
-/*  .uslugiSpisok {*/
-/*    margin-top: 40px;*/
-/*  }*/
-/*  .uslugiSpisok li {*/
-/*    width: auto;*/
+    .feature {
+        display: block;
+        text-align: left;
+        height: 220px;
+    }
 
-/*  }*/
-/*  .soglasie {*/
-/*    font-size: 14px;*/
-/*  }*/
-/*  .izgotovim {*/
-/*    width:auto;*/
-/*  }*/
-/*  ul.nomargin {*/
-/*    overflow: hidden;*/
-/*  }*/
-/*  .dopVtoroy {*/
-/*    width: 350px;*/
-/*    height: auto;*/
-/*    padding: 0px 70px 20px 0px;*/
-/*  }*/
-/*  .smallIzg {*/
-/*      margin-right: 55px;*/
-/*    width: 160px;*/
-/*    height: 130px;*/
-/*  }*/
-/*  .smallIzg2 {*/
-/*    width: 160px;*/
-/*    height: 130px;*/
-/*    margin-bottom: -4px;*/
-/*  }*/
-/*  .otzyv {*/
-/*    height: auto;*/
-/*  }*/
+    .swiper-paginations,.pagin-wrapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pagin-wrapp {
+        position: relative;
+        top: 30px;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        padding-bottom: 30px;
+    }
+    .swiper-pagination-bullet-active {
+        width: 10px!important;
+        height: 10px!important;
+        border: 1.6px solid #C9CCCC;
+        border-radius: 50%;
+        background: none!important;
+    }
+    .swiper-pagination-rev .swiper-pagination-bullet-active,
+    .swiper-pagination-mobile .swiper-pagination-bullet-active{
+        border: 1.6px solid #757472;
+    }
 
-/*  .spisok_per {*/
-/*    top: -25px;*/
-/*    line-height: 200%;*/
-/*  }*/
-/*  .individualOne {*/
-/*    margin-top: 0px;*/
-/*  }*/
+    .overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.25);
+        mix-blend-mode: normal;
+        z-index: 99999;
+        display: none;
+    }
+    .modal-wrapper {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        max-width: 1075px;
+        width: 100%;
+        margin: 0 20px;
+        max-height: 772px;
+        background: #F0F0F3;
+        display: block;
+    }
+    .overlay.active,
+    .overlay.active .modal-wrapper{
+        display: block;
+    }
+    .modal-wrapper .close {
+        display: block;
+        margin: 35px 35px 0 auto;
+        cursor: pointer;
+    }
+    .dostavkaNav-item {
+        cursor: pointer;
+        opacity: 0.6;
+    }
+    .dostavkaNav-item.active {
+        opacity: 1;
+        position: relative;
+    }
+    .dostavkaNav-item.active:before {
+        content: '';
+        width: 40px;
+        height: 2px;
+        background: #757472;
+        position: absolute;
+        bottom: -13px;
+        left: 0;
+    }
+    .textDostavka p {
+        display: none;
+        text-align: left;
+    }
+    .itemIcon {
+        margin-right:10px;
+    }
+    .textDostavka p.active {
+        display: block;
+    }
+    .mobile-swiper .screen {
+        max-width: 450px;
+    }
+    .mobile-swiper .screen .img-project {
+        width: 100%;
+    }
+    .mobile-swiper .screen .plusArrow {
+        right: 0;
+    }
+    .copyright {
+        margin-top: 30px;
+        margin-bottom: -30px;
+        padding-bottom: 40px;
+    }
+    .mobile-slider {
+        display: none;
+    }
+    iframe{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        object-fit: contain;
+    }
+    .textAdressBtn{
+        margin: 33px 0 0 0;
+    }
+    .bottomPics {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
 
-/*  .projectText {*/
-/*    width: auto;*/
-/*  }*/
-/*  .smallInter {*/
-/*  width: 100%;*/
-/*}*/
-/*.textLe {*/
-/*  margin-left: -17%;*/
-/*}*/
-/*  .poCentru {*/
-/*    display: none;*/
-/*  }*/
-/*  .smallWomanText p {*/
-/*    margin-top:10px;*/
-/*  }*/
-/*  .proMenu li {*/
-/*    font-size: 18px;*/
-/*    display: inline;*/
-/*    margin-right: 30px;*/
-/*    margin-bottom: 0px;*/
-/*  }*/
-/*  .proMenu a {*/
-/*    font-size: 18px;*/
 
-/*  }*/
-/*  .nameOtzyv {*/
-/*    padding-left: 10px;*/
-/*  }*/
-/*  .otzyvText {*/
-/*    padding-left: 10px;*/
-/*  }*/
-/*  .middleWall {*/
-/*    margin-bottom: 100px;*/
-/*  }*/
-/*  .otzyvDate p {*/
-/*    padding-left: 10px;*/
-/*  }*/
-/*  .individualTwo {*/
-/*    height: 280px;*/
-/*  }*/
-/*  .smallWoman {*/
-/*    margin: auto;*/
-/*  }*/
-/*  .uslugiSpisok li:hover {*/
-/*    font-size: 15px;*/
-/*  }*/
-/*  .archive_title_h1 {*/
-/*    margin-bottom: 10px;*/
-/*  }*/
-/*  .menu__box {*/
-/*        margin-left: 0px;*/
-/*        width: 100%;*/
-/*        margin-top: -130px;*/
-/*        height: 100vh;*/
-/*        z-index: 1000;*/
-/*    }*/
-/*    .menu__btn {*/
-/*        margin-left:0;*/
-/*        z-index: 3000;*/
-/*        left: auto;*/
-/*        right: 21px;*/
-/*        position: fixed;*/
-/*    }*/
-/*    .navigation {*/
-/*        width: 100%;*/
-/*        position: fixed;*/
-/*        left: 0;*/
-/*        top: 0;*/
-/*        background: white;*/
-/*        z-index: 99999;*/
-/*        padding: 5px;*/
-/*    }*/
-/*    .otzyvAvatar {*/
-/*      margin-top:15px;*/
-/*    }*/
-/*    .text_bolshe {*/
-/*      margin-top: auto;*/
-/*    }*/
-/*    body {*/
-/*        margin: 0;*/
-/*    }*/
-/*    .menu__btn.active ~ .menu__box {*/
-/*      margin-top: -43px;*/
-/*    }*/
-/*    iframe{*/
-/*        width: 100%;*/
-/*        margin: 0 auto;*/
-/*        display: block;*/
-/*        object-fit: contain;*/
-/*    }*/
-/*    .textAdressBtn{*/
-/*        font-size: 14px;*/
-/*        padding: 5px 0px 20px 20px;*/
-/*    }*/
-/*  }*/
+@media screen and (max-width: 650px) {
+    .mobile-slider {
+        display: block;
+    }
+    .pc-slider {
+        display: none;
+    }
+    .woo_h1 {
+        font-size: 36px;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    iframe{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        object-fit: contain;
+    }
+    .bottomPics{
+        margin-left: 53px;
+    }
+}
+    @media screen and (max-width: 500px) {
+        h1 {
+          font-size: 38px;
+          line-height: 1.2;
+        }
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 15px;
+    }
+    .interier {
+      margin-top: -20px;
+      margin-bottom: 20px;
+    }
+    .comandaSubtitle {
+      margin-top: -10px;
+    }
+      .subZagolovok {
+        margin-top: -50px;
+          /*line-height: ;*/
+  }
+  .titleSubtitle {
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+  .boxPriv {
+    width: 97%;
+    height: 450px;
+  }
+  .logo {
+    width: 80px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .hamburger-menu {
+    padding-top: 10px;
+  }
+  .otzyvyNav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
-/*  @media screen and (max-width: 360px){*/
-/*    h1 {*/
-/*      line-height: 1.5;*/
-/*    }*/
-/*    .hide + label, .hide:checked + label {*/
-/*top: -180px;*/
-/*    }*/
+  .proMenu {
+    margin-left: -30px;
+    float: none;
+    display: inline;
+    width: 130%;
+    margin-top: 15px;;
+    line-height: 2.5;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  .proMenu a {
+    margin-right:20px;
+  }
+  .dopSl {
+    width: auto !important;
+  }
+  .soglasie {
+    width: auto;
+  }
+  .uslugi {
+    width: auto;
+  }
+  .smile {
+  width: auto;
+  font-size: 15px;
+  }
+  .uslugiTextDop {
+    margin-bottom: 40px;
+    margin-top: -10px;
+  }
+  .featureIcon {
+    margin-top:20px;
+  }
+  .uslugiSpisok {
+    margin-top: 40px;
+  }
+  .uslugiSpisok li {
+    width: auto;
 
-/*    .modal-review {*/
-/*      width: 80%;*/
-/*    }*/
-/*      iframe{*/
-/*          width: 100%;*/
-/*          margin: 0 auto;*/
-/*          display: block;*/
-/*          object-fit: contain;*/
-/*      }*/
-/*      .bottomPics{*/
-/*          display: flex;*/
-/*          flex-wrap: wrap;*/
-/*      }*/
-/*      .smallIzg2{*/
-/*          margin-left: 15px;*/
-/*      }*/
-/*  }*/
+  }
+  .soglasie {
+    font-size: 14px;
+  }
+  .izgotovim {
+    width:auto;
+  }
+  ul.nomargin {
+    overflow: hidden;
+  }
+  .dopVtoroy {
+    width: 350px;
+    height: auto;
+    padding: 0px 70px 20px 0px;
+  }
+  .smallIzg {
+      margin-right: 55px;
+    width: 160px;
+    height: 130px;
+  }
+  .smallIzg2 {
+    width: 160px;
+    height: 130px;
+    margin-bottom: -4px;
+  }
+  .otzyv {
+    height: auto;
+  }
+
+  .spisok_per {
+    top: -25px;
+    line-height: 200%;
+  }
+  .individualOne {
+    margin-top: 0px;
+  }
+
+  .projectText {
+    width: auto;
+  }
+  .smallInter {
+  width: 100%;
+}
+.textLe {
+  margin-left: -17%;
+}
+  .poCentru {
+    display: none;
+  }
+  .smallWomanText p {
+    margin-top:10px;
+  }
+  .proMenu li {
+    font-size: 18px;
+    display: inline;
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+  .proMenu a {
+    font-size: 18px;
+
+  }
+  .nameOtzyv {
+    padding-left: 10px;
+  }
+  .otzyvText {
+    padding-left: 10px;
+  }
+  .middleWall {
+    margin-bottom: 100px;
+  }
+  .otzyvDate p {
+    padding-left: 10px;
+  }
+  .individualTwo {
+    height: 280px;
+  }
+  .smallWoman {
+    margin: auto;
+  }
+  .uslugiSpisok li:hover {
+    font-size: 15px;
+  }
+  .archive_title_h1 {
+    margin-bottom: 10px;
+  }
+  .menu__box {
+        margin-left: 0px;
+        width: 100%;
+        margin-top: -130px;
+        height: 100vh;
+        z-index: 1000;
+    }
+    .menu__btn {
+        margin-left:0;
+        z-index: 3000;
+        left: auto;
+        right: 21px;
+        position: fixed;
+    }
+    .navigation {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: white;
+        z-index: 99999;
+        padding: 5px;
+    }
+    .otzyvAvatar {
+      margin-top:15px;
+    }
+    .text_bolshe {
+      margin-top: auto;
+    }
+    body {
+        margin: 0;
+    }
+    .menu__btn.active ~ .menu__box {
+      margin-top: -43px;
+    }
+    iframe{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        object-fit: contain;
+    }
+    .textAdressBtn{
+        font-size: 14px;
+        padding: 5px 0px 20px 20px;
+    }
+  }
+
+  @media screen and (max-width: 360px){
+    h1 {
+      line-height: 1.5;
+    }
+    .hide + label, .hide:checked + label {
+top: -180px;
+    }
+
+    .modal-review {
+      width: 80%;
+    }
+      iframe{
+          width: 100%;
+          margin: 0 auto;
+          display: block;
+          object-fit: contain;
+      }
+      .bottomPics{
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .smallIzg2{
+          margin-left: 15px;
+      }
+  }
+
+@media only screen and (max-width: 980px) {
+    .site {
+        width: calc(100% - 40px);
+        outline: 1px solid magenta;
+    }
+    .adaptivFirst {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
