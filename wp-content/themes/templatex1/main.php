@@ -360,7 +360,7 @@ if( $images ): ?>
 <div class="otstup"></div>
 <img src="<?=get_template_directory_uri()?>/assests/images/exclusive.svg">
 <h2><?=get_field('title_b')?></h2>
-<div class="screen _anim-items _anim-no-hide">
+<div class="screen _anim-items _anim-no-hide screen_bolche">
   <div class="leftscreen">
 	<div class="text_bolshe">
 		<?=get_field('des_b')?>
@@ -520,15 +520,15 @@ if( $images ): ?>
 <div class="leftscreen">
 <img class="commandWoman" src=" <?=get_field('photo_k')['url']?>" alt="<?=get_field('title_k')?>">
 </div>
-<div class="rightscreen">
-<div class="screen">
-  <div class="leftscreen">
+<div class="rightscreen rigth_title">
+<div class="screen right_tile_wrap">
+  <div class="leftscreen left_text">
 <img src="<?=get_template_directory_uri()?>/assests/images/Team.svg">
 <h2><?=get_field('title_k')?></h2>
 <p class="comandaSubtitle"><?=get_field('subtitle_k')?></p>
 <?=get_field('text1_k')?>
 </div>
-<div class="rightscreen">
+<div class="rightscreen rigth_text">
 
 <div class="comandSmallText">
  <?=get_field('text2_k')?>
