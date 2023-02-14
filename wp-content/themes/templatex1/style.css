@@ -2515,11 +2515,11 @@ left: 32%;
 @media screen and (max-width: 980px) {
     .site {
         width: calc(100% - 40px);
-        outline: 1px solid magenta;
+        /*outline: 1px solid magenta;*/
     }
-    .otstup{
-        display: none;
-    }
+    /*.otstup{*/
+    /*    display: none;*/
+    /*}*/
     .modal {
         width: 95%;
         height: auto;
@@ -2586,6 +2586,7 @@ left: 32%;
     .rightscreen {
         /*padding-top: 30px;*/
         width: 100%;
+        margin: auto;
     }
     .tel {
         visibility: hidden;
@@ -2889,9 +2890,9 @@ left: 32%;
         margin-top: auto;
         margin-left: 0;
     }
-    .left_text{
-        padding-top: 312px;
-    }
+    /*.left_text{*/
+    /*    padding-top: 312px;*/
+    /*}*/
     .commandWoman {
         width: 100%;
     }
@@ -2962,7 +2963,6 @@ left: 32%;
         z-index: 10001;
         background-color: #F5F5F5;
         margin-top: -10px;
-        padding-left: 10px;
     }
     .textLe {
         width:auto;
@@ -3033,6 +3033,15 @@ left: 32%;
         overflow: auto;
         -ms-overflow-style: none;
         scrollbar-width: none;
+    }
+    .right_tile_wrap{
+        margin: auto;
+    }
+    .hide + label, .hide:checked + label {
+                top: 554px;
+            }
+    .otzyv{
+        margin: auto;
     }
 }
 /*@media screen and (max-width: 550px){*/
