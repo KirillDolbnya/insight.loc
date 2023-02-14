@@ -2,7 +2,7 @@
       <section class="site">
         
         <div class="hamburger-menu">
-            <a href="/" ><img class="logo" src="<?=get_template_directory_uri()?>/assests/images/logo.svg"></a>
+            <a href="/" class="logo_link" ><img class="logo" src="<?=get_template_directory_uri()?>/assests/images/logo.svg"></a>
             <div class="tel"><?=get_field('phone', 'option')?></div>
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
