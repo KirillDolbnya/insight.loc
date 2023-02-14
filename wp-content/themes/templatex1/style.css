@@ -5,16 +5,10 @@ Description:  templatex1 is the perfect theme for your next WooCommerce project.
 Version:      2.5.1
 License:      GNU General Public License v2 or later
 Text Domain:  templatex1
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-
-
 Resetting and rebuilding styles have been helped along thanks to the fine work of
-
-
 All sizing (typography, layout, padding/margins, etc) are inspired by a modular scale that uses 1em as a base size with a 1.618 ratio.
-
 Images License: GNU General Public License v2 or later
 */
 /*
@@ -94,7 +88,7 @@ body {
 }
 .site {
     width: 1620px;
-    /*outline: 1px solid red;*/
+    /* outline: 1px solid red; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -319,10 +313,11 @@ body {
 }
 
 .leftscreen {
-    width: 60%;
+    /* width: 60%; */
 }
 .kursiv {
-    margin-bottom: -50px;
+    margin-top: 70px;
+    margin-bottom: 7px;
 }
 
 .rightscreen {
@@ -346,7 +341,6 @@ body {
     cursor: pointer;
     font-weight: 400;
     margin-top: 30px;
-
 }
 .dopLeft {
     overflow: visible !important;
@@ -360,7 +354,7 @@ body {
 }
 
 .titleSubtitle {
-    margin-top: -30px;
+    /* margin-top: -30px; */
     margin-bottom: 60px;
 }
 
@@ -373,8 +367,8 @@ body {
 
 .screen {
     display: flex;
+    /* justify-content: space-between; */
     /*margin-top: 20px;*/
-    /*align-items: end;*/
 }
 
 .vstolbik {
@@ -386,10 +380,13 @@ body {
 .zagolovok {
     width: 85%;
     line-height: 40px;
+    padding-bottom: 30px;
+    /* margin-bottom: 97px; */
 }
 
 .foton {
-    width: 100%;
+    width: 720px;
+    height: 770px;
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
     -webkit-animation-fill-mode: both;
@@ -413,17 +410,19 @@ body {
 .winSmall {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    /* align-items: center; */
 }
 .projectText {
     /*margin-top: 410px;*/
-    width: 251px;
-    margin-left: 50px;
+    width: 265px;
+    margin-left: 125px;
     /*padding-left: 10px;*/
 }
 .projectMiddle {
+    margin-left: 182px;
     height: 399px;
-    float: right;
+    /* float: right; */
 }
 .proMenu {
     float: right;
@@ -433,6 +432,7 @@ body {
     list-style-type: none;
     line-height: 1.5;
     margin-top:-10px;
+    margin-bottom: 123px;
 }
 .proMenu a {
     font-family: Gilroy;
@@ -469,9 +469,9 @@ body {
     margin-top:25px;
 }
 .poCentru {
-    width: 514px;
+    width: 512px;
     float: right;
-    margin-right: 4%;
+    /* margin-right: 4%; */
     margin-top: 5%;
 }
 .podKartinkoi {
@@ -480,18 +480,19 @@ body {
     margin-left: 5px;
 }
 .projectBig {
-    width: 100%;
-    /* margin-left:4px;*/
+    width: 450px;
+    min-height: 596px;
+    /* margin-left:4px; */
+    margin-right: 63px;
 }
 .center {
-    margin-left:20% !important;
+    margin-left: 26% !important;
     align-items: center;
-    margin-top: 90px;
-    /*padding-top: 55%;*/
-
+    margin-top: 197px;
+    /* padding-top: 55%; */
 }
 .dopCenter {
-    margin-top: 195px;
+    margin-top: 150px;
 }
 
 .dopSl {
@@ -517,9 +518,10 @@ body {
     margin-bottom: 10px;
 }
 #text, .ftext {
+    margin-bottom: 35px;
     font-family: Gilroy;
     width: 90%;
-    height: 35px;
+    height: 154px;
     border-radius: 0px;
     padding: 34px 20px 17px 34px;
     border: 1px solid #75747254;
@@ -530,7 +532,8 @@ body {
     width: 90%;
 }
 .formIMG {
-    width: 100%;
+    width: 901px;
+    height: 1050px;
 }
 input {
     font-family: 'Gilroy';
@@ -554,8 +557,8 @@ input {
 }
 .textSliderOne {
     width: 70%;
-    margin-top: -20px;
-    margin-bottom: 60px;
+    margin-top: 11px;
+    margin-bottom: 32px;
 }
 .mobile-slider {
     display: none;
@@ -685,7 +688,7 @@ svg {
     margin-bottom: 40px;
 }
 .projects_box_main {
-    margin-top:100px;
+    margin-top: 82px;
 }
 
 .persona {
@@ -1414,6 +1417,7 @@ svg {
 .swiper-slide .projectText ,
 .swiper-slide .poCentru p{
     text-align: left;
+    margin-bottom: 283px;
 }
 .leftK,
 .rightK{
@@ -1489,7 +1493,7 @@ svg {
     justify-content: space-between;
 }
 .firstBlock {
-    margin-top: 100px;
+    margin-top: 145px;
 }
 .dlyaVasAdaptiv {
     display:none;
@@ -3905,3 +3909,4 @@ svg {
 /*    }*/
 
 /*}*/
+
