@@ -51,7 +51,7 @@
 					if ($featured_posts): ?><?php foreach ($featured_posts as $post): setup_postdata($post); ?>
 
 						<?php if ($count % 3 == 0): ?>
-							<div class="swiper-slide">	<div class="itc-slider__item">	<div class="screen">
+							<div class="swiper-slide">    <div class="itc-slider__item">    <div class="screen">
 						<?php endif ?>
 
 
@@ -80,7 +80,7 @@
 								</div>
 							</a>
 
-						</div>			</div>
+						</div>            </div>
 						</div>
 					<?php endif ?>
 
@@ -130,7 +130,7 @@
 
 
 						<?php if ($count % 3 == 2): ?>
-							</div></div>	</div>
+							</div></div>    </div>
 						<?php endif ?>
 
 						<?php $count2++;
@@ -205,33 +205,33 @@
 		<div class="swiper-pagination-review pagin-wrapp"></div>
 	</div>
 </section>
-<div class="otstup"></div>
-<div class="otstup"></div>
-<section class="site _anim-items _anim-no-hide" id="hello">
-	<div class="screen">
 
-		<div class="leftscreen">
+<section class="site _anim-items _anim-no-hide hello" id="hello">
+	<div class="hello__row">
+		<div class="hello__left">
 			<div class="test">
 				<h2><?= get_field('priv_title') ?></h2>
 				<div class="boxPriv">
 					<?= get_field('priv_anons') ?>
 				</div>
 
-				<input class="hide" id="hd-1" type="checkbox">
-				<label for="hd-1">Читать полностью
-					<img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 178.svg"></label>
-				<div>
-					<?= get_field('priv_text') ?>
+				<div class="hello__wrap-readmore">
+					<input class="hide" id="hd-1" type="checkbox">
+					<label for="hd-1" class="hello__readmore-btn">Читать полностью
+						<img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 178.svg"></label>
+					<div class="hello__readmore-text"><?= get_field('priv_text'); ?></div>
 				</div>
-				<!-- <img class="topSmall" src="<?= get_template_directory_uri() ?>/assests/images/top.svg"> -->
-				<button class="topSmall">
-					<img class="smallLogo" src="<?= get_template_directory_uri() ?>/assests/images/smallLogo.svg">
-					<div class="textLogo"><?= get_field('very_important_fact') ?></div>
-				</button>
 			</div>
+			<button class="topSmall">
+				<img class="smallLogo" src="<?= get_template_directory_uri() ?>/assests/images/smallLogo.svg">
+				<div class="textLogo"><?= get_field('very_important_fact') ?></div>
+			</button>
+
 		</div>
-		<div class="rightscreen">
-			<img class="persona" src="<?= get_field('priv_photo')['url'] ?>" alt="Ирина Шишканова">
+		<div class="hello__right">
+			<div class="hello__wrap-avatar">
+				<img class="persona" src="<?= get_field('priv_photo')['url'] ?>" alt="Ирина Шишканова">
+			</div>
 		</div>
 	</div>
 
