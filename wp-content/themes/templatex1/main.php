@@ -237,20 +237,17 @@
 
 </section>
 
-<div class="newFon">
-	<div class="otstup big"></div>
-
-
+<div class="newFon block-uslugi">
 	<section class="site" id="uslugi">
 		<div class=" _anim-items _anim-no-hide">
 			<img src="<?= get_template_directory_uri() ?>/assests/images/services.svg">
 			<h2><?= get_field('title_usl') ?></h2>
 			<p class="subuslugi"><?= get_field('subtitle_usl') ?></p>
 		</div>
-		<div class="screen _anim-items _anim-no-hide">
-			<div class="leftcreen">
-				<div class="screen adaptivUslugi">
-					<div class="leftscreen">
+		<div class="block-uslugi__row _anim-items _anim-no-hide">
+			<div class="block-uslugi__info">
+				<div class="adaptivUslugi block-uslugi__block-information">
+					<div class="block-uslugi__iformation">
 						<div class="uslugi">
 							<div class="uslugiSpisok">
 
@@ -270,12 +267,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="rightscreen">
+					<div class="block-uslugi__avatar">
 						<img class="fotoUsluga" id="mypic" src="<?= get_template_directory_uri() ?>/assests/images/usluga_vyezd.png">
 					</div>
 				</div>
 			</div>
-			<div class="rightscreen">
+			<div class="block-uslugi__slogan">
 				<button class="dopEsciz RightServices">
 					<div class="textLogo textServices">
 						<?= get_field('very_important_fact_usl') ?>
