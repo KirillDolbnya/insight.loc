@@ -137,10 +137,10 @@ ul.nomargin{
 
 @media (min-width: 768px){
 
-.projectBig{
-	min-height:696px;
-	object-fit:cover;
-}
+/*.projectBig{*/
+/*	min-height:696px;*/
+/*	object-fit:cover;*/
+/*}*/
 
 .leftscreen{
 	overflow:hidden;

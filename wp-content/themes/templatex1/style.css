@@ -417,12 +417,10 @@ body {
 
 .kursiv {
     margin-top: 70px;
-    margin-bottom: 7px;
+    /* margin-bottom: 7px; */
 }
 
-.rightscreen {
-    width: 44.39%;
-}
+.rightscreen {/* width: 569px; */}
 
 .button {
     font-size: 16px;
@@ -453,7 +451,8 @@ body {
 }
 
 .subtitleBrand {
-    margin-bottom: -8px;
+    margin-top: 10px;
+    /* margin-bottom: -8px; */
 }
 
 .titleSubtitle {
@@ -468,10 +467,11 @@ body {
     background: rgb(0 0 0 / 30%);
 }
 
-.screen {
+.home-textiles {
     display: flex;
-    /* justify-content: space-between; */
-    /*margin-top: 20px;*/
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 74px;
 }
 
 .vstolbik {
@@ -516,28 +516,45 @@ body {
     }
 }
 
+.project{
+    display: flex;
+    justify-content: space-between;
+}
+
+.project_left{
+    display: flex;
+    justify-content: space-between;
+    width: 923px;
+}
+.project-right{
+    display: flex;
+    justify-content: space-between;
+    width: 510px;
+}
 .projectSmall {
 
-    margin-left: 25px;
+    /* margin-left: 25px; */
+
+    /* margin-top: 319px; */
 }
 
 .winSmall {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* align-items: center; */
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .projectText {
     /*margin-top: 410px;*/
     width: 265px;
-    margin-left: 125px;
+    /* margin-left: 125px; */
     /*padding-left: 10px;*/
 }
 
 .projectMiddle {
     height: 399px;
-    margin-left: 182px;
+    /* margin-left: 182px; */
     /* float: right; */
 }
 
@@ -568,7 +585,7 @@ body {
 
 .strelka {
     display: inline-block;
-    margin: 4px 2px;
+    /* margin: 4px 2px; */
     margin-bottom: 50px;
     margin-left: auto;
     text-align: center;
@@ -593,28 +610,36 @@ body {
 }
 
 .poCentru {
-    float: right;
+    /* float: right; */
     width: 512px;
     /* margin-right: 4%; */
-    margin-top: 5%;
+    margin-top: 10px;
+    margin-top: 10px;
 }
 
 .podKartinkoi {
     display: flex;
     justify-content: space-between;
-    margin-left: 5px;
+    /* margin-left: 5px; */
 }
 
 .projectBig {
     width: 450px;
     min-height: 596px;
     /* margin-left:4px; */
-    margin-right: 63px;
+    /* margin-right: 63px; */
 }
-
+.order-curtains{
+    margin-top: 180px;
+}
+.order-curtains__wrap{
+    display: flex;
+    align-items: center;
+    /* margin-top: 83px; */
+}
 .center {
     align-items: center;
-    margin-top: 197px;
+    margin-top: 270px;
     margin-left: 26% !important;
     /* padding-top: 55%; */
 }
@@ -627,9 +652,13 @@ body {
 .dopSl {
     width: 80% !important;
 }
+.from-order{
+    margin-left: auto;
+    width: 503px;
+}
 
 #fname, .fname {
-    width: 90%;
+    width: 445px;
     height: 35px;
     margin-bottom: -10px;
     padding: 14px 20px 17px 34px;
@@ -638,7 +667,7 @@ body {
 }
 
 #tel, .ftelbox {
-    width: 90%;
+    width: 445px;
     height: 35px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -650,7 +679,7 @@ body {
 
 #text, .ftext {
     font-family: Gilroy;
-    width: 90%;
+    width: 445px;
     height: 154px;
     margin-bottom: 35px;
     padding: 34px 20px 17px 34px;
@@ -664,7 +693,8 @@ body {
     width: 90%;
 }
 
-.formIMG {
+.order-curtains__image {
+    /* padding-top: 93px; */
     width: 901px;
     height: 1050px;
 }
@@ -683,13 +713,18 @@ input {
     outline: none;
 }
 
+.brand__container{
+    margin-top: 125px;
+}
+
 .slider {
     display: flex;
     justify-content: space-between;
 }
 
 .textSlider {
-    width: 53%;
+    width: 823px;
+    margin-top: 10px;
 }
 
 .textSliderOne {
@@ -742,7 +777,7 @@ input {
     box-sizing: border-box;
     width: 316px;
     height: 250px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     opacity: 0.9;
     border: 1px solid #7574722b;
     border-radius: 5px;
@@ -837,7 +872,7 @@ svg {
 }
 
 .otstup {
-    height: 100px;
+    /* height: 100px; */
 }
 
 .subuslugi {
@@ -846,7 +881,7 @@ svg {
 }
 
 .projects_box_main {
-    margin-top: 82px;
+    margin-top: 182px;
 }
 
 .persona {
@@ -928,29 +963,47 @@ svg {
     /*margin-top: 150px;*/
 }
 
+.block-uslugi__row{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.block-uslugi__block-information{
+    display: flex;
+}
+
 .big {
     height: 200px;
 }
 
 .RightServices {
+    margin-top: 139px;
     width: 708.21px;
     height: 328.39px;
-    margin-right: -10px;
+    margin-right: -40px;
     transform: rotate(-30deg);
     border: 1px solid rgb(117 116 114 / 16%);
     border-radius: 50%;
+    background-color: rgb(0 0 0 / 0%);
+}
 
-    background-color: transparent;
-
+.order__zagolovok{
+    margin-top: 312px;
 }
 
 .uslugiTextDop {
-    margin-top: -30px;
+    margin-top: 10px;
     margin-bottom: 70px;
 }
 
+.block-uslugi__avatar{
+    width: 451px;
+    height: 640px;
+    /*margin-left: 85px;*/
+}
+
 .fotoUsluga {
-    width: 100%;
     transition: .4s;
 }
 
@@ -1008,9 +1061,10 @@ svg {
     font-weight: 400;
     font-style: italic;
     line-height: 25px;
-    margin-bottom: 28px;
+    margin-top: 32px;
     list-style-type: none;
-    color: #757472;
+    color: rgb(117 116 114);
+    width: 319px;
 }
 
 .uslugiSpisok li:hover {
@@ -1033,6 +1087,7 @@ svg {
 }
 
 .featureIcon {
+    border: 1px solid red;
     font-style: italic;
     display: inline-block;
     box-sizing: border-box;
@@ -1043,7 +1098,7 @@ svg {
     text-align: center;
     opacity: 0.8;
     color: #757472;
-    border: 1px solid #B6B5B2;
+    /* border: 1px solid #B6B5B2; */
     border-color: transparent;
     border-radius: 50%;
     background-color: transparent;
@@ -1052,17 +1107,18 @@ svg {
 .featureText {
     font-size: 16px;
     position: relative;
-    top: -3px;
+    /* top: -3px; */
     transform: rotate(-55deg);
 }
 
 .feature {
+    /* margin-top: 63px; */
     line-height: 1.5;
     display: flex;
     align-items: center;
     width: 713px;
     height: 155px;
-    padding-top: 10px;
+    /* padding-top: 15px; */
     padding-bottom: 10px;
     padding-left: 5px;
     letter-spacing: 0.3px;
@@ -1078,7 +1134,7 @@ svg {
 }
 
 .otstupK {
-    margin-top: 60px;
+    margin-top: 90px;
 }
 
 .text_bolshe {
@@ -1678,7 +1734,7 @@ svg {
 }
 
 .swiper-slide .projectText {
-    margin-bottom: 283px;
+    /* margin-bottom: 283px; */
     text-align: left;
 }
 
@@ -1775,7 +1831,7 @@ svg {
 }
 
 .firstBlock {
-    margin-top: 145px;
+    /* margin-top: 116px; */
 }
 
 .dlyaVasAdaptiv {
@@ -4355,4 +4411,3 @@ svg {
 /*    }*/
 
 /*}*/
-

@@ -6,7 +6,7 @@
 <?php get_header(); ?>
 
 <section class="site ">
-	<div class="screen adaptivFirst">
+	<div class="home-textiles adaptivFirst">
 		<div class="leftscreen vstolbik firstBlock">
 
 			<div class="kursiv">
@@ -51,15 +51,15 @@
 					if ($featured_posts): ?><?php foreach ($featured_posts as $post): setup_postdata($post); ?>
 
 						<?php if ($count % 3 == 0): ?>
-							<div class="swiper-slide">    <div class="itc-slider__item">    <div class="screen">
+							<div class="swiper-slide">    <div class="itc-slider__item">    <div class="project">
 						<?php endif ?>
 
 
 						<?php if ($count % 3 == 0): ?>
-						<div class="leftscreen">
-						<div class="screen"><a href="<?php the_permalink(); ?>" class="leftscreen project_item_link">
+						<div class="leftscreen left__block">
+						<div class="project_left"><a href="<?php the_permalink(); ?>" class="leftscreen project_item_link">
 							<img class="projectBig" src="<?= get_the_post_thumbnail_url() ?>" alt="<?php the_title(); ?>">
-							<div class="podKartinkoi">
+							<div class="podKartinkoi  button__image">
 								<span><?php the_title(); ?></span>
 								<span><img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 178.svg"></span>
 							</div>
@@ -74,7 +74,7 @@
 							<a href="<?php the_permalink(); ?>" class="projectSmall project_item_link">
 
 								<img class="projectSmall_img" alt="<?php the_title(); ?>" src="<?= get_the_post_thumbnail_url() ?>">
-								<div class="podKartinkoi">
+								<div class="podKartinkoi ">
 									<span><?php the_title(); ?></span>
 									<span><img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 178.svg"></span>
 								</div>
@@ -86,9 +86,9 @@
 
 
 						<?php if ($count % 3 == 2): ?>
-							<div class="rightscreen">
-								<div class="screen">
-									<div class="leftscreen">
+							<div class="rightscreen rigth__block">
+								<div class="project-right">
+									<div class="right__block__image">
 										<a href="<?php the_permalink(); ?>" class="projectMiddle project_item_link">
 											<img class="projectMiddle_img" src="<?= get_the_post_thumbnail_url() ?>" alt="<?php the_title(); ?>">
 
@@ -147,16 +147,17 @@
 	</div>
 
 </section><!-- <div class="otstup"></div> --><!-- <div class="otstup"></div> -->
+<div class="order-curtains">
 <section class="site _anim-items _anim-no-hide">
-	<div class="screen">
-		<div class="leftscreen">
-			<div class="otstup"></div>
+	<div class="order-curtains__wrap">
+		<div class="order-curtains__image">
+<!--			<div class="otstup"></div>-->
 			<img class="formIMG" src="<?= get_template_directory_uri() ?>/assests/images/formIMG.png">
 
 		</div>
 
-		<div class="rightscreen">
-			<div class="center">
+		<div class="from-order">
+			<div class="form-order-curtains__input">
 				<h2><?= get_field('form_title') ?></h2>
 				<div class="textSliderOne  dopSl">
 					<p><?= get_field('des_form') ?></p>
@@ -167,10 +168,10 @@
 			</div>
 		</div>
 	</div>
-
-
 </section><!-- <div class="otstup"></div> -->
-<div class="otstup"></div>
+</div>
+<!--<div class="otstup"></div>-->
+<div class="brand__container">
 <section class="site" id="brands">
 	<p></p>
 	<div class=" _anim-items _anim-no-hide">
@@ -205,6 +206,7 @@
 		<div class="swiper-pagination-review pagin-wrapp"></div>
 	</div>
 </section>
+</div>
 
 <section class="site _anim-items _anim-no-hide hello" id="hello">
 	<div class="hello__row">
@@ -280,12 +282,11 @@
 				</button>
 			</div>
 		</div>
-		<div class="otstup big"></div>
-		<div class="_anim-items _anim-no-hide">
+		<div class="_anim-items _anim-no-hide order__zagolovok">
 			<h2><?= get_field('kakz_title') ?></h2>
 			<p class="uslugiTextDop"><?= get_field('kakz_subtitle') ?></p>
 		</div>
-		<div class="screen _anim-items _anim-no-hide">
+		<div class="how__order _anim-items _anim-no-hide order">
 			<div class="swiper swiperMobile">
 				<div class="swiper-wrapper">
 					<?php if (get_field('kakz_punkt')): $i = 0; ?><?php while (has_sub_field('kakz_punkt')): $i++; ?>
