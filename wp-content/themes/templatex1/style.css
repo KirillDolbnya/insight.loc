@@ -653,47 +653,58 @@ body {
 }
 
 .dopSl {
-    width: 80% !important;
+    /* width: 80% !important; */
 }
 .from-order{
     margin-left: auto;
-    width: 503px;
+    width: 518px;
+    outline: 1px solid red;
 }
 
-#fname, .fname {
-    width: 445px;
-    height: 35px;
-    margin-bottom: -10px;
-    padding: 14px 20px 17px 34px;
-    border: 1px solid #75747254;
-    border-radius: 0px;
+.from-order form{
+    margin-top: 31px;
 }
 
-#tel, .ftelbox {
-    width: 445px;
-    height: 35px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-bottom: 10px;
-    padding: 14px 20px 17px 34px;
+.from-order .wpcf7-form-control-wrap{
+    /* outline:1px solid; */
+    display:block;
+    margin-top: 10px;
+}
+
+.from-order .wpcf7-form-control-wrap:nth-child(2) {
+    /*     outline:1px solid magenta; */
+    margin-top:0px;
+}
+.from-order input,
+.from-order textarea{
+    display:block;
+    /* outline:1px solid red; */
+    width: 100%;
+    padding: 22px 31px;
     border: 1px solid #75747254;
     border-radius: 0px;
+    font-size: 14px;
+    font-family: 'Gilroy';
+    /* margin-top:10px; */
 }
+
+
+.zayavka{
+    /* outline:1px solid green; */
+    margin:0;
+    margin-top: 53px;
+}
+
 
 #text, .ftext {
     font-family: Gilroy;
-    width: 445px;
-    height: 154px;
-    margin-bottom: 35px;
-    padding: 34px 20px 17px 34px;
-    border: 1px solid #75747254;
-    border-radius: 0px;
-    outline: none;
+    height: 212px;
 }
 
 .soglasie {
     font-size: 15px;
-    width: 90%;
+    /* width: 90%; */
+    margin-top: 20px;
 }
 
 .order-curtains__image {
@@ -707,12 +718,11 @@ input {
     font-size: 14px;
     font-weight: 500;
     font-style: normal;
-    line-height: 130%;
+    /* line-height: 130%; */
     /* or 18px */
     letter-spacing: 0.05em;
     color: rgba(117, 116, 114, 0.6);
     border: 5px #75747200;
-
     outline: none;
 }
 
@@ -731,9 +741,9 @@ input {
 }
 
 .textSliderOne {
-    width: 70%;
+    /* width: 70%; */
     margin-top: 11px;
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
 }
 
 .mobile-slider {
@@ -1110,7 +1120,7 @@ iframe{
     opacity: 0.8;
     color: #757472;
     border: 1px solid #B6B5B2;
-    border-color: transparent;
+    border-color: rgb(223 15 15);
     border-radius: 50%;
     background-color: transparent;
 }
@@ -1508,7 +1518,10 @@ iframe{
     cursor: pointer;
 }
 
-
+.form-order{
+    outline:1px solid #065fd4;
+    width:613px
+}
 @media (max-width: 600px) {
     .otzyvyNav {
         overflow: auto;
