@@ -504,10 +504,8 @@
 		</div>
 	</div>
 </section>
-<div class="newFon ">
+<div class="newFon footer">
 	<section class="site" id="otzyv">
-		<div class="otstup"></div>
-		<div class="otstup"></div>
 		<div class="zagolovokWrapper _anim-items _anim-no-hide">
 			<div class="zagolovokOtzyv">
 				<h2><?= get_field('rev_title', 'option') ?></h2>
@@ -515,8 +513,6 @@
 			<div class="textZagolovok">
 				<?= get_field('rev_subtitle', 'option') ?>
 			</div>
-
-
 		</div>
 
 		<div class="slider _anim-items _anim-no-hide">
@@ -531,23 +527,17 @@
 				<button class="leftK review-next-btn dopColorP" href="#">
 					<img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 155.svg"></button>
 				<button class="rightK review-prev-btn dopColor" href="#">
-					<img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 155.svg"></button>
-
+					<img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 155.svg">
+                </button>
 			</div>
-
 		</div>
 
 		<div class="swiper review-slider _anim-items _anim-no-hide">
 			<div class="swiper-wrapper">
-
-
 				<?php if (get_field('rev', 'option')): $i = 0; ?><?php while (has_sub_field('rev', 'option')): $i++; ?>
-
-
 					<div data-nav="<?= get_sub_field('cat')->slug ?>" class="swiper-slide ">
-
 						<div class="otzyv ">
-							<div class="site">
+							<div class="otzyv_item">
 								<div class="otzyvAvatar">
 									<img class="avatarIMG" src="<?= get_sub_field('img')['url'] ?>" alt="<?= get_sub_field('title') ?>">
 								</div>
@@ -559,15 +549,10 @@
 							</div>
 						</div>
 					</div>
-
 				<?php endwhile; ?><?php endif; ?>
-
-
 			</div>
 			<div class="swiper-pagination-rev pagin-wrapp"></div>
 		</div>
-
-
 		<div class="otstup" name="dostavka"></div>
 		<div class="dostavka _anim-items _anim-no-hide">
 			<h2><?= get_field('title_do', 'option') ?></h2>
@@ -580,25 +565,15 @@
 					</div>
 				<?php endwhile; ?><?php endif; ?>
 			</div>
-
 			<div class="textDostavka">
-
 				<?php if (get_field('do', 'option')): $i = 0; ?><?php while (has_sub_field('do', 'option')): $i++; ?>
-
-
 					<p class="<? if ($i == 1) echo 'active'; ?>" data-cont="item<?= $i ?>">
 						<?= get_sub_field('text') ?>
 					</p>
-
 				<?php endwhile; ?><?php endif; ?>
-
-
 			</div>
 		</div>
-
-		<div class="otstup"></div>
 	</section>
-
 </div>
 <?php get_footer(); ?>
 

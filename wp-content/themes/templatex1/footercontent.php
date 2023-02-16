@@ -7,9 +7,9 @@
   </div>
 </div>
 <footer>
-<div class="newFon">
+<div class="footer__site">
 <section class="site" id="contact">
-  <div class="otstup"></div>
+<!--  <div class="otstup"></div>-->
   <div class="footerZagolovokWrapper">
 <div class="footerZagolovok">
   <h2><?=get_field('title_contact', 'option')?></h2>

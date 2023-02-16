@@ -733,6 +733,7 @@ input {
 .slider {
     display: flex;
     justify-content: space-between;
+    margin-top: 16px;
 }
 
 .textSlider {
@@ -758,7 +759,7 @@ input {
 .leftK {
     display: inline-block;
     margin: 4px 2px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     margin-left: auto;
     text-align: center;
     text-decoration: none;
@@ -772,7 +773,7 @@ input {
 .rightK {
     display: inline-block;
     margin: 4px 2px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     margin-left: auto;
     text-align: center;
     text-decoration: none;
@@ -1113,14 +1114,14 @@ iframe{
     display: inline-block;
     box-sizing: border-box;
     margin-right: 35px;
-    margin-left: 9px;
-    padding: 16px 13px 8px 13px;
+    margin-left: 7px;
+    padding: 30px 18px 30px 15px;
     transform: rotate(55deg);
     text-align: center;
     opacity: 0.8;
-    color: #757472;
+    color: rgb(117 116 114);
     border: 1px solid #B6B5B2;
-    border-color: rgb(223 15 15);
+    border-color: rgb(117 120 120);
     border-radius: 50%;
     background-color: transparent;
 }
@@ -1335,6 +1336,7 @@ iframe{
 
 .comfort{
     margin-top: 166px;
+    padding: 0 15px;
 }
 
 .comfortFeature {
@@ -1365,7 +1367,7 @@ iframe{
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
-    align-items: end;
+    /* align-items: end; */
 }
 
 .wrapperComfort_in {
@@ -1390,7 +1392,7 @@ iframe{
 /*}*/
 
 .commandInsight{
-    margin-top: 199px;
+    margin-top: 185px;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
@@ -1441,17 +1443,26 @@ iframe{
 }
 
 .smallWomanWrapper {
+    margin-top: 42px;
     /* display: flex; */
-    width: 321px;
+    width: 256px;
     /* align-content: flex-end; */
     /* align-items: flex-end; */
     /* flex-direction: column; */
 }
 
+.diplom{
+    margin-top: 45px;
+}
 /*.comandSmallText {*/
 /*    width: 95%;*/
 /*    margin-top: 67%;*/
 /*}*/
+
+.footer{
+    margin-top: 198px;
+    padding-top: 182px;
+}
 
 .zagolovokWrapper {
     display: flex;
@@ -1459,7 +1470,7 @@ iframe{
 }
 
 .zagolovokOtzyv {
-    width: 25%;
+    width: 400px;
 }
 
 .textZagolovok {
@@ -1467,8 +1478,8 @@ iframe{
     font-size: 18px;
     font-weight: 100;
     line-height: 1.3;
-    width: 43%;
-    margin-top: 10px;
+    width: 416px;
+    margin-top: 32px;
     letter-spacing: 0.3mm;
     color: #757472;
 }
@@ -1586,19 +1597,21 @@ iframe{
 }
 
 .otzyv {
-    width: 100%;
+    width: 530px;
     height: 676px;
-    margin-right: 15px;
+    margin-top: 33px;
+    /* margin-right: 15px; */
     background-color: #F0F0F3;
+    padding: 58px;
 }
 
 .otzyvAvatar {
     overflow: hidden;
     width: 108.08px;
     height: 138.08px;
-    margin-top: 85px;
-    margin-bottom: 75px;
-    margin-left: 10px;
+    margin-top: 16px;
+    /* margin-bottom: 75px; */
+    /* margin-left: 10px; */
     transform: rotate(30deg);
     border-radius: 90%;
 }
@@ -1614,26 +1627,29 @@ iframe{
     font-weight: 200;
     font-style: normal;
     line-height: 110%;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     text-align: left;
     color: #757472;
+    margin-top: 76px;
 }
 
 .otzyvText {
-    line-height: 25.2px;
-    width: 520px;
+    /* line-height: 25.2px; */
+    margin-top: 11px;
+    width: 453px;
     max-height: 178.2px !important;
-    margin-bottom: 65px;
+    /* margin-bottom: 65px; */
     padding: 10px;
     text-align: left;
 }
 
 .otzyvDate {
-    margin-left: 15px
+    /* margin-left: 15px; */
+    margin-top: 73px;
 }
 
 .dostavka {
-    margin-top: 50px;
+    margin-top: 180px;
     text-align: center;
 }
 
@@ -1645,8 +1661,8 @@ iframe{
 .dostavkaNav {
     display: flex;
     justify-content: space-evenly;
-    width: 30%;
-    margin-top: -40px;
+    width: 545px;
+    margin-top: 22px;
     margin-right: auto;
     margin-left: auto;
 
@@ -1654,9 +1670,10 @@ iframe{
 
 .textDostavka {
     line-height: 1.4;
-    width: 55%;
+    width: 780px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 57px;
     text-align: center;
 }
 
