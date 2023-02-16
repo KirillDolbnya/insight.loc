@@ -421,8 +421,6 @@
 					</div>
 				</div>
 			</div>
-			<!--<div class="otstup"></div>-->
-			<!--<div class="otstupSmall"></div>-->
 			<div class="block_images">
 				<div class="dopLeft">
 					<div class="secondFlex">
@@ -452,8 +450,7 @@
 	</div>
 </section>
 
-<!--<div class="otstup"></div>-->
-<!--<div class="otstup"></div>-->
+
 
 <section class="site ">
 	<div class="_anim-items _anim-no-hide">
