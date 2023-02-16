@@ -303,7 +303,7 @@
 				</div>
 				<div class="swiper-pagination-mobile pagin-wrapp"></div>
 			</div>
-			<div class="leftscreen sv">
+			<div class="conditions__left sv">
 				<?php if (get_field('kakz_punkt')): $i = 0; ?><?php while (has_sub_field('kakz_punkt')): $i++; ?>
 					<div class="feature">
 						<button class="featureIcon"><p class="featureText"><? if ($i < 10) echo 0;
@@ -314,7 +314,7 @@
 			</div>
 
 
-			<div class="rightscreen sv _anim-items _anim-no-hide">
+			<div class="conditions__right sv _anim-items _anim-no-hide">
 				<?php if (get_field('kakz_punkt')): $i = 0; ?><?php while (has_sub_field('kakz_punkt')): $i++; ?><? if ($i < 5) { ?>
 					<div class="feature">
 						<button class="featureIcon"><p class="featureText"><? if ($i < 10) echo 0;
@@ -325,132 +325,136 @@
 			</div>
 		</div>
 		<div class="screen _anim-items _anim-no-hide">
-			<div class="leftscreen">
-				<div class='blank'></div>
-
-			</div>
-			<div class="rightscreen">
+			<div class="button_zayavka">
 				<a href="/#zayavka" class="button otstupK">Оставить заявку</a>
 			</div>
 		</div>
-		<div class="otstup"></div>
-		<img src="<?= get_template_directory_uri() ?>/assests/images/exclusive.svg">
-		<h2><?= get_field('title_b') ?></h2>
-		<div class="screen _anim-items _anim-no-hide screen_bolche">
-			<div class="leftscreen">
-				<div class="text_bolshe">
-					<?= get_field('des_b') ?>
-					<p></p>
-					<p></p>
-					<img class="bolshe" src="<?= get_field('img_b1')['url'] ?>">
-				</div>
-			</div>
-			<div class="rightscreen">
-				<div class="izgotovim">
-					<h3><?= get_field('title_b2') ?></h3>
-				</div>
-				<div class="dlyaVas">
-					<button class="RightServices ">
-						<div class="text_v_btn">
-							<div class="spisok_per">
-								<?= get_field('spisok1') ?>
-							</div>
-							<div class="spisok_vtor">
-								<?= get_field('spisok2') ?>
-							</div>
-						</div>
-					</button>
-				</div>
-				<div class="dlyaVasAdaptiv">
-					<button class="RightServices dopVtoroy">
-						<div class="text_v_btn">
-							<div class="spisok_per">
-								<?= get_field('spisok1') ?>
-							</div>
-						</div>
-					</button>
-					<div class="spisok_vtor">
-						<?= get_field('spisok2') ?>
-					</div>
-				</div>
-				<div class="screen borderBottom bottomPics">
-					<div class="leftcreen"></div>
-					<img class="smallIzg" src="<?= get_field('img_b2')['url'] ?>">
-					<div class="rightscreen">
-						<img class="smallIzg2" src="<?= get_field('img_b3')['url'] ?>">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="otstup"></div>
-		<div class="otstup"></div>
-
+<!--		<div class="otstup"></div>-->
+        <div class="more-about">
+            <div class="more-about__title">
+	            <img src="<?= get_template_directory_uri() ?>/assests/images/exclusive.svg">
+	            <h2><?= get_field('title_b') ?></h2>
+            </div>
+		    <div class="more-about__content _anim-items _anim-no-hide screen_bolche">
+		    	<div class="more-about__left">
+		    		<div class="text_bolshe">
+		    			<?= get_field('des_b') ?>
+		    			<p></p>
+		    			<p></p>
+                        <div class="image__bolshe">
+                            <img class="bolshe" src="<?= get_field('img_b1')['url'] ?>">
+                        </div>
+		    		</div>
+		    	</div>
+			    <div class="more-about__right">
+			    	<div class="izgotovim">
+			    		<h3><?= get_field('title_b2') ?></h3>
+			    	</div>
+			    	<div class="dlyaVas">
+			    		<button class="RightServices ">
+			    			<div class="text_v_btn">
+			    				<div class="spisok_per">
+			    					<?= get_field('spisok1') ?>
+			    				</div>
+			    				<div class="spisok_vtor">
+			    					<?= get_field('spisok2') ?>
+			    				</div>
+			    			</div>
+			    		</button>
+			    	</div>
+				    <div class="dlyaVasAdaptiv">
+				    	<button class="RightServices dopVtoroy">
+				    		<div class="text_v_btn">
+				    			<div class="spisok_per">
+				    				<?= get_field('spisok1') ?>
+				    			</div>
+				    		</div>
+				    	</button>
+				    	<div class="spisok_vtor">
+				    		<?= get_field('spisok2') ?>
+				    	</div>
+				    </div>
+				    <div class="borderBottom bottomPics">
+				    	<div class="image__smallIzg">
+				    	    <img class="smallIzg" src="<?= get_field('img_b2')['url'] ?>">
+                        </div>
+				    	<div class="image__smallIzg2">
+				    		<img class="smallIzg2" src="<?= get_field('img_b3')['url'] ?>">
+				    	</div>
+				    </div>
+			    </div>
+		    </div>
+        </div>
 	</section>
-
-
 </div>
 
 
-<div class="otstup"></div>
-<div class="otstup"></div>
 <section class="site individuality _anim-items  _anim-no-hide">
-	<div class="screen">
-		<div class="rightscreen">
-			<div class="shirina">
-				<h2><?= get_field('title_c') ?></h2>
-				<p class="interier"><?= get_field('subtitle_c') ?></p>
-				<p></p>
-				<?= get_field('text_c') ?>
-				<div class="otstup"></div>
-				<img class="individualOne" src="<?= get_template_directory_uri() ?>/assests/images/kreslo.png">
+	<div class="individuality__content">
+		<div class="left-block__individuality">
+			<div class="left-block__individuality-content">
+                <div class="individeality__title">
+                    <h2><?= get_field('title_c') ?></h2>
+                    <p class="interier"><?= get_field('subtitle_c') ?></p>
+                    <p class="interier_two"><?= get_field('text_c') ?></p>
+                </div>
+				<div class="image__individualOne">
+                    <img class="individualOne" src="<?= get_template_directory_uri() ?>/assests/images/kreslo.png">
+                </div>
 			</div>
 		</div>
-		<div class="leftcreen">
-			<div class="screen">
-				<div class="leftcreen">
-					<div class="individualTwo"><?= get_field('img_c') ?>
+		<div class="right-block__individuality">
+			<div class="right-block__individuality-content">
+				<div class="video__block">
+					<div class="individualTwo">
+                        <?= get_field('img_c') ?>
 					</div>
 				</div>
-				<div class="rightscreen">
+				<div class="block__krivaya">
 					<div class="smallsquare">
-						<p><?= get_field('des_img') ?></p>
-						<img class="krivaya" src="<?= get_template_directory_uri() ?>/assests/images/krivaya.svg">
+                        <div>
+                            <p><?= get_field('des_img') ?></p>
+                        </div>
+                        <div class="image__krivaya">
+                            <img class="krivaya" src="<?= get_template_directory_uri() ?>/assests/images/krivaya.svg">
+                        </div>
 					</div>
 				</div>
 			</div>
-			<div class="otstup"></div>
-			<div class="otstupSmall"></div>
-			<div class="screen block_images">
-				<div class="leftscreen dopLeft">
+			<!--<div class="otstup"></div>-->
+			<!--<div class="otstupSmall"></div>-->
+			<div class="block_images">
+				<div class="dopLeft">
 					<div class="secondFlex">
-						<img class="smallInter" src="<?= get_template_directory_uri() ?>/assests/images/smaillinter.png">
+                        <div class="image__smallInter">
+                            <img class="smallInter" src="<?= get_template_directory_uri() ?>/assests/images/smaillinter.png">
+                        </div>
 						<div class="textLe">
 							<?= get_field('text2_c') ?>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="rightscreen">
-				<div class="blank"></div>
-			</div>
-			<div class="screen">
-				<div class="leftscreen">
+			<div class="block__image">
+				<div class="image__left">
 					<div class="parent">
 						<img class="middleTable" src="<?= get_template_directory_uri() ?>/assests/images/middleTable.png">
 					</div>
 				</div>
-				<div class="rightscreen">
-					<img class="middleWall" src="<?= get_template_directory_uri() ?>/assests/images/middleWall.png">
-				</div>
+                <div class="image__rigth">
+                    <div class="image__middleWall">
+                        <img class="middleWall" src="<?= get_template_directory_uri() ?>/assests/images/middleWall.png">
+                    </div>
+                </div>
 			</div>
 		</div>
-
-
 	</div>
 	</div>
 </section>
-<div class="otstup"></div>
-<div class="otstup"></div>
+
+<!--<div class="otstup"></div>-->
+<!--<div class="otstup"></div>-->
+
 <section class="site ">
 	<div class="_anim-items _anim-no-hide">
 		<img src="<?= get_template_directory_uri() ?>/assests/images/Comfort.svg">
