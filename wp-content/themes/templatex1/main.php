@@ -452,67 +452,57 @@
 
 
 
-<section class="site ">
-	<div class="_anim-items _anim-no-hide">
-		<img src="<?= get_template_directory_uri() ?>/assests/images/Comfort.svg">
-		<h2><?= get_field('title_v') ?></h2>
-	</div>
-	<div class="wrapperComfort">
-		<div class="wrapperComfort_in">
-
-			<?php if (get_field('punkt_v')): $i = 0; ?><?php while (has_sub_field('punkt_v')): $i++; ?>
-
-				<div class="firstScreen _anim-items _anim-no-hide">
-					<div class="comfortFeature">
-						<img class="iconSon" src="<?= get_template_directory_uri() ?>/assests/images/star.svg">
-						<div class="iconText">
-							<?= get_sub_field('text') ?>
-						</div>
-					</div>
-				</div>
-			<?php endwhile; ?><?php endif; ?>
-
-
-		</div>
-
-
-		<div class="thirdScreen _anim-items _anim-no-hide">
-			<div class="smallWomanWrapper">
-				<div class="smallWomanText">
-					<?= get_field('subtitle_v') ?>
-				</div>
-				<img class="smallWoman" src="<?= get_field('img_v')['url'] ?>" alt="<?= get_field('title_v') ?>">
-			</div>
-		</div>
-	</div>
-	<div class="otstup"></div>
-	<div class="otstup"></div>
-	<div class="screen commandInsight _anim-items _anim-no-hide" id="comanda">
-		<div class="leftscreen">
+<section class="site _anim-items  _anim-no-hide">
+    <div class="comfort">
+	    <div class="_anim-items _anim-no-hide">
+	    	<img src="<?= get_template_directory_uri() ?>/assests/images/Comfort.svg">
+	    	<h2><?= get_field('title_v') ?></h2>
+	    </div>
+	    <div class="wrapperComfort">
+		    <div class="wrapperComfort_in">
+		    	<?php if (get_field('punkt_v')): $i = 0; ?><?php while (has_sub_field('punkt_v')): $i++; ?>
+		    		<div class="comfer__item _anim-items _anim-no-hide">
+		    			<div class="comfortFeature">
+		    				<img class="iconSon" src="<?= get_template_directory_uri() ?>/assests/images/star.svg">
+		    				<div class="iconText">
+		    					<?= get_sub_field('text') ?>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	<?php endwhile; ?><?php endif; ?>
+		    </div>
+	    	<div class="diplom_wrap _anim-items _anim-no-hide">
+	    		<div class="smallWomanWrapper">
+	    			<div class="smallWomanText">
+	    				<?= get_field('subtitle_v') ?>
+	    			</div>
+                    <div class="diplom">
+                        <img class="smallWoman" src="<?= get_field('img_v')['url'] ?>" alt="<?= get_field('title_v') ?>">
+                    </div>
+	    		</div>
+	    	</div>
+	    </div>
+    </div>
+	<div class="commandInsight _anim-items _anim-no-hide" id="comanda">
+		<div class="image__comanda">
 			<img class="commandWoman" src=" <?= get_field('photo_k')['url'] ?>" alt="<?= get_field('title_k') ?>">
 		</div>
-		<div class="rightscreen rigth_title">
-			<div class="screen right_tile_wrap">
-				<div class="leftscreen left_text">
+		<div class="title__comanda">
+			<div class="title_wrap">
+				<div class="title-about__comand">
 					<img src="<?= get_template_directory_uri() ?>/assests/images/Team.svg">
 					<h2><?= get_field('title_k') ?></h2>
 					<p class="comandaSubtitle"><?= get_field('subtitle_k') ?></p>
 					<?= get_field('text1_k') ?>
 				</div>
-				<div class="rightscreen rigth_text">
-
+				<div class="rigth_text__comanda">
 					<div class="comandSmallText">
 						<?= get_field('text2_k') ?>
 					</div>
 				</div>
 			</div>
 		</div>
-
-
 	</div>
-
-	<div class="otstup"></div>
-	<div class="otstup"></div>
 </section>
 <div class="newFon ">
 	<section class="site" id="otzyv">
