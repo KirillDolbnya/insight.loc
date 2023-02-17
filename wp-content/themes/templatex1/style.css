@@ -409,7 +409,7 @@ body {
 
 
 .firstBlock {
-    margin-top: 71px;
+    /*margin-top: 71px;*/
 }
 
 .leftscreen {
@@ -472,7 +472,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 74px;
+    margin-top: 146px;
 }
 
 .vstolbik {
@@ -483,7 +483,7 @@ body {
 
 .zagolovok {
     line-height: 40px;
-    width: 85%;
+    width: 690px;
     padding-bottom: 30px;
     /* margin-bottom: 97px; */
 }
