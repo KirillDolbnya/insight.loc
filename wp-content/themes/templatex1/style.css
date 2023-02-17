@@ -1677,39 +1677,45 @@ iframe{
     text-align: center;
 }
 
+.footer__site{
+    background-color: rgb(201 204 204);
+    padding-top: 180px;
+}
+
 .footerZagolovokWrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footerZagolovok {
-    width: 16%;
+    width: 250px;
 }
 
 .footerZagolovokText {
-    width: 18%;
+    width: 277px;
 }
 
 .adressItemWrapper {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 3px;
+    /* align-items: flex-start; */
+    margin-top: 27px;
 }
-
 .itemText {
-    align-items: flex-start;
-    width: 100%;
+    /*align-items: flex-start;*/
+    width: 296px;
     margin-left: 15px;
 }
 
 .itemText p {
-    width: 200px;
+    width: 300px;
     margin-top: 0px;
 }
 
 .adressList {
     display: flex;
-    margin-top: 10px;
+    margin-top: 29px;
+    align-items: center;
 }
 
 .inlineSocial {
@@ -1719,7 +1725,7 @@ iframe{
 .adressBtn {
     display: block;
     box-sizing: border-box;
-    width: 305.36px;
+    width: 324.36px;
     height: 182.61px;
     padding: 40px 0px 40px 40px;
     transform: rotate(-30deg);
@@ -1729,7 +1735,6 @@ iframe{
     border: 1px solid #B6B5B2;
     border-radius: 50%;
     background-color: transparent;
-
 }
 
 .adressBtn:hover {
@@ -1749,6 +1754,39 @@ iframe{
     color: #757472;
 }
 
+.footer__form{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 220px;
+}
+
+.form__zakazhite{
+    margin-left: auto;
+    width: 710px;
+    outline: 1px solid rgb(255 0 0);
+}
+
+.form__zakazhite .wpcf7-form-control-wrap {
+    /* outline: 1px solid; */
+    display: block;
+    margin-top: 10px;
+}
+
+.form__zakazhite form{
+    margin-top: 31px;
+}
+
+.form__zakazhite input, .form__zakazhite textarea {
+    display: block;
+    outline: 1px solid rgb(255 0 0);
+    width: 100%;
+    padding: 22px 31px;
+    border: 1px solid rgb(117 116 114 / 33%);
+    border-radius: 0px;
+    font-size: 14px;
+    font-family: 'Gilroy';
+    /* margin-top: 10px; */
+}
 
 .zakazhite {
     box-sizing: border-box;
@@ -1787,6 +1825,14 @@ iframe{
     margin-top: 0px;
 }
 
+.footer__contacts{
+    padding-top: 215px;
+}
+
+.footer__contacts-wrap{
+    padding: 50px 0;
+}
+
 .line {
     border-bottom: 1px solid #75747233;
 }
@@ -1794,21 +1840,21 @@ iframe{
 .bottomLogo {
     display: block;
     margin-right: auto;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     margin-left: auto;
 }
 
 .bottomAdress {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 80px;
+    margin-top: 20px;
+    /* width: 761px; */
+    /* margin-bottom: 80px; */
 }
 
 .bottomShi {
-    width: 21%;
-    margin-right: -4%;
-
+    width: 225px;
+    /* margin-right: -4%; */
 }
 
 .swiper {
@@ -1818,7 +1864,7 @@ iframe{
 
 .copyright {
     font-size: 15px;
-    margin-top: 50px;
+    margin-top: 71px;
     padding-bottom: 50px;
 }
 
@@ -3037,636 +3083,636 @@ iframe{
 /*    }*/
 /*}*/
 
-@media screen and (max-width: 980px) {
-    .site {
-        width: calc(100% - 40px);
-        /*outline: 1px solid magenta;*/
-    }
-
-    /*.otstup{*/
-    /*    display: none;*/
-    /*}*/
-    .modal {
-        width: 95%;
-        height: auto;
-    }
-
-    .modal .modalBtn {
-        box-sizing: border-box;
-        width: 150px;
-        margin-bottom: 30px;
-
-    }
-
-    .modal p {
-        font-size: 12px;
-    }
-
-    .modalTitle {
-        font-size: 20px;
-        margin-top: 80px;
-    }
-
-    .logo {
-        width: 80px;
-    }
-
-    .tel {
-        visibility: hidden;
-    }
-
-    .menu__btn {
-        z-index: 3000;
-    }
-
-    .menu__box {
-        z-index: 1000;
-        width: 100%;
-        height: 100vh;
-        margin-top: -130px;
-        margin-left: 0px;
-    }
-
-    .menu__btn.active ~ .menu__box {
-        z-index: 1000;
-        top: 70px;
-        overflow: auto;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .hamburger-menu {
-        height: 80px;
-        box-shadow: 0px 2px 10px 0px #0000000d;
-    }
-
-    .screen {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .leftscreen {
-        width: 100%;
-    }
-
-    .rightscreen {
-        /*padding-top: 30px;*/
-        width: 100%;
-        margin: auto;
-    }
-
-    .tel {
-        display: none;
-        visibility: hidden;
-    }
-
-    .RightServices {
-        width: auto;
-        height: auto;
-    }
-
-    .bolshe {
-        width: 100%;
-    }
-
-    .sliderControl {
-        display: none;
-    }
-
-    .adress {
-        width: 100%;
-    }
-
-    .adressList {
-        display: block;
-    }
-
-    .persona {
-        float: none;
-        width: 100%;
-        margin-top: 100px;
-    }
-
-    .topSmall {
-        position: static;
-        width: auto;
-        height: auto;
-        margin-top: 150px;
-        margin-bottom: 150px;
-    }
-
-    .hide:checked + label {
-        top: 440px;
-        background-color: rgb(245 245 245);
-    }
-
-    .hide:checked + label + div {
-        top: 440px;
-        width: auto;
-    }
-
-    /*.hide:checked + label {*/
-    /*    top: 440px;*/
-    /*}*/
-    .foton {
-        width: 100%;
-    }
-
-    .adaptivFirst {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .button {
-        width: 99%;
-        margin-top: 40px;
-    }
-
-    .projectMiddle {
-        display: none;
-    }
-
-    .winSmall {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-right: 10px;
-    }
-
-    .projectText {
-        width: auto;
-        margin-left: 37px;
-    }
-
-    .swiper-slide .projectText, .swiper-slide .poCentru p {
-        text-align: left;
-    }
-
-    .proMenu {
-        line-height: 2.5;
-        display: inline;
-        display: flex;
-        float: none;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        width: 130%;
-        margin-top: 15px;
-        margin-left: -30px;
-    }
-
-    .proMenu li {
-        font-size: 18px;
-        display: inline;
-        margin-right: 16px;
-        margin-bottom: 0px;
-    }
-
-    .strelka {
-        display: none;
-    }
-
-    .poCentru {
-        display: none;
-    }
-
-    .projectSmall {
-        display: none;
-    }
-
-    /*.proMenu {*/
-    /*    margin-left: 0px;*/
-    /*    float: none;*/
-    /*    text-align: center;*/
-    /*}*/
-    .menu__item {
-        font-family: 'Raleway' !important;
-        font-size: 20px;
-        font-weight: 200;
-        font-style: normal;
-        line-height: 120%;
-        color: #6D6960;
-    }
-
-    .menu__box {
-        width: 55%;
-        height: auto;
-        margin-top: -100px;
-        margin-left: 0px;
-    }
-
-    .center {
-        margin: 0 !important;
-    }
-
-    .formIMG {
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 30px;
-    }
-
-    #fname, .fname {
-        font-size: 13px;
-        width: 81%;
-        height: 21px;
-        margin-bottom: -5px;
-    }
-
-    #tel, .ftelbox {
-        font-size: 13px;
-        width: 81%;
-        height: 21px;
-        margin-bottom: 15px;
-    }
-
-    #text, .ftext {
-        font-size: 13px;
-        width: 81%;
-    }
-
-    .textSlider {
-        font-size: 15px;
-        width: 100%;
-    }
-
-    .swiper-slide {
-        width: 350px;
-    }
-
-    .boxPriv {
-        width: 300px;
-        margin-bottom: 90px;
-    }
-
-    .adaptivUslugi {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .big {
-        height: 100px;
-    }
-
-    .textServices {
-        font-family: 'Raleway';
-        font-size: 18px;
-        font-weight: 200;
-        font-style: normal;
-        line-height: 110%;
-        width: 60%;
-        margin-left: 17px;
-    }
-
-    .smile {
-        font-size: 16px;
-        width: 130%;
-        margin-bottom: 50px;
-    }
-
-    .textLogo {
-        font-size: 16px;
-        width: 90%;
-
-    }
-
-    .feature {
-        display: block;
-        height: 200px;
-    }
-
-    .text_bolshe {
-        width: 100%;
-    }
-
-    .bolshe {
-        margin: auto;
-        margin-bottom: 30px;
-    }
-
-    .text_v_btn {
-        display: block;
-    }
-
-    .spisok_vtor {
-        line-height: 200%;
-        float: none;
-        margin-top: 60px;
-        margin-bottom: -80px;
-        margin-left: 0px;
-        transform: rotate(0deg);
-    }
-
-    .dlyaVas {
-        display: none;
-    }
-
-    .dlyaVasAdaptiv {
-        display: block;
-    }
-
-    .izgotovim {
-        margin-top: 30px;
-        margin-bottom: 50px;
-    }
-
-    .spisok_per {
-        position: relative;
-        top: -15px;
-        left: -30px;
-    }
-
-    .bottomPics {
-        display: block;
-        flex-direction: row;
-        margin-left: 34px;
-    }
-
-
-    .smallIzg {
-        float: none;
-        width: 150px;
-        margin-bottom: 70px;
-        margin-left: 20px;
-    }
-
-    .smallIzg2 {
-        float: none;
-        width: 150px;
-        margin-bottom: 30px;
-        margin-left: 20px;
-    }
-
-    .shirina {
-        width: auto;
-    }
-
-    .individualOne {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .individualTwo {
-        width: 100%;
-    }
-
-    .smallsquare {
-        display: flex;
-        flex-direction: row-reverse;
-        margin-top: -13%;
-        margin-left: 90px;
-    }
-
-    .krivaya {
-        margin-top: -70px;
-        margin-right: 20px;
-        transform: rotate(90deg);
-    }
-
-    .smallInter {
-        width: 100%;
-        margin: auto;
-    }
-
-    .textLe {
-        margin-top: 30px;
-    }
-
-    .middleTable {
-        width: 100%;
-    }
-
-    .middleWall {
-        width: 100%;
-        margin: auto;
-        padding-top: 36px;
-        padding-bottom: 50px;
-    }
-
-    .wrapperComfort {
-        display: block;
-    }
-
-    .firstScreen {
-        width: auto;
-    }
-
-    .secondScreen {
-        width: auto;
-    }
-
-    .thirdScreen {
-        width: auto;
-    }
-
-    .smallWoman {
-        display: block;
-        width: 198px;
-        margin-left: -329px;
-        padding-top: 70px;
-    }
-
-    .smallWomanText {
-        width: auto;
-        margin-right: 35%;
-    }
-
-    .commandInsight {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .comandSmallText {
-        margin-top: auto;
-        margin-left: 0;
-    }
-
-    /*.left_text{*/
-    /*    padding-top: 312px;*/
-    /*}*/
-    .commandWoman {
-        width: 100%;
-    }
-
-    .dostavkaNav {
-        display: flex;
-        width: 252px;
-        margin-top: -20px;
-        gap: 19px;
-    }
-
-    .textDostavka {
-        width: auto;
-    }
-
-    .zagolovokWrapper {
-        display: block;
-    }
-
-    .zagolovokOtzyv {
-        width: auto;
-    }
-
-    .textZagolovok {
-        font-size: 15px;
-        width: auto;
-    }
-
-    .footerZagolovok {
-        width: auto;
-    }
-
-    .footerZagolovokWrapper {
-        display: block;
-    }
-
-    .zakazhite {
-        display: none;
-    }
-
-    .itemText {
-        width: auto;
-    }
-
-    .footerZagolovokText {
-        width: auto;
-        margin-bottom: 30px;
-    }
-
-    .adressBtn {
-        width: 166px;
-        height: 100px;
-    }
-
-    .adress {
-        width: auto;
-    }
-
-
-    .inlineSocial {
-        display: inline-block;
-        width: 40%;
-        margin-top: 30px;
-        margin-right: 20px;
-        margin-bottom: 30px;
-    }
-
-    .adressBtn {
-        padding: 0 0 0 0;
-    }
-
-    .textAdressBtn {
-        margin: 38px 40px 20px 20px;
-    }
-
-    .bottomAdress {
-        display: block;
-        margin-left: 25%;
-    }
-
-    .navigate {
-        position: fixed;
-        z-index: 10001;
-        width: 100%;
-        margin-top: -10px;
-        background-color: #F5F5F5;
-    }
-
-    .textLe {
-        width: auto;
-    }
-
-    .secondFlex {
-        display: block;
-        width: auto;
-        margin: auto;
-    }
-
-    .dopEsciz {
-        width: 90%;
-        height: 90%;
-        margin-top: auto;
-    }
-
-    .breacrumbs {
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-
-    .iconSon {
-        margin-top: 30px;
-    }
-
-    .projectTextTwo {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .adap {
-        margin-top: 70px;
-    }
-
-    .projectTitle {
-        margin-top: 0px;
-    }
-
-    .projectBottom {
-        display: block;
-    }
-
-    .projectAdaptiv {
-        width: 100%;
-        margin-top: 30px;
-    }
-
-    .poCentru {
-        margin-right: 0px;
-    }
-
-    iframe {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-        object-fit: contain;
-    }
-
-    .comfortFeature {
-        display: flex;
-        align-items: center;
-        height: 159px;
-        margin-right: 20px;
-        margin-bottom: 10px;
-        padding-left: 20px;
-        opacity: 1;
-        border: 1px solid rgb(117 116 114 / 24%);
-        border-radius: 5px;
-    }
-
-    .otzyvText {
-        overflow: hidden;
-        width: 198px;
-        margin-left: 15px;
-        text-overflow: ellipsis;
-    }
-
-    .otzyvyNav {
-        overflow: auto;
-        width: 100%;
-        margin-top: 40px;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-
-    .right_tile_wrap {
-        margin: auto;
-    }
-
-    .hide + label, .hide:checked + label {
-        top: 554px;
-    }
-
-    .otzyv {
-        margin: auto;
-    }
-}
+/*@media screen and (max-width: 980px) {*/
+/*    .site {*/
+/*        width: calc(100% - 40px);*/
+/*        !*outline: 1px solid magenta;*!*/
+/*    }*/
+
+/*    !*.otstup{*!*/
+/*    !*    display: none;*!*/
+/*    !*}*!*/
+/*    .modal {*/
+/*        width: 95%;*/
+/*        height: auto;*/
+/*    }*/
+
+/*    .modal .modalBtn {*/
+/*        box-sizing: border-box;*/
+/*        width: 150px;*/
+/*        margin-bottom: 30px;*/
+
+/*    }*/
+
+/*    .modal p {*/
+/*        font-size: 12px;*/
+/*    }*/
+
+/*    .modalTitle {*/
+/*        font-size: 20px;*/
+/*        margin-top: 80px;*/
+/*    }*/
+
+/*    .logo {*/
+/*        width: 80px;*/
+/*    }*/
+
+/*    .tel {*/
+/*        visibility: hidden;*/
+/*    }*/
+
+/*    .menu__btn {*/
+/*        z-index: 3000;*/
+/*    }*/
+
+/*    .menu__box {*/
+/*        z-index: 1000;*/
+/*        width: 100%;*/
+/*        height: 100vh;*/
+/*        margin-top: -130px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+
+/*    .menu__btn.active ~ .menu__box {*/
+/*        z-index: 1000;*/
+/*        top: 70px;*/
+/*        overflow: auto;*/
+/*        width: 100%;*/
+/*        height: 100vh;*/
+/*    }*/
+
+/*    .hamburger-menu {*/
+/*        height: 80px;*/
+/*        box-shadow: 0px 2px 10px 0px #0000000d;*/
+/*    }*/
+
+/*    .screen {*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*    }*/
+
+/*    .leftscreen {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .rightscreen {*/
+/*        !*padding-top: 30px;*!*/
+/*        width: 100%;*/
+/*        margin: auto;*/
+/*    }*/
+
+/*    .tel {*/
+/*        display: none;*/
+/*        visibility: hidden;*/
+/*    }*/
+
+/*    .RightServices {*/
+/*        width: auto;*/
+/*        height: auto;*/
+/*    }*/
+
+/*    .bolshe {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .sliderControl {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .adress {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .adressList {*/
+/*        display: block;*/
+/*    }*/
+
+/*    .persona {*/
+/*        float: none;*/
+/*        width: 100%;*/
+/*        margin-top: 100px;*/
+/*    }*/
+
+/*    .topSmall {*/
+/*        position: static;*/
+/*        width: auto;*/
+/*        height: auto;*/
+/*        margin-top: 150px;*/
+/*        margin-bottom: 150px;*/
+/*    }*/
+
+/*    .hide:checked + label {*/
+/*        top: 440px;*/
+/*        background-color: rgb(245 245 245);*/
+/*    }*/
+
+/*    .hide:checked + label + div {*/
+/*        top: 440px;*/
+/*        width: auto;*/
+/*    }*/
+
+/*    !*.hide:checked + label {*!*/
+/*    !*    top: 440px;*!*/
+/*    !*}*!*/
+/*    .foton {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .adaptivFirst {*/
+/*        display: flex;*/
+/*        flex-direction: column-reverse;*/
+/*    }*/
+
+/*    .button {*/
+/*        width: 99%;*/
+/*        margin-top: 40px;*/
+/*    }*/
+
+/*    .projectMiddle {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .winSmall {*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        justify-content: space-between;*/
+/*        margin-right: 10px;*/
+/*    }*/
+
+/*    .projectText {*/
+/*        width: auto;*/
+/*        margin-left: 37px;*/
+/*    }*/
+
+/*    .swiper-slide .projectText, .swiper-slide .poCentru p {*/
+/*        text-align: left;*/
+/*    }*/
+
+/*    .proMenu {*/
+/*        line-height: 2.5;*/
+/*        display: inline;*/
+/*        display: flex;*/
+/*        float: none;*/
+/*        align-content: flex-start;*/
+/*        flex-wrap: wrap;*/
+/*        width: 130%;*/
+/*        margin-top: 15px;*/
+/*        margin-left: -30px;*/
+/*    }*/
+
+/*    .proMenu li {*/
+/*        font-size: 18px;*/
+/*        display: inline;*/
+/*        margin-right: 16px;*/
+/*        margin-bottom: 0px;*/
+/*    }*/
+
+/*    .strelka {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .poCentru {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .projectSmall {*/
+/*        display: none;*/
+/*    }*/
+
+/*    !*.proMenu {*!*/
+/*    !*    margin-left: 0px;*!*/
+/*    !*    float: none;*!*/
+/*    !*    text-align: center;*!*/
+/*    !*}*!*/
+/*    .menu__item {*/
+/*        font-family: 'Raleway' !important;*/
+/*        font-size: 20px;*/
+/*        font-weight: 200;*/
+/*        font-style: normal;*/
+/*        line-height: 120%;*/
+/*        color: #6D6960;*/
+/*    }*/
+
+/*    .menu__box {*/
+/*        width: 55%;*/
+/*        height: auto;*/
+/*        margin-top: -100px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+
+/*    .center {*/
+/*        margin: 0 !important;*/
+/*    }*/
+
+/*    .formIMG {*/
+/*        width: 100%;*/
+/*        margin-top: 10px;*/
+/*        margin-bottom: 30px;*/
+/*    }*/
+
+/*    #fname, .fname {*/
+/*        font-size: 13px;*/
+/*        width: 81%;*/
+/*        height: 21px;*/
+/*        margin-bottom: -5px;*/
+/*    }*/
+
+/*    #tel, .ftelbox {*/
+/*        font-size: 13px;*/
+/*        width: 81%;*/
+/*        height: 21px;*/
+/*        margin-bottom: 15px;*/
+/*    }*/
+
+/*    #text, .ftext {*/
+/*        font-size: 13px;*/
+/*        width: 81%;*/
+/*    }*/
+
+/*    .textSlider {*/
+/*        font-size: 15px;*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .swiper-slide {*/
+/*        width: 350px;*/
+/*    }*/
+
+/*    .boxPriv {*/
+/*        width: 300px;*/
+/*        margin-bottom: 90px;*/
+/*    }*/
+
+/*    .adaptivUslugi {*/
+/*        display: flex;*/
+/*        flex-direction: column-reverse;*/
+/*    }*/
+
+/*    .big {*/
+/*        height: 100px;*/
+/*    }*/
+
+/*    .textServices {*/
+/*        font-family: 'Raleway';*/
+/*        font-size: 18px;*/
+/*        font-weight: 200;*/
+/*        font-style: normal;*/
+/*        line-height: 110%;*/
+/*        width: 60%;*/
+/*        margin-left: 17px;*/
+/*    }*/
+
+/*    .smile {*/
+/*        font-size: 16px;*/
+/*        width: 130%;*/
+/*        margin-bottom: 50px;*/
+/*    }*/
+
+/*    .textLogo {*/
+/*        font-size: 16px;*/
+/*        width: 90%;*/
+
+/*    }*/
+
+/*    .feature {*/
+/*        display: block;*/
+/*        height: 200px;*/
+/*    }*/
+
+/*    .text_bolshe {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .bolshe {*/
+/*        margin: auto;*/
+/*        margin-bottom: 30px;*/
+/*    }*/
+
+/*    .text_v_btn {*/
+/*        display: block;*/
+/*    }*/
+
+/*    .spisok_vtor {*/
+/*        line-height: 200%;*/
+/*        float: none;*/
+/*        margin-top: 60px;*/
+/*        margin-bottom: -80px;*/
+/*        margin-left: 0px;*/
+/*        transform: rotate(0deg);*/
+/*    }*/
+
+/*    .dlyaVas {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .dlyaVasAdaptiv {*/
+/*        display: block;*/
+/*    }*/
+
+/*    .izgotovim {*/
+/*        margin-top: 30px;*/
+/*        margin-bottom: 50px;*/
+/*    }*/
+
+/*    .spisok_per {*/
+/*        position: relative;*/
+/*        top: -15px;*/
+/*        left: -30px;*/
+/*    }*/
+
+/*    .bottomPics {*/
+/*        display: block;*/
+/*        flex-direction: row;*/
+/*        margin-left: 34px;*/
+/*    }*/
+
+
+/*    .smallIzg {*/
+/*        float: none;*/
+/*        width: 150px;*/
+/*        margin-bottom: 70px;*/
+/*        margin-left: 20px;*/
+/*    }*/
+
+/*    .smallIzg2 {*/
+/*        float: none;*/
+/*        width: 150px;*/
+/*        margin-bottom: 30px;*/
+/*        margin-left: 20px;*/
+/*    }*/
+
+/*    .shirina {*/
+/*        width: auto;*/
+/*    }*/
+
+/*    .individualOne {*/
+/*        width: 100%;*/
+/*        margin-bottom: 20px;*/
+/*    }*/
+
+/*    .individualTwo {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .smallsquare {*/
+/*        display: flex;*/
+/*        flex-direction: row-reverse;*/
+/*        margin-top: -13%;*/
+/*        margin-left: 90px;*/
+/*    }*/
+
+/*    .krivaya {*/
+/*        margin-top: -70px;*/
+/*        margin-right: 20px;*/
+/*        transform: rotate(90deg);*/
+/*    }*/
+
+/*    .smallInter {*/
+/*        width: 100%;*/
+/*        margin: auto;*/
+/*    }*/
+
+/*    .textLe {*/
+/*        margin-top: 30px;*/
+/*    }*/
+
+/*    .middleTable {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .middleWall {*/
+/*        width: 100%;*/
+/*        margin: auto;*/
+/*        padding-top: 36px;*/
+/*        padding-bottom: 50px;*/
+/*    }*/
+
+/*    .wrapperComfort {*/
+/*        display: block;*/
+/*    }*/
+
+/*    .firstScreen {*/
+/*        width: auto;*/
+/*    }*/
+
+/*    .secondScreen {*/
+/*        width: auto;*/
+/*    }*/
+
+/*    .thirdScreen {*/
+/*        width: auto;*/
+/*    }*/
+
+/*    .smallWoman {*/
+/*        display: block;*/
+/*        width: 198px;*/
+/*        margin-left: -329px;*/
+/*        padding-top: 70px;*/
+/*    }*/
+
+/*    .smallWomanText {*/
+/*        width: auto;*/
+/*        margin-right: 35%;*/
+/*    }*/
+
+/*    .commandInsight {*/
+/*        display: flex;*/
+/*        flex-direction: column-reverse;*/
+/*    }*/
+
+/*    .comandSmallText {*/
+/*        margin-top: auto;*/
+/*        margin-left: 0;*/
+/*    }*/
+
+/*    !*.left_text{*!*/
+/*    !*    padding-top: 312px;*!*/
+/*    !*}*!*/
+/*    .commandWoman {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .dostavkaNav {*/
+/*        display: flex;*/
+/*        width: 252px;*/
+/*        margin-top: -20px;*/
+/*        gap: 19px;*/
+/*    }*/
+
+/*    .textDostavka {*/
+/*        width: auto;*/
+/*    }*/
+
+/*    .zagolovokWrapper {*/
+/*        display: block;*/
+/*    }*/
+
+/*    .zagolovokOtzyv {*/
+/*        width: auto;*/
+/*    }*/
+
+/*    .textZagolovok {*/
+/*        font-size: 15px;*/
+/*        width: auto;*/
+/*    }*/
+
+/*    .footerZagolovok {*/
+/*        width: auto;*/
+/*    }*/
+
+/*    .footerZagolovokWrapper {*/
+/*        display: block;*/
+/*    }*/
+
+/*    .zakazhite {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .itemText {*/
+/*        width: auto;*/
+/*    }*/
+
+/*    .footerZagolovokText {*/
+/*        width: auto;*/
+/*        margin-bottom: 30px;*/
+/*    }*/
+
+/*    .adressBtn {*/
+/*        width: 166px;*/
+/*        height: 100px;*/
+/*    }*/
+
+/*    .adress {*/
+/*        width: auto;*/
+/*    }*/
+
+
+/*    .inlineSocial {*/
+/*        display: inline-block;*/
+/*        width: 40%;*/
+/*        margin-top: 30px;*/
+/*        margin-right: 20px;*/
+/*        margin-bottom: 30px;*/
+/*    }*/
+
+/*    .adressBtn {*/
+/*        padding: 0 0 0 0;*/
+/*    }*/
+
+/*    .textAdressBtn {*/
+/*        margin: 38px 40px 20px 20px;*/
+/*    }*/
+
+/*    .bottomAdress {*/
+/*        display: block;*/
+/*        margin-left: 25%;*/
+/*    }*/
+
+/*    .navigate {*/
+/*        position: fixed;*/
+/*        z-index: 10001;*/
+/*        width: 100%;*/
+/*        margin-top: -10px;*/
+/*        background-color: #F5F5F5;*/
+/*    }*/
+
+/*    .textLe {*/
+/*        width: auto;*/
+/*    }*/
+
+/*    .secondFlex {*/
+/*        display: block;*/
+/*        width: auto;*/
+/*        margin: auto;*/
+/*    }*/
+
+/*    .dopEsciz {*/
+/*        width: 90%;*/
+/*        height: 90%;*/
+/*        margin-top: auto;*/
+/*    }*/
+
+/*    .breacrumbs {*/
+/*        margin-top: 30px;*/
+/*        margin-bottom: 20px;*/
+/*    }*/
+
+/*    .iconSon {*/
+/*        margin-top: 30px;*/
+/*    }*/
+
+/*    .projectTextTwo {*/
+/*        width: 100%;*/
+/*        margin-top: 50px;*/
+/*    }*/
+
+/*    .adap {*/
+/*        margin-top: 70px;*/
+/*    }*/
+
+/*    .projectTitle {*/
+/*        margin-top: 0px;*/
+/*    }*/
+
+/*    .projectBottom {*/
+/*        display: block;*/
+/*    }*/
+
+/*    .projectAdaptiv {*/
+/*        width: 100%;*/
+/*        margin-top: 30px;*/
+/*    }*/
+
+/*    .poCentru {*/
+/*        margin-right: 0px;*/
+/*    }*/
+
+/*    iframe {*/
+/*        display: block;*/
+/*        width: 100%;*/
+/*        margin: 0 auto;*/
+/*        object-fit: contain;*/
+/*    }*/
+
+/*    .comfortFeature {*/
+/*        display: flex;*/
+/*        align-items: center;*/
+/*        height: 159px;*/
+/*        margin-right: 20px;*/
+/*        margin-bottom: 10px;*/
+/*        padding-left: 20px;*/
+/*        opacity: 1;*/
+/*        border: 1px solid rgb(117 116 114 / 24%);*/
+/*        border-radius: 5px;*/
+/*    }*/
+
+/*    .otzyvText {*/
+/*        overflow: hidden;*/
+/*        width: 198px;*/
+/*        margin-left: 15px;*/
+/*        text-overflow: ellipsis;*/
+/*    }*/
+
+/*    .otzyvyNav {*/
+/*        overflow: auto;*/
+/*        width: 100%;*/
+/*        margin-top: 40px;*/
+/*        -ms-overflow-style: none;*/
+/*        scrollbar-width: none;*/
+/*    }*/
+
+/*    .right_tile_wrap {*/
+/*        margin: auto;*/
+/*    }*/
+
+/*    .hide + label, .hide:checked + label {*/
+/*        top: 554px;*/
+/*    }*/
+
+/*    .otzyv {*/
+/*        margin: auto;*/
+/*    }*/
+/*}*/
 
 /*@media screen and (max-width: 550px){*/
 /*    h1 {*/
