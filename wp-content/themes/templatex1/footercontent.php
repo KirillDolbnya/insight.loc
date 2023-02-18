@@ -47,11 +47,10 @@
       </div>
 </div>
 
-
 <?php if(get_field('social', 'option')): $i= 0; ?>
 	<?php while(has_sub_field('social', 'option')): $i++; ?>
         <div class="footer__social">
-		    <a class="adress inlineSocial" href="<?=get_sub_field('soc_link')?>">
+		    <a class="inlineSocial" href="<?=get_sub_field('soc_link')?>">
 			    <span class="adressBtn">
 				    <span class="textAdressBtn">
 					    <?=get_sub_field('soc_name')?>

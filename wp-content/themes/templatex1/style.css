@@ -2383,7 +2383,202 @@ iframe{
         width: 371px;
         height: 220px;
     }
+    .left-block__individuality-content {
+        width: 373px;
+    }
+    .image__individualOne {
+        margin-top: 109px;
+        width: 371px;
+        height: 511px;
+    }
+    .individualOne {
+        width: 100%;
+        height: 100%;
+    }
+    .right-block__individuality {
+        width: 528px;
+        padding-top: 124px;
+    }
+    .secondFlex {
+         display: block;
+    }
+    .image__smallInter {
+        width: 222px;
+        height: 222px;
+    }
+    .smallInter {
+        width: 100%;
+        height: 100%;
+    }
+    .textLe {
+        margin-top: 40px;
+        width: 390px;
+    }
+    .block__image{
+        display: none;
+    }
+    .comfort {
+        margin-top: 521px;
+         padding: 0px 0px;
+    }
+    .wrapperComfort {
+        display: block;
+    }
 
+    .comfortFeature {
+        display: flex;
+        align-items: center;
+        height: 134px;
+        width: 473px;
+        justify-content: center;
+        /* margin-right: 20px; */
+        /* margin-bottom: 10px; */
+        /* padding-left: 20px; */
+        opacity: 1;
+        border: 1px solid #7574723d;
+        border-radius: 5px;
+    }
+    .smallWomanWrapper{
+        display: flex;
+        width: 425px;
+        margin-top: 69px;
+    }
+    .diplom {
+         margin-top: auto;
+    }
+    .commandInsight {
+        margin-top: 134px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .image__comanda {
+        width: 371px;
+        height: 261px;
+    }
+    .commandWoman{
+        width: 100%;
+        height: 100%;
+    }
+    .title_wrap {
+        width: 489px;
+        display: block;
+    }
+    .comandSmallText {
+        margin-top: 27px;
+        width: auto;
+    }
+    .footer {
+        margin-top: 141px;
+        padding-top: 146px;
+    }
+    .zagolovokOtzyv {
+        width: 300px;
+    }
+    .textZagolovok {
+        display: none;
+    }
+    .footer .slider {
+        display: flex;
+        justify-content: space-between;
+        margin-top: auto;
+    }
+    .footer .swiper-slide{
+        width: 470px !important;
+        height: 612px !important;
+        margin-right: 25px !important;
+    }
+    .otzyv {
+        width: 100%;
+        height: 100%;
+        margin-top: 5px;
+        /* margin-right: 15px; */
+        background-color: #F0F0F3;
+        padding: 58px;
+    }
+    .otzyvText {
+        /* line-height: 25.2px; */
+        margin-top: 11px;
+        width: 304px;
+        max-height: 178.2px !important;
+        /* margin-bottom: 65px; */
+        padding: 10px;
+        text-align: left;
+    }
+    .otzyvDate {
+        /* margin-left: 15px; */
+        margin-top: 36px;
+    }
+    .dostavka {
+        margin-top: 133px;
+        text-align: center;
+    }
+    .textDostavka {
+        line-height: 1.4;
+        width: 644px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 37px;
+        text-align: center;
+    }
+    .footer__site {
+        background-color: rgb(201 204 204);
+        padding-top: 135px;
+    }
+    .adressList {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        align-items: center;
+    }
+    .adress{
+        width: 650px;
+    }
+    .footer__social {
+        margin-left: 100px;
+    }
+    .adressBtn {
+        margin-top: 25px;
+        display: block;
+        box-sizing: border-box;
+        width: 324.36px;
+        height: 182.61px;
+        padding: 40px 0px 40px 40px;
+        transform: rotate(-30deg);
+        text-align: center;
+        text-decoration: none !important;
+        opacity: 0.5;
+        border: 1px solid #B6B5B2;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+    .footer__form {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 83px;
+    }
+    .zakazhite {
+        box-sizing: border-box;
+        width: 561.98px;
+        height: 328.98px;
+        margin-top: 40px;
+        margin-left: -1%;
+        padding: 70px 0px 40px 80px;
+        transform: rotate(-30deg);
+        text-align: center;
+        vertical-align: bottom;
+        opacity: 0.5;
+        border: 1px solid rgba(117, 116, 114, 0.5);
+        border-radius: 50%;
+        background-color: transparent;
+    }
+    .form__zakazhite {
+        margin-left: auto;
+        width: 341px;
+        outline: 1px solid rgb(255 0 0);
+    }
+    .footer__contacts {
+        padding-top: 115px;
+    }
 }
 /*    .tel {*/
 /*    }*/
