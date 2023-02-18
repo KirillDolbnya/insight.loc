@@ -79,6 +79,11 @@ p {
     letter-spacing: 0.3mm;
     color: #757472;
 }
+a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #757472;
+}
 
 .swiper {
     height: auto !important
@@ -525,7 +530,7 @@ body {
 .left__block{
     width: 913px;
 }
-.right__block{
+.rigth__block{
     width: 510px;
 }
 
@@ -547,11 +552,19 @@ body {
     /* margin-top: 319px; */
 }
 
-.winSmall {
+.winSmall_one{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+}
+.projectSmall_img{
+    width: 251px;
+    height: 251px;
+}
+
+.projectMiddle_img{
+    width: 251px;
 }
 
 .projectText {
@@ -570,10 +583,10 @@ body {
 
 .proMenu {
     line-height: 1.5;
-    float: right;
-    margin-top: -10px;
-    margin-bottom: 123px;
-    margin-left: auto;
+    /* float: right; */
+    /* margin-top: -10px; */
+    /* margin-bottom: 123px; */
+    /* margin-left: auto; */
     list-style-type: none;
     text-align: right;
     color: #757472 !important;
@@ -595,9 +608,10 @@ body {
 
 .strelka {
     display: inline-block;
+    margin-top: 105px;
     /* margin: 4px 2px; */
-    margin-bottom: 50px;
-    margin-left: auto;
+    /* margin-bottom: 172px; */
+    /* margin-left: auto; */
     text-align: center;
     text-decoration: none;
     border: 1px solid #E4E4E3;
@@ -655,7 +669,7 @@ body {
 }
 
 .dopCenter {
-    margin-top: 150px;
+    margin-top: 176px;
     outline: 1px solid red;
 }
 
@@ -2184,8 +2198,23 @@ iframe{
         justify-content: space-between;
         margin-top: 37px;
     }
-
-
+    .left__block {
+        width: 620px;
+    }
+    .rigth__block {
+        width: 337px;
+    }
+    .right__block__image {
+        display: flex;
+        align-items: flex-end;
+        height: 385px;
+    }
+    .winSmall_one {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
     .projectBig {
         width: 264px;
         min-height: 350px;
@@ -2200,7 +2229,16 @@ iframe{
         max-height: 206px;
         object-fit: cover;
     }
-
+    .dopCenter {
+        margin-top: 150px;
+        display: none;
+    }
+    .podKartinkoi {
+        display: flex;
+        justify-content: space-between;
+        /* margin-left: 5px; */
+        margin-top: 10px;
+    }
 }
 /*    .tel {*/
 /*    }*/

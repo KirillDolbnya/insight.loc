@@ -68,7 +68,7 @@
 
 
 						<?php if ($count % 3 == 1): ?>
-						<div class="rightscreen winSmall">
+						<div class="winSmall_one">
 							<!-- <p class="projectText"><?= get_the_excerpt() ?></p> -->
 							<p class="projectText">Посмотрите оригинальные проекты, которые команда создала для разных типов жилья.</p>
 							<a href="<?php the_permalink(); ?>" class="projectSmall project_item_link">
@@ -98,7 +98,7 @@
 											</div>
 										</a>
 									</div>
-									<div class="rightscreen winSmall">
+									<div class="winSmall_two">
 
 										<?php
 
