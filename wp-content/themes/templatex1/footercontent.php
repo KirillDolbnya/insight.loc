@@ -46,7 +46,7 @@
       <div class="itemText"><p><?=get_field('mail', 'option')?></p></div>
       </div>
 </div>
-
+<div class="social_wrap">
 <?php if(get_field('social', 'option')): $i= 0; ?>
 	<?php while(has_sub_field('social', 'option')): $i++; ?>
         <div class="footer__social">
@@ -60,7 +60,7 @@
         </div>
 <?php endwhile; ?>
 <?php endif; ?>
-
+</div>
 
     </div>
 <div>
