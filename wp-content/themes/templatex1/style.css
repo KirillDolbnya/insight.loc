@@ -5924,3 +5924,13 @@ iframe{
 /*    }*/
 
 /*}*/
+
+.newFon .swiper .swiper-pagination-bullet{
+    background:#757472;
+    opacity:1;
+}
+
+.newFon .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    outline:2px solid;
+    background:none;
+}
