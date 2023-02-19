@@ -2862,7 +2862,7 @@ iframe{
     .hello .topSmall {
         display: block;
         box-sizing: border-box;
-        width: 326.98px;
+        width: 320px;
         height: 163.98px;
         margin-top: 66px;
         margin-right: auto;
@@ -3434,6 +3434,9 @@ iframe{
         margin-top: 25px;
     }
 
+    .textSlider{
+        display: none;
+    }
 }
 /*    .tel {*/
 /*    }*/
