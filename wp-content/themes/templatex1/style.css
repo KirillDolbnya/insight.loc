@@ -2823,17 +2823,23 @@ iframe {
     }
 
     .order-curtains__wrap {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
     }
 
     .order-curtains__image {
         width: 320px;
         height: 374px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .from-order {
         width: 319px;
         margin-left: auto;
+        margin-right: auto;
         padding-top: 34px;
     }
 
@@ -2888,7 +2894,7 @@ iframe {
         width: 128px !important;
         margin-right: auto;
         margin-left: auto;
-        padding-top: 10px;
+        padding-top: 46px;
     }
 
     .hello {
@@ -3110,6 +3116,8 @@ iframe {
         width: 320px;
         height: 214px;
         margin-top: 53px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .more-about__right {
@@ -3260,6 +3268,7 @@ iframe {
         align-items: center;
         justify-content: space-around;
         margin-top: 75px;
+        flex-wrap: wrap;
     }
 
     .parent {
@@ -3344,7 +3353,7 @@ iframe {
     .commandInsight {
         display: flex;
         flex-flow: wrap;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         margin-top: 117px;
     }
 
@@ -3354,6 +3363,8 @@ iframe {
         width: 320px;
         height: 225px;
         margin-top: 52px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .title-about__comand .img_kursiv {
@@ -3466,7 +3477,7 @@ iframe {
 
     .textDostavka {
         line-height: 1.8;
-        width: 324px;
+        width: 100%;
         margin-top: 26px;
         margin-right: auto;
         margin-left: auto;
@@ -3528,6 +3539,8 @@ iframe {
         display: flex;
         justify-content: space-between;
         padding-top: 118px;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
     }
 
     .slogan__zakazhite {
@@ -3537,6 +3550,7 @@ iframe {
     .form__zakazhite {
         width: 319px;
         margin-left: auto;
+        margin-right: auto;
     }
 
     .footer__contacts {
@@ -3576,7 +3590,7 @@ iframe {
 
     .title_wrap {
         display: block;
-        width: 319px;
+        width: 100%;
     }
 
     .zagolovok {
@@ -3603,6 +3617,41 @@ iframe {
         align-items: center;
         justify-content: space-around;
         width: 100%;
+        flex-wrap: wrap;
+    }
+    .firstBlock {
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-top: 68px; */
+    }
+    .project-right {
+        display: none;
+        justify-content: space-between;
+        /* width: 510px; */
+        /* height: 200px; */
+    }
+    .winSmall_one {
+        display: none;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .test {
+        max-width: 100%;
+    }
+    .left__block {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .project_left {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rigth__block {
+        display: none;
     }
 }
 
@@ -6104,4 +6153,7 @@ iframe {
 .newFon .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
     outline: 2px solid;
     background: none;
+}
+.footer #otzyv.swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    margin-top: 20px;
 }
