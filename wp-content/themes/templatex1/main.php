@@ -242,7 +242,7 @@
 <div class="newFon block-uslugi">
 	<section class="site" id="uslugi">
 		<div class=" _anim-items _anim-no-hide">
-			<img src="<?= get_template_directory_uri() ?>/assests/images/services.svg">
+			<img class="img_kursiv" src="<?= get_template_directory_uri() ?>/assests/images/services.svg">
 			<h2><?= get_field('title_usl') ?></h2>
 			<p class="subuslugi"><?= get_field('subtitle_usl') ?></p>
 		</div>
@@ -332,7 +332,7 @@
 <!--		<div class="otstup"></div>-->
         <div class="more-about">
             <div class="more-about__title">
-	            <img src="<?= get_template_directory_uri() ?>/assests/images/exclusive.svg">
+	            <img class="img_kursiv" src="<?= get_template_directory_uri() ?>/assests/images/exclusive.svg">
 	            <h2><?= get_field('title_b') ?></h2>
             </div>
 		    <div class="more-about__content _anim-items _anim-no-hide screen_bolche">
@@ -455,7 +455,7 @@
 <section class="site _anim-items  _anim-no-hide">
     <div class="comfort">
 	    <div class="_anim-items _anim-no-hide">
-	    	<img src="<?= get_template_directory_uri() ?>/assests/images/Comfort.svg">
+	    	<img class="img_kursiv" src="<?= get_template_directory_uri() ?>/assests/images/Comfort.svg">
 	    	<h2><?= get_field('title_v') ?></h2>
 	    </div>
 	    <div class="wrapperComfort">
@@ -490,7 +490,7 @@
 		<div class="title__comanda">
 			<div class="title_wrap">
 				<div class="title-about__comand">
-					<img src="<?= get_template_directory_uri() ?>/assests/images/Team.svg">
+					<img class="img_kursiv" src="<?= get_template_directory_uri() ?>/assests/images/Team.svg">
 					<h2><?= get_field('title_k') ?></h2>
 					<p class="comandaSubtitle"><?= get_field('subtitle_k') ?></p>
 					<?= get_field('text1_k') ?>
