@@ -18,13 +18,18 @@
 					<p><?= get_field('subtitle_contact', 'option') ?></p>
 				</div>
 			</div>
+			<div class="adressCols">
+				<div class="adressItemWrapper">
+					<img class="itemIcon" src="<?= get_template_directory_uri() ?>/assests/images/adress.svg">
+					<div class="itemText"><p><?= get_field('adres', 'option') ?></p></div>
+				</div>
+				<div class="footerZagolovokText">
+					<p><?= get_field('subtitle_contact', 'option') ?></p>
+				</div>
+
+			</div>
 			<div class="adressList">
 				<div class="adress">
-					<div class="adressItemWrapper">
-						<img class="itemIcon" src="<?= get_template_directory_uri() ?>/assests/images/adress.svg">
-						<div class="itemText"><p><?= get_field('adres', 'option') ?></p></div>
-					</div>
-
 
 					<div class="adressItemWrapper">
 						<img class="itemIcon" src="<?= get_template_directory_uri() ?>/assests/images/phone.svg">

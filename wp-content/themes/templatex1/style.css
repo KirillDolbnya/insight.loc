@@ -2176,6 +2176,10 @@ iframe {
     width: 100%;
 }
 
+.adressCols .footerZagolovokText {
+    display: none;
+}
+
 @media screen and (max-width: 1650px) {
     .site {
         width: 960px;
@@ -2791,6 +2795,25 @@ iframe {
 
     .footer__contacts {
         padding-top: 115px;
+    }
+
+    .adressCols {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .footerZagolovokWrapper .footerZagolovokText {
+        display: none;
+    }
+
+    .adressCols .footerZagolovokText {
+        display: block;
+    }
+
+    .adressCols .adressItemWrapper {
+        margin-top: 0;
     }
 }
 
