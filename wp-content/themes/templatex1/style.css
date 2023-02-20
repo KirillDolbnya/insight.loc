@@ -82,7 +82,7 @@ p {
 }
 
 a {
-    font-size: 18px;
+    font-size: 15px;
     text-decoration: none;
     color: #757472;
 }
@@ -217,7 +217,7 @@ body {
     order: 1;
     margin-top: 30px;
     cursor: pointer;
-    border-bottom: 1px dotted;
+    /*border-bottom: 1px dotted;*/
 }
 
 .hello__readmore-text {
@@ -613,7 +613,7 @@ body {
 
 .strelka {
     display: inline-block;
-    margin-top: 105px;
+    margin-top: 215px;
     /* margin: 4px 2px; */
     /* margin-bottom: 172px; */
     /* margin-left: auto; */
@@ -640,7 +640,7 @@ body {
 
 .poCentru {
     /* float: right; */
-    width: 512px;
+    width: 472px;
     /* margin-right: 4%; */
     margin-top: 10px;
     margin-top: 10px;
@@ -649,7 +649,7 @@ body {
 .podKartinkoi {
     display: flex;
     justify-content: space-between;
-    /* margin-left: 5px; */
+    margin-top: 15px;
 }
 
 .projectBig {
@@ -677,7 +677,8 @@ body {
 }
 
 .dopCenter {
-    margin-top: 176px;
+    margin-top: 159px;
+    text-align: left;
 }
 
 .dopSl {
@@ -762,12 +763,11 @@ input {
 .slider {
     display: flex;
     justify-content: space-between;
-    margin-top: 16px;
+    margin-top: 10px;
 }
 
 .textSlider {
     width: 823px;
-    margin-top: 10px;
 }
 
 .textSliderOne {
@@ -811,6 +811,9 @@ input {
     background-color: transparent;
     Width: 143.75px;
     Height: 50px;
+}
+.brand-slider{
+    margin-top: 22px;
 }
 
 .brand {
@@ -981,14 +984,14 @@ iframe {
 
 
 .textLogo {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 100;
     line-height: 1.3;
     position: relative;
     left: -50px;
     /* margin-top: 10px; */
     display: block;
-    width: 254px;
+    width: 299px;
     margin-right: auto;
     margin-left: auto;
     transform: rotate(30deg);
@@ -1082,21 +1085,23 @@ iframe {
 
 
 .textServices {
+    text-align: left;
     font-family: 'Raleway';
     font-size: 36px;
     font-weight: 200;
     font-style: normal;
     line-height: 110%;
-    padding: 40px 0px 70px 60px;
+    padding: 30px 0px 15px 0px;
     transform: rotate(30deg);
     color: #757472;
+    margin-left: 229px;
 }
 
 .uslugi {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 70%;
+    width: 447px;
     height: 100%;
     margin-top: 0px;
 }
@@ -1108,16 +1113,16 @@ iframe {
     font-style: italic;
     line-height: 25px;
     width: 319px;
-    margin-top: 36px;
+    margin-top: 33px;
     list-style-type: none;
-    color: rgb(117 116 114);
+    color: #757472;
 }
 
 .uslugiSpisok li:hover {
     font-family: Gilroy;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    width: 80%;
+    width: 340px;
     margin-left: 45px;
     padding-left: 10px;
     list-style-image: url(http://slavamo0.beget.tech/wp-content/themes/templatex1/assests/images/Rectangle155.svg);
@@ -1125,6 +1130,9 @@ iframe {
     transition: .4s;
     color: #757472;
     background-repeat: no-repeat;
+}
+.uslugiSpisok li:active{
+    list-style-image: url(http://slavamo0.beget.tech/wp-content/themes/templatex1/assests/images/Rectangle155.svg);
 }
 
 .secondProj {
@@ -1150,7 +1158,7 @@ iframe {
     opacity: 0.8;
     color: rgb(117 116 114);
     border: 1px solid #B6B5B2;
-    border-color: rgb(117 120 120);
+    border-color: rgb(176 178 178);
     border-radius: 50%;
     background-color: transparent;
 }
@@ -1482,7 +1490,7 @@ iframe {
 }
 
 .smallWomanWrapper {
-    width: 256px;
+    width: 223px;
     /* display: flex; */
     margin-top: 42px;
     /* align-content: flex-end; */
@@ -1679,7 +1687,7 @@ iframe {
     max-height: 178.2px !important;
     margin-top: 11px;
     /* margin-bottom: 65px; */
-    padding: 10px;
+    padding: 10px 0 ;
     text-align: left;
 }
 
@@ -1719,7 +1727,7 @@ iframe {
 
 .footer__site {
     padding-top: 180px;
-    background-color: rgb(201 204 204);
+    background-color: #C9CCCC;
 }
 
 .footerZagolovokWrapper {
@@ -1738,7 +1746,7 @@ iframe {
 
 .adressItemWrapper {
     display: flex;
-    /* align-items: flex-start; */
+     align-items: flex-start;
     margin-top: 27px;
 }
 
@@ -1777,9 +1785,9 @@ iframe {
     text-align: center;
     text-decoration: none !important;
     opacity: 0.5;
-    border: 1px solid #B6B5B2;
+    border: 1px solid #a3a3a3;
     border-radius: 50%;
-    background-color: transparent;
+    background-color: #C9CCCC;
 }
 
 .adressBtn:hover {
@@ -1796,7 +1804,7 @@ iframe {
     margin: 40px 40px 20px 20px;
     transform: rotate(30deg);
     letter-spacing: 0.15em;
-    color: #757472;
+    color: #706b6b;
 }
 
 .footer__form {
@@ -1842,7 +1850,7 @@ iframe {
     text-align: center;
     vertical-align: bottom;
     opacity: 0.5;
-    border: 1px solid rgba(117, 116, 114, 0.5);
+    border: 1px solid rgb(90 88 88 / 50%);
     border-radius: 50%;
     background-color: transparent;
 }
@@ -1851,10 +1859,15 @@ iframe {
     width: 70%;
     margin-left: 70px;
     transform: rotate(30deg);
+    color: #333333;
+}
+.lastBtnText p {
+    color: #333333;
 }
 
 .lastBtnText h3 {
     margin-bottom: 5px;
+    color: #333333;
 }
 
 .short {
@@ -2115,6 +2128,7 @@ iframe {
 }
 
 .otzyvOver {
+    width: 963px;
     overflow: auto;
 }
 
@@ -2133,6 +2147,9 @@ iframe {
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     display: none;
+}
+.fotoUsluga{
+    width: 100%;
 }
 
 @media screen and (max-width: 1650px) {
@@ -2160,7 +2177,7 @@ iframe {
 
     p {
         font-family: Gilroy;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 100;
         line-height: 1.3;
         letter-spacing: 0.3mm;
@@ -2195,7 +2212,7 @@ iframe {
     }
 
     .foton {
-        width: 420px;
+        width: 380px;
         height: 450px;
         -webkit-animation-name: fadeIn;
         animation-name: fadeIn;
@@ -2300,7 +2317,7 @@ iframe {
     }
 
     .from-order {
-        width: 339px;
+        width: 357px;
         margin-left: auto;
         padding-top: 22px;
     }
@@ -2321,9 +2338,21 @@ iframe {
 
     .brand__container .swiper-slide {
         width: 325px !important;
-        margin-right: 8px;
+        margin-right: 0px !important;
     }
-
+    .brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 274px;
+        height: 250px;
+        /* margin-top: 10px; */
+        opacity: 0.9;
+        border: 1px solid #7574722b;
+        border-radius: 5px;
+        border-radius: 5px;
+    }
     .hello {
         margin-top: 151px;
     }
@@ -2333,6 +2362,9 @@ iframe {
         /* height: 306px; */
         margin-top: 20px;
     }
+    .boxPriv p{
+        font-size: 16px;
+    }
 
     .hello__readmore-btn {
         position: static;
@@ -2340,7 +2372,7 @@ iframe {
         order: 1;
         margin-top: 57px;
         cursor: pointer;
-        border-bottom: 1px dotted;
+        /*border-bottom: 1px dotted;*/
     }
 
     .hello__wrap-avatar {
@@ -2352,11 +2384,17 @@ iframe {
         margin-top: 121px;
         padding-top: 128px;
     }
-
     .block-uslugi__slogan {
         display: none;
     }
-
+    .uslugi {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 460px;
+        height: 100%;
+        margin-top: 0px;
+    }
     .order__zagolovok {
         margin-top: 121px;
     }
@@ -2385,7 +2423,7 @@ iframe {
 
     .button_zayavka {
         width: 469px;
-        margin-top: 60px;
+        margin-top: 38px;
         margin-left: auto;
     }
 
@@ -2416,6 +2454,31 @@ iframe {
 
     .more-about__right {
         margin-top: 74px;
+    }
+    .spisok_per {
+        font-family: 'Gilroy';
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 210%;
+        float: right;
+        margin-top: 60px;
+        transform: rotate(30deg);
+        text-align: left;
+        color: #757472;
+    }
+    .spisok_vtor {
+        font-family: 'Gilroy';
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 210%;
+        float: right;
+        margin-top: 20px;
+        margin-left: 50px;
+        transform: rotate(30deg);
+        text-align: left;
+        color: #757472;
     }
 
     .image__smallIzg {
@@ -2480,6 +2543,7 @@ iframe {
 
     .secondFlex {
         display: block;
+        margin-left: 153px;
     }
 
     .image__smallInter {
@@ -2502,7 +2566,7 @@ iframe {
     }
 
     .comfort {
-        margin-top: 521px;
+        margin-top: 200px;
         padding: 0px 0px;
     }
 
@@ -2577,6 +2641,7 @@ iframe {
         display: flex;
         justify-content: space-between;
         margin-top: auto;
+        margin-bottom: 20px;
     }
 
     .footer .swiper-slide {
@@ -2600,7 +2665,7 @@ iframe {
         max-height: 178.2px !important;
         margin-top: 11px;
         /* margin-bottom: 65px; */
-        padding: 10px;
+        padding: 10px 0;
         text-align: left;
     }
 
@@ -2673,11 +2738,11 @@ iframe {
 
     .zakazhite {
         box-sizing: border-box;
-        width: 561.98px;
-        height: 328.98px;
+        width: 555.98px;
+        height: 278.98px;
         margin-top: 40px;
         margin-left: -1%;
-        padding: 70px 0px 40px 80px;
+        padding: 35px 6px 40px 50px;
         transform: rotate(-30deg);
         text-align: center;
         vertical-align: bottom;
@@ -2956,15 +3021,15 @@ iframe {
         font-weight: 100;
         line-height: 1.3;
         position: relative;
-        left: -50px;
-        /* margin-top: 10px; */
+        left: -38px;
         display: block;
-        width: 254px;
+        width: 224px;
         margin-right: auto;
         margin-left: auto;
         transform: rotate(30deg);
-        letter-spacing: 0.3mm;
+        letter-spacing: .3mm;
         opacity: 90%;
+        /* margin-top: 25px; */
     }
 
     .hello__right {
@@ -3087,7 +3152,7 @@ iframe {
         opacity: 0.8;
         color: rgb(117 116 114);
         border: 1px solid #B6B5B2;
-        border-color: rgb(117 120 120);
+        border-color: rgb(176 178 178);
         border-radius: 50%;
         /* padding-bottom: 35px; */
         background-color: transparent;
@@ -3618,6 +3683,7 @@ iframe {
         justify-content: space-around;
         width: 100%;
         flex-wrap: wrap;
+        margin: auto;
     }
     .firstBlock {
         margin-left: auto;
@@ -3652,6 +3718,21 @@ iframe {
     }
     .rigth__block {
         display: none;
+    }
+    .textLogo {
+        font-size: 13px;
+        font-weight: 100;
+        line-height: 1.3;
+        position: relative;
+        left: 14px;
+        display: block;
+        width: 156px;
+        margin-right: auto;
+        margin-left: auto;
+        transform: rotate(30deg);
+        letter-spacing: .3mm;
+        opacity: 90%;
+        /* margin-top: 25px; */
     }
 
 }
