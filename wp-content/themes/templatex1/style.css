@@ -812,7 +812,8 @@ input {
     Width: 143.75px;
     Height: 50px;
 }
-.brand-slider{
+
+.brand-slider {
     margin-top: 22px;
 }
 
@@ -1085,16 +1086,16 @@ iframe {
 
 
 .textServices {
-    text-align: left;
     font-family: 'Raleway';
     font-size: 36px;
     font-weight: 200;
     font-style: normal;
     line-height: 110%;
+    margin-left: 229px;
     padding: 30px 0px 15px 0px;
     transform: rotate(30deg);
+    text-align: left;
     color: #757472;
-    margin-left: 229px;
 }
 
 .uslugi {
@@ -1131,7 +1132,8 @@ iframe {
     color: #757472;
     background-repeat: no-repeat;
 }
-.uslugiSpisok li:active{
+
+.uslugiSpisok li:active {
     list-style-image: url(http://slavamo0.beget.tech/wp-content/themes/templatex1/assests/images/Rectangle155.svg);
 }
 
@@ -1245,6 +1247,24 @@ iframe {
     color: #757472;
 
 
+}
+
+.spisok_per li {
+    position: relative;
+    padding-left: 10px;
+    list-style: none;
+}
+
+.spisok_per li:before {
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 0px;
+    display: block;
+    width: 4px;
+    height: 4px;
+    content: "";
+    border-radius: 100%;
+    background: #757472;
 }
 
 .spisok_vtor {
@@ -1687,7 +1707,7 @@ iframe {
     max-height: 178.2px !important;
     margin-top: 11px;
     /* margin-bottom: 65px; */
-    padding: 10px 0 ;
+    padding: 10px 0;
     text-align: left;
 }
 
@@ -1746,7 +1766,7 @@ iframe {
 
 .adressItemWrapper {
     display: flex;
-     align-items: flex-start;
+    align-items: flex-start;
     margin-top: 27px;
 }
 
@@ -1861,6 +1881,7 @@ iframe {
     transform: rotate(30deg);
     color: #333333;
 }
+
 .lastBtnText p {
     color: #333333;
 }
@@ -2128,8 +2149,8 @@ iframe {
 }
 
 .otzyvOver {
-    width: 963px;
     overflow: auto;
+    width: 963px;
 }
 
 .plusArrow {
@@ -2148,7 +2169,8 @@ iframe {
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     display: none;
 }
-.fotoUsluga{
+
+.fotoUsluga {
     width: 100%;
 }
 
@@ -2340,6 +2362,7 @@ iframe {
         width: 325px !important;
         margin-right: 0px !important;
     }
+
     .brand {
         display: flex;
         align-items: center;
@@ -2353,6 +2376,7 @@ iframe {
         border-radius: 5px;
         border-radius: 5px;
     }
+
     .hello {
         margin-top: 151px;
     }
@@ -2362,7 +2386,8 @@ iframe {
         /* height: 306px; */
         margin-top: 20px;
     }
-    .boxPriv p{
+
+    .boxPriv p {
         font-size: 16px;
     }
 
@@ -2384,9 +2409,11 @@ iframe {
         margin-top: 121px;
         padding-top: 128px;
     }
+
     .block-uslugi__slogan {
         display: none;
     }
+
     .uslugi {
         display: flex;
         flex-direction: column;
@@ -2395,6 +2422,7 @@ iframe {
         height: 100%;
         margin-top: 0px;
     }
+
     .order__zagolovok {
         margin-top: 121px;
     }
@@ -2455,6 +2483,7 @@ iframe {
     .more-about__right {
         margin-top: 74px;
     }
+
     .spisok_per {
         font-family: 'Gilroy';
         font-size: 16px;
@@ -2467,6 +2496,7 @@ iframe {
         text-align: left;
         color: #757472;
     }
+
     .spisok_vtor {
         font-family: 'Gilroy';
         font-size: 16px;
@@ -2897,14 +2927,14 @@ iframe {
     .order-curtains__image {
         width: 320px;
         height: 374px;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
     }
 
     .from-order {
         width: 319px;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
         padding-top: 34px;
     }
 
@@ -3181,8 +3211,8 @@ iframe {
         width: 320px;
         height: 214px;
         margin-top: 53px;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
     }
 
     .more-about__right {
@@ -3331,9 +3361,9 @@ iframe {
     .block__image {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: space-around;
         margin-top: 75px;
-        flex-wrap: wrap;
     }
 
     .parent {
@@ -3428,8 +3458,8 @@ iframe {
         width: 320px;
         height: 225px;
         margin-top: 52px;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
     }
 
     .title-about__comand .img_kursiv {
@@ -3614,8 +3644,8 @@ iframe {
 
     .form__zakazhite {
         width: 319px;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
     }
 
     .footer__contacts {
@@ -3680,45 +3710,53 @@ iframe {
     .secondFlex {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
-        flex-wrap: wrap;
         margin: auto;
     }
+
     .firstBlock {
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
         /* margin-top: 68px; */
     }
+
     .project-right {
         display: none;
         justify-content: space-between;
         /* width: 510px; */
         /* height: 200px; */
     }
+
     .winSmall_one {
         display: none;
         align-items: flex-start;
         flex-direction: column;
         justify-content: space-between;
     }
+
     .test {
         max-width: 100%;
     }
+
     .left__block {
         width: 100%;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
     }
+
     .project_left {
         display: block;
         width: 100%;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
     }
+
     .rigth__block {
         display: none;
     }
+
     .textLogo {
         font-size: 13px;
         font-weight: 100;
@@ -6236,6 +6274,7 @@ iframe {
     outline: 2px solid;
     background: none;
 }
+
 .footer #otzyv.swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin-top: 20px;
 }
