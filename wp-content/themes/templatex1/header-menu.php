@@ -10,7 +10,7 @@
             </label>
             <ul class="menu__box" id="menu__box">
               <li><a class="menu__item" href="/">Главная</a></li>
-              <li><a class="menu__item" href="/#brands"  >Бренды</a></li>
+              <li><a class="menu__item" href="/#brands"  >Проекты Insight</a></li>
               <li><a class="menu__item" href="/#hello" >Приветсвую вас!</a></li>
               <li><a class="menu__item" href="/#uslugi" >Услуги Insight</a></li>
               <li><a class="menu__item" href="/#comanda">Команда Insight</a></li>
