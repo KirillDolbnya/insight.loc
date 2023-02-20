@@ -1249,13 +1249,15 @@ iframe {
 
 }
 
-.spisok_per li {
+.spisok_per li,
+.spisok_vtor li {
     position: relative;
     padding-left: 10px;
     list-style: none;
 }
 
-.spisok_per li:before {
+.spisok_per li:before,
+.spisok_vtor li:before {
     position: absolute;
     top: calc(50% - 2px);
     left: 0px;
