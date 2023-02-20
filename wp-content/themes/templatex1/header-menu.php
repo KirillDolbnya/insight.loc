@@ -8,6 +8,7 @@
             <label class="menu__btn" for="menu__toggle">
               <span></span>
             </label>
+
             <ul class="menu__box" id="menu__box">
               <li><a class="menu__item" href="/">Главная</a></li>
               <li><a class="menu__item" href="/#brands"  >Проекты Insight</a></li>
