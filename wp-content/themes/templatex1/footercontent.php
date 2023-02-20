@@ -118,7 +118,7 @@
 		<img class="close" src="<?= get_template_directory_uri() ?>/assests/images/close.svg">
 		<div class="modal-review">
 			<div class="otzyv">
-				<div class="site">
+				<div class="site-modal">
 					<div class="otzyvAvatar">
 						<img class="avatarIMG" id="reviewAvatar" src="">
 					</div>
