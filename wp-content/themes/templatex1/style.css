@@ -105,6 +105,7 @@ body {
     width: 1620px;
     margin-right: auto;
     margin-left: auto;
+    outline: 1px solid red;
 }
 
 .dostavkaNav-item {
@@ -140,11 +141,11 @@ body {
     text-align: left;
 }
 
-.breadcrumbs {
-    font-size: 14px;
-    margin-top: 10px;
-    /*margin-bottom: -15px;*/
-}
+/*.breadcrumbs {*/
+/*    font-size: 14px;*/
+/*    margin-top: 10px;*/
+/*    !*margin-bottom: -15px;*!*/
+/*}*/
 
 .otstup50 {
     height: 50px;
@@ -162,9 +163,9 @@ body {
     opacity: 1;
 }
 
-.projjP {
-    margin-top: -5px;
-}
+/*.projjP {*/
+/*    margin-top: -5px;*/
+/*}*/
 
 .smallInter {
     /*margin-bottom: -5px;*/
@@ -2187,6 +2188,51 @@ iframe {
     display: none;
 }
 
+/*page bedroom*/
+.bedroom{
+    margin-top: 56px;
+}
+
+.bedroom__wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.breadcrumbs{
+    display: flex;
+    gap: 10px;
+}
+.bedroom-block__image{
+    width:920px;
+    height:708px;
+}
+.bedroom_image{
+    width: 100%;
+    height: 100%;
+}
+.block-info{
+    margin-top: 127px;
+}
+.block-info__wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.block-info__date p {
+    padding-top: 20px;
+}
+.block-info__text{
+    width: 582px;
+}
+
+.block-info__text p {
+    padding-top: 30px;
+}
+/*.block-gallery__images{*/
+/*    display: flex;*/
+/*    flex-wrap: nowrap;*/
+/*}*/
+
 @media screen and (max-width: 1650px) {
     .site {
         width: 960px;
@@ -2821,6 +2867,18 @@ iframe {
 
     .adressCols .adressItemWrapper {
         margin-top: 0;
+    }
+
+    /*page bedroom*/
+    .bedroom-block__image{
+        width: 480px;
+        height: 369px;
+    }
+    .block-info__text {
+        width: 521px;
+    }
+    .button-bedroom{
+        margin-top: 45px;
     }
 }
 
@@ -3819,6 +3877,46 @@ iframe {
         letter-spacing: .3mm;
         opacity: 90%;
     }
+
+
+    /*page bedroom*/
+
+    .bedroom__wrap{
+        display: flex;
+        align-items: center;
+        flex-flow: wrap;
+        justify-content: space-between;
+        margin-top: 17px;
+
+    }
+    .bedroom-left__block{
+        order: 2;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bedroom-right__block{
+        order: 1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bedroom-block__image{
+        width: 320px;
+        height: 343px;
+    }
+    .button-bedroom{
+        margin-top: 45px;
+    }
+    .block-info__wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .block-info__right{
+        margin-top: 80px;
+    }
+    .block-info__text{
+        width: 100%;
+    }
+
 
 }
 
