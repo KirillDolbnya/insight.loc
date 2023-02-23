@@ -2281,6 +2281,9 @@ iframe {
     width: 100%;
     height: auto;
 }
+.item_gallery_2{
+    width: 100%;
+}
 
 
 @media screen and (max-width: 1650px) {

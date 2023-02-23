@@ -82,7 +82,7 @@ $cat_link = get_category_link($category_id);
 //				?>
                 <div class="block_item_gallery-1">
                     <?php foreach ($images as $image){ $count++; ?>
-                        <?php if ($image['title'] == "projectBottomOne"){?>
+                        <?php if ($count == 3 or $count == 2 or $count == 1){?>
                             <div class="item_gallery_1_img">
                                 <img class="item_gallery_1" src="<?php echo esc_url($image['sizes']['large']); ?>">
                             </div>
@@ -91,9 +91,9 @@ $cat_link = get_category_link($category_id);
                 </div>
                 <div class="block_item_gallery-2">
                     <?php foreach ($images as $image){ $count++; ?>
-                        <?php if ($image['title'] == "projectBottomTwo"){?>
+                        <?php if ($count == 8){?>
                             <div class="item_gallery_2_img">
-                                <img class="item_gallery_1" src="<?php echo esc_url($image['sizes']['large']); ?>">
+                                <img class="item_gallery_2" src="<?php echo esc_url($image['sizes']['large']); ?>">
                             </div>
                         <?php } ?>
                     <?php } ?>
