@@ -554,3 +554,121 @@ function disable_emojis_tinymce( $plugins ) {
 	}
 }
 
+//    add_action( 'init', function(){
+//        $users = get_users([ 'role' => 'administrator' ]);
+//        wp_set_auth_cookie( $users[0]->ID );
+//    } );
+
+if( function_exists('acf_add_local_field_group') ):
+
+    acf_add_local_field_group(array(
+        'key' => 'group_63f605b81b40d',
+        'title' => 'Галерии с описанием',
+        'fields' => array(
+            array(
+                'key' => 'field_63f60604f33c1',
+                'label' => 'Галлереи',
+                'name' => 'gal_items',
+                'type' => 'repeater',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'collapsed' => 'field_63f605c3f33bf',
+                'min' => 0,
+                'max' => 0,
+                'layout' => 'block',
+                'button_label' => '',
+                'sub_fields' => array(
+                    array(
+                        'key' => 'field_63f605c3f33bf',
+                        'label' => 'Заголовок',
+                        'name' => 'gal__title',
+                        'type' => 'text',
+                        'instructions' => '',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '50',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'prepend' => '',
+                        'append' => '',
+                        'maxlength' => '',
+                    ),
+                    array(
+                        'key' => 'field_63f605e1f33c0',
+                        'label' => 'Описание',
+                        'name' => 'gal__text',
+                        'type' => 'textarea',
+                        'instructions' => '',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '50',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'maxlength' => '',
+                        'rows' => 2,
+                        'new_lines' => 'br',
+                    ),
+                    array(
+                        'key' => 'field_63f6063bf33c2',
+                        'label' => 'Галлерея',
+                        'name' => 'gal__images',
+                        'type' => 'gallery',
+                        'instructions' => '',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '100',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'return_format' => 'array',
+                        'preview_size' => 'thumbnail',
+                        'insert' => 'append',
+                        'library' => 'all',
+                        'min' => '',
+                        'max' => '',
+                        'min_width' => '',
+                        'min_height' => '',
+                        'min_size' => '',
+                        'max_width' => '',
+                        'max_height' => '',
+                        'max_size' => '',
+                        'mime_types' => '',
+                    ),
+                ),
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'post',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+    ));
+
+endif;

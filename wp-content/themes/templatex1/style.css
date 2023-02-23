@@ -2232,6 +2232,56 @@ iframe {
 /*    display: flex;*/
 /*    flex-wrap: nowrap;*/
 /*}*/
+.block-gallery{
+    margin-top: 150px;
+}
+
+
+.post__gallery-wrap{
+    margin-top: 50px;
+    padding-bottom: 150px;
+}
+.post__gallery{
+    padding-top: 50px;
+}
+.post__gallery_title{
+    width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.post__gallery-block{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.post__gallery-block img{
+    width: 530px;
+    height: 354px;
+}
+.block_item_gallery-1{
+    /*margin-top: 30px;*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item_gallery_1_img {
+    width: 530px;
+    height: 354px;
+}
+.item_gallery_1{
+    width: 100%;
+    height: 100%;
+}
+
+.block_item_gallery-2{
+    margin-top: 20px;
+}
+.item_gallery_2_img{
+    width: 100%;
+    height: auto;
+}
+
 
 @media screen and (max-width: 1650px) {
     .site {
@@ -2879,6 +2929,29 @@ iframe {
     }
     .button-bedroom{
         margin-top: 45px;
+    }
+    .post__gallery-block img{
+       width: 473px;
+        height: 317px;
+    }
+    .post__gallery-block img:last-child{
+        display: none;
+    }
+    .post__gallery_title{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item_gallery_1_img:last-child{
+        display: none;
+    }
+    .item_gallery_1_img {
+        width: 473px;
+        height: 317px;
+    }
+    .item_gallery_1{
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -3916,8 +3989,23 @@ iframe {
     .block-info__text{
         width: 100%;
     }
-
-
+    .post__gallery-block img{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
+        width: 320px;
+        height: 214px;
+    }
+    .item_gallery_1_img {
+        margin-right: auto;
+        margin-left: auto;
+        width: 320px;
+        height: 214px;
+    }
+    .item_gallery_1{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /*    .tel {*/
@@ -6422,4 +6510,10 @@ iframe {
 
 .footer #otzyv.swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin-top: 20px;
+}
+/*.privacy-policy{*/
+/*    list-style: unset;*/
+/*}*/
+.privacy-policy__wrap{
+    padding: 70px 0px;
 }

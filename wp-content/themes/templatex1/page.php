@@ -34,13 +34,14 @@ get_header(); ?>
 		dynamic_sidebar( 'bread_widget' );
 		endif;
 	?>
+    <?php
+    the_title( '<h1 class="woo_h1">', '</h1>' );
+    ?>
 </div>
-<?php 
-	the_title( '<h1 class="woo_h1">', '</h1>' );
-?>
 </section>
 
-
+<section class="site">
+    <div class="privacy-policy__wrap">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <?php the_content(); ?>
 <?php endwhile; endif; ?>
@@ -54,12 +55,16 @@ get_header(); ?>
     );
 $parent = new WP_Query( $args );
 if ( $parent->have_posts() ) : ?>
-	<ul class="pages_list">
-       <?php while ( $parent->have_posts() ) : $parent->the_post(); ?><li>
-	   <a href="<?php the_permalink() ?>"><span><?php the_title(); ?></span></a>
-	   </li><?php endwhile; ?>
+	<ul class="pages_list privacy-policy">
+        <li class="list__privacy">
+       <?php while ( $parent->have_posts() ) : $parent->the_post(); ?>
+
+	        <a href="<?php the_permalink() ?>"><span><?php the_title(); ?></span></a>
+	   <?php endwhile; ?>
+        </li>
 	</ul>
 <?php endif; wp_reset_query(); ?>
-</div>
+    </div>
+</section>
 
 <?php get_footer();
