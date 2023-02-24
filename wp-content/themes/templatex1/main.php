@@ -135,18 +135,12 @@
 
 						<?php $count2++;
 						$count++; endforeach; ?><?php wp_reset_postdata(); ?><?php endif; ?>
-
-
 				</div>
 				<div class="swiper-paginations"></div>
 			</div>
-
-
 		</div>
-
 	</div>
-
-</section><!-- <div class="otstup"></div> --><!-- <div class="otstup"></div> -->
+</section>
 <div class="order-curtains">
 <section class="site _anim-items _anim-no-hide">
 	<div class="order-curtains__wrap">
