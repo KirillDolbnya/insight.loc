@@ -6,25 +6,26 @@
  */
 get_header(); ?>
 <style>
-@media screen and (max-width: 500px){
-.menu__btn {
-	top:20px;	
-}
-.woo_h1 {
-  margin-top: 120px;
-  margin-left: 140px;
-  font-size: 70px;
-  width: 30%;
-}
-.breadcrumbs {
-	margin-top: 70px;
-}
-.hamburger-menu {
-    padding-bottom: 0px;
-    margin-top: -80px;
-	background-color: #F5F5F5;
+/*@media screen and (max-width: 980px){*/
+/*.menu__btn {*/
+/*	top:20px;*/
+/*}*/
+/*.woo_h1 {*/
+/*  margin-top: 120px;*/
+/*  margin-left: 140px;*/
+/*  font-size: 30px;*/
+/*  width: 30%;*/
+/*}*/
+/*.breadcrumbs {*/
+/*	margin-top: 70px;*/
+/*}*/
+/*.hamburger-menu {*/
+/*    padding-bottom: 0px;*/
+/*    margin-top: -80px;*/
+/*	background-color: #F5F5F5;*/
 
-}
+/*}*/
+/*}*/
 </style>	
 <div class="container entry_content">
 <div class="woo_bread_wrap bread_main_wrap">
@@ -35,7 +36,7 @@ get_header(); ?>
 		endif;
 	?>
     <?php
-    the_title( '<h1 class="woo_h1">', '</h1>' );
+    the_title( '<h1 class="title_privacy-policy">', '</h1>' );
     ?>
 </div>
 </section>
@@ -46,6 +47,7 @@ get_header(); ?>
 <?php the_content(); ?>
 <?php endwhile; endif; ?>
 
+
 	<?php $args = array(
     'post_type'      => 'page',
     'posts_per_page' => -1,
@@ -54,11 +56,10 @@ get_header(); ?>
     'orderby'        => 'menu_order'
     );
 $parent = new WP_Query( $args );
-if ( $parent->have_posts() ) : ?>
-	<ul class="pages_list privacy-policy">
+if ( $parent->have_posts() ) :?>
+	<ul class="privacy-policy">
         <li class="list__privacy">
        <?php while ( $parent->have_posts() ) : $parent->the_post(); ?>
-
 	        <a href="<?php the_permalink() ?>"><span><?php the_title(); ?></span></a>
 	   <?php endwhile; ?>
         </li>
