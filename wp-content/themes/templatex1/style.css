@@ -2132,8 +2132,11 @@ iframe {
 }
 
 .modalBtn {
+    display: flex;
     width: 150px;
     height: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal p {
