@@ -76,7 +76,7 @@
 
 					</div>
 
-					<div class="form__zakazhite">
+					<div class="form__zakazhite" id="zayavka">
 						<div class="form__zakazhite__wrap">
 							<h2>Оставить заявку</h2>
 							<div class="textSlider"></div>

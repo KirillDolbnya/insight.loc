@@ -30,7 +30,7 @@
 </section>
 
 <div class="otstup"></div>
-<section class="site projects_box_main">
+<section class="site projects_box_main" id="projects">
 	<div class="_anim-items _anim-no-hide">
 		<h2 class="subZagolovok"><?= get_field('project_title') ?></h2>
 		<p class="titleSubtitle"><?= get_field('project_subtitle') ?></p>
@@ -548,7 +548,7 @@
 			<div class="swiper-pagination-rev pagin-wrapp"></div>
 		</div>
 		<div class="otstup" name="dostavka"></div>
-		<div class="dostavka _anim-items _anim-no-hide">
+		<div class="dostavka _anim-items _anim-no-hide" id="dostavka">
 			<h2><?= get_field('title_do', 'option') ?></h2>
 			<div class="dostavkaNav">
 				<?php if (get_field('do', 'option')): $i = 0; ?><?php while (has_sub_field('do', 'option')): $i++; ?>
