@@ -2294,6 +2294,8 @@ iframe {
     line-height: 1.3;
     letter-spacing: 0.3mm;
     color: #757472;
+    list-style-position:inside;
+    margin-left: 12px;
 }
 .title_privacy-policy {
     margin-top: 78px;
