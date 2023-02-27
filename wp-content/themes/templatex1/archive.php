@@ -20,22 +20,23 @@ $idofcat = $maincategory->term_id;
 $currentCatID = $maincategory->term_id;
 ?>
 
+<div class="projects">
 <section class="site">
- <div class="otstup"></div> 
-
+<!-- <div class="otstup"></div> -->
+        <div class="bedroom__nav">
 		<?php
 			if ( is_active_sidebar( 'bread_widget' ) ) : 
 			dynamic_sidebar( 'bread_widget' );
 			endif;
 		?>
-
+        </div>
 
 <?php the_archive_title( '<h1 class="woo_h1 archive_title_h1">', '</h1>' ); ?>
 
-<div class="container">
+<div class="projects__wrap">
 
 
-<?
+<?php
 $terms = get_field('rubric_list', get_option('page_on_front')); 
 $count = 0;
 $current_cat_id  = get_query_var('cat');
@@ -58,7 +59,7 @@ $count_row = count($args)+1;
   <?php if($count % 4 == 1): ?>
           <div class="swiper-slide">
           <div class="itc-slider__item">
-          <div class="screen">
+          <div class="block__projects">
 
               <div class="rightscreen">
                 <div class="screen">
@@ -92,29 +93,29 @@ $count_row = count($args)+1;
 				
 			<div class="rightscreen winSmall marginleft object_menu_fix">
       <ul class="proMenu">
-	  
+
 	  <? if($currentCatID == 1) { ?>
       <li style="color: #757472 !important;">Все проекты</li>
 	  <? } else { ?>
-		<li> 
+		<li>
 			<a href="/category/projects/">
 				Все проекты
 			</a>
 		</li>
 	  <? } ?>
 	  
-    <?php foreach( $terms as $term ): ?>
-	<? if($term->term_id != $currentCatID) { ?>
-		<li> 
-			<a href="<?php echo esc_url( get_term_link( $term ) ); ?>">
-				<?php echo esc_html( $term->name ); ?>
-			</a>
-		</li>
-	<? } else { ?>
-		<li style="color: #00000 !important;"><?php echo esc_html( $term->name ); ?></li>
-	<? }  ?>
-		<?php endforeach; ?>
-    </ul>
+<!--    --><?php //foreach( $terms as $term ): ?>
+<!--	--><?// if($term->term_id != $currentCatID) { ?>
+<!--		<li> -->
+<!--			<a href="--><?php //echo esc_url( get_term_link( $term ) ); ?><!--">-->
+<!--				--><?php //echo esc_html( $term->name ); ?>
+<!--			</a>-->
+<!--		</li>-->
+<!--	--><?// } else { ?>
+<!--		<li style="color: #00000 !important;">--><?php //echo esc_html( $term->name ); ?><!--</li>-->
+<!--	--><?// }  ?>
+<!--		--><?php //endforeach; ?>
+<!--    </ul>-->
 			<btn class="strelka itc-slider__btn itc-slider__btn_next"><img src="<?=get_template_directory_uri()?>/assests/images/Rectangle 188.svg"><p>Тяните</p></btn>
 			</div>
 			</div>
@@ -122,7 +123,7 @@ $count_row = count($args)+1;
          </div>
 	<?php endif ?>
 	
-	<div style="height:60px"></div>
+<!--	<div style="height:60px"></div>-->
 	<?php if($count % 4 == 3): ?>
 	<div class="screen">
 		
@@ -204,9 +205,8 @@ query_posts($args);
   </div>
 </div>
 </section>
+</div>
 
 
-<div class="otstup"></div>
-<div class="otstup"></div>
 <?php
 get_footer();
