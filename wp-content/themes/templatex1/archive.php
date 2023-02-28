@@ -44,7 +44,6 @@ $currentCatID = $maincategory->term_id;//ID текущей категории
 						'rubric_list', //получить поле
 						get_option('page_on_front')//id главной страницы
 				);
-				$count = 0;//количество по умолчанию
 				$current_cat_id = get_query_var('cat');//ID текущей страницы
 				$showposts = 100;
 				$args = array('cat' => $current_cat_id, 'orderby' => 'post_date', 'order' => 'DESC', 'posts_per_page' => $showposts, 'post_status' => 'publish');//настройка выборки записей
@@ -61,7 +60,7 @@ $currentCatID = $maincategory->term_id;//ID текущей категории
 
 							// Разбивка на блоки в цикле
 							$count_item = 0;//начало счетчика
-							$col_item = 2;//количество элементов в блоке
+							$col_item = 3;//количество элементов в блоке
 							$col_start = '<div class="swiper-slide"> <div class="itc-slider__item"> <div class="block__projects">'; //Начало блока
 							$col_end = '</div> </div> </div><!--							.slide -->'; //Конец блока
 
@@ -80,8 +79,6 @@ $currentCatID = $maincategory->term_id;//ID текущей категории
 										$count_item++;
 									}
 									$count++;
-
-
 									?>
 
 									<!--											elem -->
@@ -92,7 +89,6 @@ $currentCatID = $maincategory->term_id;//ID текущей категории
 											<a href="<?php the_permalink(); ?>" class="projectsAdapt fotoAdaptiv_1 project_item_link">
 												<img class="fotoAdaptiv fotoONE" src="<?= get_the_post_thumbnail_url() ?>">
 												<div class="podKartinkoi">
-													<?php var_dump($count); ?>
 													<p><?php the_title(); ?></p>
 													<img class="plusArrow" src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 178.svg">
 												</div>
