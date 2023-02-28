@@ -132,9 +132,9 @@ body {
     background: #757472;
 }
 
-.archive_title_h1 {
-    margin-bottom: -3%;
-}
+/*.archive_title_h1 {*/
+/*    margin-bottom: -3%;*/
+/*}*/
 
 .textDostavka p {
     display: none;
@@ -2301,6 +2301,24 @@ iframe {
     margin-top: 78px;
     font-size: 70px;
     width: 700px;
+}
+
+/*page projects*/
+.pc-slider{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.block__projects{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1358px;
+    gap: 60px;
+}
+.projects__image{
+    width: 649px;
+    height: 433px;
 }
 
 

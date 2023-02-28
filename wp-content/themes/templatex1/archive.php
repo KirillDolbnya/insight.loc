@@ -52,7 +52,7 @@ $currentCatID = $maincategory->term_id;//ID текущей категории
 				?>
 
 
-				<div class="pc-slider projects_box_main">
+				<div class="pc-slider">
 					<div class="swiper mySwiper">
 						<div class="swiper-wrapper">
 
@@ -60,7 +60,7 @@ $currentCatID = $maincategory->term_id;//ID текущей категории
 
 							// Разбивка на блоки в цикле
 							$count_item = 0;//начало счетчика
-							$col_item = 3;//количество элементов в блоке
+							$col_item = 4;//количество элементов в блоке
 							$col_start = '<div class="swiper-slide"> <div class="itc-slider__item"> <div class="block__projects">'; //Начало блока
 							$col_end = '</div> </div> </div><!--							.slide -->'; //Конец блока
 
@@ -86,8 +86,8 @@ $currentCatID = $maincategory->term_id;//ID текущей категории
 									<div class="rightscreen">
 										<div class="screen">
 
-											<a href="<?php the_permalink(); ?>" class="projectsAdapt fotoAdaptiv_1 project_item_link">
-												<img class="fotoAdaptiv fotoONE" src="<?= get_the_post_thumbnail_url() ?>">
+											<a href="<?php the_permalink(); ?>" class="">
+												<img class="projects__image" src="<?= get_the_post_thumbnail_url() ?>">
 												<div class="podKartinkoi">
 													<p><?php the_title(); ?></p>
 													<img class="plusArrow" src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 178.svg">
