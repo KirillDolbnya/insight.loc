@@ -2333,6 +2333,9 @@ iframe {
 .archive__pagination{
     display: none;
 }
+.bedroom__nav{
+    margin-top: 20px;
+}
 
 
 @media screen and (max-width: 1650px) {
