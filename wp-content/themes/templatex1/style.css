@@ -2309,6 +2309,16 @@ iframe {
     align-items: flex-start;
     justify-content: space-between;
 }
+.projects__wrap{
+    margin-top: 44px;
+    margin-bottom: 194px;
+}
+.title__archive{
+    margin-top: 66px;
+}
+.archive_title_h1{
+    margin-top: 10px;
+}
 .block__projects{
     display: flex;
     justify-content: space-between;
@@ -2319,6 +2329,9 @@ iframe {
 .projects__image{
     width: 649px;
     height: 433px;
+}
+.archive__pagination{
+    display: none;
 }
 
 
@@ -3005,6 +3018,33 @@ iframe {
         font-size: 50px;
         width: 500px;
     }
+    /*page projects*/
+    .pc-slider{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .projects__wrap{
+        margin-top: 30px;
+        margin-bottom: 145px;
+    }
+    .title__archive{
+        margin-top: 66px;
+    }
+    .archive_title_h1{
+        margin-top: 10px;
+    }
+    .block__projects{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 790px;
+        gap: 30px;
+    }
+    .projects__image{
+        width: 380px;
+        height: 253px;
+    }
 }
 
 @media screen and (max-width: 980px) {
@@ -3632,7 +3672,7 @@ iframe {
         width: 31px;
         height: 16px;
         margin-top: 41px;
-        margin-left: 29px;
+        /*margin-left: 29px;*/
     }
 
     .iconText {
@@ -4071,6 +4111,44 @@ iframe {
         margin-top: 78px;
         font-size: 30px;
         width: 300px;
+    }
+    /*page projects*/
+    .pc-slider{
+        display: block;
+    }
+    .projects__wrap{
+        margin-top: 30px;
+        margin-bottom: 145px;
+    }
+    .title__archive{
+        margin-top: 66px;
+    }
+    .archive_title_h1{
+        margin-top: 10px;
+    }
+    .block__projects {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: inherit;
+        width: auto;
+        gap: 20px;
+    }
+    .projects__image{
+        width: 259px;
+        height: 200px;
+    }
+    .projects__wrap .strelka{
+        display: none;
+    }
+    .projects__wrap .swiper-slide{
+        width: auto !important;
+    }
+    .archive__pagination{
+        display: block;
+        width: 128px !important;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 46px;
     }
 }
 

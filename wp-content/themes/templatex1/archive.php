@@ -32,9 +32,10 @@ $currentCatID = $maincategory->term_id;//ID текущей категории
 				endif;
 				?>
 			</div>
-
-			<?php the_archive_title('<h1 class="woo_h1 archive_title_h1">', '</h1>'); ?>
-
+            <div class="title__archive">
+                <img class="iconSon" src="<?= get_template_directory_uri() ?>/assests/images/star.svg">
+			    <?php the_archive_title('<h1 class="woo_h1 archive_title_h1">', '</h1>'); ?>
+            </div>
 			<div class="projects__wrap">
 
 
@@ -105,7 +106,9 @@ $currentCatID = $maincategory->term_id;//ID текущей категории
 					</div>
 					<btn class="strelka itc-slider__btn itc-slider__btn_next">
 						<img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 188.svg">
-						<p>Тяните</p></btn>
+						<p>Тяните</p>
+                    </btn>
+                    <div class="swiper-paginations swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
 				</div>
 
 
