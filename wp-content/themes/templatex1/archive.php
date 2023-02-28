@@ -59,24 +59,30 @@ $currentCatID = $maincategory->term_id;//ID текущей категории
 
 							<?php
 
-							$htmlStart = '<div class="swiper-slide">
-	<div class="itc-slider__item">
-		<div class="block__projects">';
+							// Разбивка на блоки в цикле
+							$count_item = 0;//начало счетчика
+							$col_item = 2;//количество элементов в блоке
+							$col_start = '<div class="swiper-slide"> <div class="itc-slider__item"> <div class="block__projects">'; //Начало блока
+							$col_end = '</div> </div> </div><!--							.slide -->'; //Конец блока
 
-							$htmlEnd = '</div>
-	</div>
-</div><!--							.slide -->';
 							if (have_posts()) :
 
-								echo $htmlStart;
 								while (have_posts()) :
 									the_post();
+
+									if ($count_item === 0) {
+										echo $col_start;
+										$count_item++;
+									} elseif ($count_item === $col_item) {
+										$count_item = 1;
+										echo $col_end . $col_start;
+									} else {
+										$count_item++;
+									}
 									$count++;
 
-									if ($count % 5 == 0) {
-										echo $htmlEnd . $htmlStart;
-									} ?>
 
+									?>
 
 									<!--											elem -->
 
@@ -94,12 +100,10 @@ $currentCatID = $maincategory->term_id;//ID текущей категории
 
 										</div>
 									</div>
-
 									<!--											.elem -->
 
-
 								<?php endwhile;
-								echo $htmlEnd;
+								echo $col_end;
 							else: ?><?php endif; ?>
 						</div>
 					</div>
