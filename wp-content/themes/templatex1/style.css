@@ -2361,6 +2361,15 @@ iframe {
 .block-info__right{
     width: 922px;
 }
+.bedroom__nav a {
+    font-size: 14px;
+}
+.taxonomy {
+    font-size: 14px;
+}
+.bedroom__nav .post{
+    font-size: 14px;
+}
 
 @media screen and (max-width: 1650px) {
     .site {
