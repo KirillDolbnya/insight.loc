@@ -97,6 +97,13 @@ $cat_link = get_category_link($category_id);
                             </div>
                         <?php } ?>
                     <?php } ?>
+                    <?php foreach ($images as $image){ $count++; ?>
+                        <?php if ($count == 18){?>
+                            <div class="item_gallery_3_img">
+                                <img class="item_gallery_3" src="<?php echo esc_url($image['sizes']['large']); ?>">
+                            </div>
+                        <?php } ?>
+                    <?php } ?>
                 </div>
 
 <!--                            --><?php //if ($count == 1) { ?>

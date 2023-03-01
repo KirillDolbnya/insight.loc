@@ -105,7 +105,9 @@
 										if ($terms): ?>
 
 											<ul class="proMenu">
-												<li style="">Все проекты</li>
+												<li>
+                                                    <a href="https://insight-art.ru/category/projects/">Все проекты</a>
+                                                </li>
 												<?php foreach ($terms as $term): ?>
 <!--													<li>-->
 <!--														<a class="dopoln" href="--><?php //echo esc_url(get_term_link($term)); ?><!--">--><?php //echo esc_html($term->name); ?><!--</a>-->

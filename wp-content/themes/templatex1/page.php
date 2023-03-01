@@ -30,11 +30,13 @@ get_header(); ?>
 <div class="container entry_content">
 <div class="woo_bread_wrap bread_main_wrap">
 <section class="site">
-	<?php
-		if ( is_active_sidebar( 'bread_widget' ) ) : 
-		dynamic_sidebar( 'bread_widget' );
-		endif;
-	?>
+    <div class="bedroom__nav">
+	    <?php
+	    	if ( is_active_sidebar( 'bread_widget' ) ) :
+	    	dynamic_sidebar( 'bread_widget' );
+	    	endif;
+	    ?>
+    </div>
     <?php
     the_title( '<h1 class="title_privacy-policy">', '</h1>' );
     ?>
