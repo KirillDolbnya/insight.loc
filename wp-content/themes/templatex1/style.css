@@ -3931,6 +3931,7 @@ iframe {
         border: 1px solid #B6B5B2;
         border-radius: 50%;
         background-color: transparent;
+        justify-content: center;
     }
 
     .footer__form {
