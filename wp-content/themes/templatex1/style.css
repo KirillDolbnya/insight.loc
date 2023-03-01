@@ -3292,6 +3292,7 @@ iframe {
         justify-content: center;
         margin-top: 35px;
         height: 51px;
+        gap: 20px;
     }
 
     .hello {
@@ -4257,23 +4258,23 @@ iframe {
         opacity: 1;
         background: #C9CCCC;
     }
+    .swiper-pagination-review .swiper-pagination-bullet-active{
+        border: 1px solid #C9CCCC !important;
+        background: none !important;
+        width: 8px !important;
+        height: 8px !important;
+    }
+     .swiper-pagination-review .swiper-pagination-bullet{
+        width: 5px;
+        height: 5px;
+        opacity: 1;
+        background: #C9CCCC;
+    }
     .swiper-paginations{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    /*.swiper .swiper-paginations .swiper-pagination-bullet-active {*/
-    /*    border: 1px solid #C9CCCC;*/
-    /*    background: none;*/
-    /*    width: 8px;*/
-    /*    height: 8px;*/
-    /*}*/
-    /*.swiper .swiper-paginations .swiper-pagination-bullet{*/
-    /*    width: 5px;*/
-    /*    height: 5px;*/
-    /*    opacity: 1;*/
-    /*    background: #C9CCCC;*/
-    /*}*/
 }
 
 /*    .tel {*/
