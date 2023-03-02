@@ -4221,6 +4221,9 @@ iframe {
     .post{
         font-size: 12px;
     }
+    .bedroom__nav .post {
+        font-size: 12px;
+    }
     .taxonomy{
         font-size: 12px;
     }
@@ -4228,7 +4231,7 @@ iframe {
         font-size: 15px;
     }
     .block-info{
-        margin-top: 109px;
+        margin-top: 90px;
     }
     .block-info__date{
         font-size: 15px;
