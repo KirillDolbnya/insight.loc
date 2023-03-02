@@ -3111,6 +3111,9 @@ iframe {
         /*border: 1px solid #D7D7D9;*/
         fill: #757472;
     }
+    .proMenu_for_phone{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 980px) {
