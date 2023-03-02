@@ -107,6 +107,9 @@ body {
     margin-left: auto;
     /*outline: 1px solid red;*/
 }
+/*.loader{*/
+/*    display: block !important;*/
+/*}*/
 
 .dostavkaNav-item {
     cursor: pointer;
@@ -606,7 +609,7 @@ body {
 
 .proMenu a {
     font-family: Gilroy;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 140%;
     text-decoration: none;
@@ -2371,6 +2374,9 @@ iframe {
 }
 .bedroom__nav .post{
     font-size: 14px;
+}
+.proMenu_for_phone{
+    display: none;
 }
 
 @media screen and (max-width: 1650px) {
@@ -4330,6 +4336,34 @@ iframe {
         background: #F0F0F3;
         box-shadow: 0px 0px 50px rgb(0 0 0 / 12%);
         text-align: center;
+    }
+    .modal {
+        position: fixed;
+        z-index: 1000;
+        top: 50%;
+        left: 50%;
+        display: none;
+        width: 360px;
+        height: 450px;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        background: #F0F0F3;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.12);
+    }
+    .proMenu_for_phone{
+        display: block;
+    }
+    .proMenu_for_phone li{
+        list-style: none;
+    }
+    .proMenu_for_phone a{
+        font-family: Gilroy;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 140%;
+        text-decoration: none;
+        color: #757472;
+        border-bottom: 1px solid #757472;
     }
 }
 

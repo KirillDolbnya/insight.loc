@@ -140,6 +140,13 @@
 				</div>
 				<div class="swiper-paginations"></div>
 			</div>
+            <div>
+                <ul class="proMenu_for_phone">
+                    <li>
+                        <a href="https://insight-art.ru/category/projects/">Все проекты</a>
+                    </li>
+                </ul>
+            </div>
 		</div>
 	</div>
 </section>
