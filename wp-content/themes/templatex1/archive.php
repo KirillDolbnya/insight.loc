@@ -106,7 +106,7 @@ $currentCatID = $maincategory->term_id;//ID текущей категории
 					</div>
 					<btn class="strelka itc-slider__btn itc-slider__btn_next">
 						<img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 188.svg">
-						<p>Тяните</p>
+						<p>Листайте</p>
                     </btn>
                     <div class="swiper-paginations swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
 				</div>
