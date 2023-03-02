@@ -4287,6 +4287,9 @@ iframe {
         align-items: center;
         justify-content: center;
     }
+    .projects__wrap .swiper-slide{
+        margin-right: 110px !important;
+    }
 }
 
 /*    .tel {*/
