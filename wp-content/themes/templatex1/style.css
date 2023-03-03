@@ -762,7 +762,7 @@ input {
     /* line-height: 130%; */
     /* or 18px */
     letter-spacing: 0.05em;
-    color: rgba(117, 116, 114, 0.6);
+    color: rgba(117, 116, 114);
     border: 5px #75747200;
     outline: none;
 }
@@ -1871,6 +1871,7 @@ iframe {
     border: 1px solid rgb(117 116 114 / 33%);
     border-radius: 0px;
     background: #F0F0F3;
+    color: rgba(117, 116, 114);
     /* margin-top: 10px; */
 }
 
@@ -3111,9 +3112,9 @@ iframe {
         /*border: 1px solid #D7D7D9;*/
         fill: #757472;
     }
-    .proMenu_for_phone{
-        display: none;
-    }
+    /*.proMenu_for_phone{*/
+    /*    display: none;*/
+    /*}*/
 }
 
 @media screen and (max-width: 980px) {
@@ -6889,4 +6890,9 @@ iframe {
 /*}*/
 .privacy-policy__wrap{
     padding: 70px 0px;
+}
+
+.wpcf7-textarea{
+    outline:none;
+    color: rgba(117, 116, 114);
 }
