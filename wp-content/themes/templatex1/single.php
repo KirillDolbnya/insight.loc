@@ -78,104 +78,107 @@ $cat_link = get_category_link($category_id);
 				$images = get_field('gallery');
 				$imagese_count = count($images) + 1;
 
-//				if ($images):
-//				?>
-                <div class="block_item_gallery-1">
-                    <?php foreach ($images as $image){ $count++; ?>
-                        <?php if ($count == 3 or $count == 2 or $count == 1){?>
-                            <div class="item_gallery_1_img">
-                                <img class="item_gallery_1" src="<?php echo esc_url($image['sizes']['large']); ?>">
-                            </div>
-                        <?php } ?>
-                    <?php } ?>
-                </div>
-                <div class="block_item_gallery-2">
-                    <?php foreach ($images as $image){ $count++; ?>
-                        <?php if ($count == 8){?>
-                            <div class="item_gallery_2_img">
-                                <img class="item_gallery_2" src="<?php echo esc_url($image['sizes']['large']); ?>">
-                            </div>
-                        <?php } ?>
-                    <?php } ?>
-                    <?php foreach ($images as $image){ $count++; ?>
-                        <?php if ($count == 18){?>
-                            <div class="item_gallery_3_img">
-                                <img class="item_gallery_3" src="<?php echo esc_url($image['sizes']['large']); ?>">
-                            </div>
-                        <?php } ?>
-                    <?php } ?>
-                </div>
+				//				if ($images):
+				//				?>
+				<div class="block_item_gallery-1">
+					<?php foreach ($images as $image) {
+						if ($count < 3) {
+							$count++; ?>
+							<div class="item_gallery_1_img">
+								<img class="item_gallery_1" src="<?php echo esc_url($image['sizes']['large']); ?>">
+							</div>
+						<?php } ?><?php } ?>
+				</div>
+				<div class="block_item_gallery-2">
+					<?php
+//					var_dump($count);
+					foreach ($images as $image) {
+						if ($count >= 3 && $count <= 5) { ?>
+							<div class="item_gallery_3_img">
+								<img class="item_gallery_3" src="<?php echo esc_url($image['sizes']['large']); ?>">
+							</div>
+							<?php $count++;
+						}
+					} ?>
+					<!--                    --><?php //foreach ($images as $image){ $count++; ?>
+					<!--                        --><?php //if ($count == 18){?>
+					<!--                            <div class="item_gallery_3_img">-->
+					<!--                                <img class="item_gallery_3" src="--><?php //echo esc_url($image['sizes']['large']); ?><!--">-->
+					<!--                            </div>-->
+					<!--                        --><?php //} ?>
+					<!--                    --><?php //} ?>
+				</div>
 
-<!--                            --><?php //if ($count == 1) { ?>
-<!--                            <div class="rightscreen rightscreen_item_gallery_1">-->
-<!--                                <img class="projectAdaptiv leftAdaptiv" src="--><?php //echo esc_url($image['sizes']['large']); ?><!--">-->
-<!--                            </div>-->
-<!--				            --><?php //}?>
+				<!--                            --><?php //if ($count == 1) { ?>
+				<!--                            <div class="rightscreen rightscreen_item_gallery_1">-->
+				<!--                                <img class="projectAdaptiv leftAdaptiv" src="--><?php //echo esc_url($image['sizes']['large']); ?><!--">-->
+				<!--                            </div>-->
+				<!--				            --><?php //}?>
 
-<!--					    --><?php //if ($count == 2) { ?>
+				<!--					    --><?php //if ($count == 2) { ?>
 
-<!--						    --><?php //} ?><!----><?php //if ($count == 2) { ?>
-<!--						    	<div class="block-item_gallery_2">-->
-<!--						    		<img class="projectAdaptiv leftAdaptiv item_gallery_2" src="--><?php //echo esc_url($image['sizes']['large']); ?><!--">-->
-<!--						    	</div>-->
-<!--						    --><?php //} ?>
-<!--                            --><?php
-//                                if ($count==3){ ?>
-<!--                                    <div class="block-item_gallery_3">-->
-<!--                                        <img class="projectAdaptiv leftAdaptiv item_gallery_3" src="--><?php //echo esc_url($image['sizes']['large']); ?><!--">-->
-<!--                                    </div>-->
-<!--                               --><?php //} ?>
-
-
-<!--						--><?php ////if ($count == 4) { ?>
-<!--						<div class="projectBottom">--><?php ////} ?>
-
-<!--							--><?php //if ($count == 4) { ?>
-<!--								<div class="item_gallery_4_wrap">-->
-<!--								<img class="projectAdaptiv item_gallery_4" src="--><?php //echo esc_url($image['sizes']['large']); ?><!--">-->
-<!--								</div>--><?php //} ?>
-<!--							--><?php //if ($imagese_count == $count and $count >= 2) { var_dump($count); ?>
-<!--						--><?php //} ?><!----><?php //if ($imagese_count == $count and $count >= 4) { ?>
-<!--						--><?php //} ?>
-
-<!--				--><?php //endforeach; ?><!----><?php //endif; ?>
-
-                <div class="post__gallery-wrap">
-                    <?php
-                    /**
-                     * Field Structure:
-                     *
-                     * - parent_repeater (Repeater)
-                     *   - parent_title (Text)
-                     *   - child_repeater (Repeater)
-                     *     - child_title (Text)
-                     */
-                    if (have_rows('gal_items')):
-                        while (have_rows('gal_items')) : the_row();
-                            echo "<div class='post__gallery'>";
-                            // Get parent value.
-                            $title = get_sub_field('gal__title');
-                            $text = get_sub_field('gal__text');
-                            $gallery = get_sub_field('gal__images');
+				<!--						    --><?php //} ?><!----><?php //if ($count == 2) { ?>
+				<!--						    	<div class="block-item_gallery_2">-->
+				<!--						    		<img class="projectAdaptiv leftAdaptiv item_gallery_2" src="--><?php //echo esc_url($image['sizes']['large']); ?><!--">-->
+				<!--						    	</div>-->
+				<!--						    --><?php //} ?>
+				<!--                            --><?php
+				//                                if ($count==3){ ?>
+				<!--                                    <div class="block-item_gallery_3">-->
+				<!--                                        <img class="projectAdaptiv leftAdaptiv item_gallery_3" src="--><?php //echo esc_url($image['sizes']['large']); ?><!--">-->
+				<!--                                    </div>-->
+				<!--                               --><?php //} ?>
 
 
-                                    echo "<div class='post__gallery_item'>";
-                                        echo "<div class='post__gallery_title'>";
-                                            echo "<h2>". $title ."</h2>";
-                                            echo "<p>" . $text . "</p>";
-                                        echo "</div>";
-                                        echo "<div class='post__gallery-block'>";
-                                foreach ($gallery as $item) {
-                                    echo "<img src =' " . $item['url'] . "' .>";
-                                }
-                                    echo "</div>";
-                                    echo "</div>";
-                            echo "</div>";
-                        endwhile;
+				<!--						--><?php ////if ($count == 4) { ?>
+				<!--						<div class="projectBottom">--><?php ////} ?>
 
-                    endif;
-                    ?>
-                </div>
+				<!--							--><?php //if ($count == 4) { ?>
+				<!--								<div class="item_gallery_4_wrap">-->
+				<!--								<img class="projectAdaptiv item_gallery_4" src="--><?php //echo esc_url($image['sizes']['large']); ?><!--">-->
+				<!--								</div>--><?php //} ?>
+				<!--							--><?php //if ($imagese_count == $count and $count >= 2) { var_dump($count); ?>
+				<!--						--><?php //} ?><!----><?php //if ($imagese_count == $count and $count >= 4) { ?>
+				<!--						--><?php //} ?>
+
+				<!--				--><?php //endforeach; ?><!----><?php //endif; ?>
+
+				<div class="post__gallery-wrap">
+					<?php
+					/**
+					 * Field Structure:
+					 *
+					 * - parent_repeater (Repeater)
+					 *   - parent_title (Text)
+					 *   - child_repeater (Repeater)
+					 *     - child_title (Text)
+					 */
+					if (have_rows('gal_items')):
+						while (have_rows('gal_items')) : the_row();
+							echo "<div class='post__gallery'>";
+							// Get parent value.
+							$title = get_sub_field('gal__title');
+							$text = get_sub_field('gal__text');
+							$gallery = get_sub_field('gal__images');
+
+
+							echo "<div class='post__gallery_item'>";
+							echo "<div class='post__gallery_title'>";
+							echo "<h2>" . $title . "</h2>";
+							echo "<p>" . $text . "</p>";
+							echo "</div>";
+							echo "<div class='post__gallery-block'>";
+							foreach ($gallery as $item) {
+								echo "<img src =' " . $item['url'] . "' .>";
+							}
+							echo "</div>";
+							echo "</div>";
+							echo "</div>";
+						endwhile;
+
+					endif;
+					?>
+				</div>
 			</div>
 		</section>
 	</div>

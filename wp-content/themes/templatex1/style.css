@@ -2269,7 +2269,7 @@ iframe {
 }
 .post__gallery-block img{
     width: 530px;
-    height: 354px;
+    height: 654px;
 }
 .block_item_gallery-1{
     /*margin-top: 30px;*/
@@ -3025,7 +3025,7 @@ iframe {
     }
     .post__gallery-block img{
        width: 473px;
-        height: 317px;
+        height: 517px;
     }
     .post__gallery-block img:last-child{
         display: none;
@@ -4167,7 +4167,7 @@ iframe {
         margin-left: auto;
         margin-top: 10px;
         width: 320px;
-        height: 214px;
+        height: 414px;
     }
     .item_gallery_1_img {
         margin-right: auto;
