@@ -83,22 +83,27 @@ $cat_link = get_category_link($category_id);
 				<div class="block_item_gallery-1">
 					<?php foreach ($images as $image) {
 						if ($count < 3) {
-							$count++; ?>
+							?>
 							<div class="item_gallery_1_img">
 								<img class="item_gallery_1" src="<?php echo esc_url($image['sizes']['large']); ?>">
 							</div>
-						<?php } ?><?php } ?>
+							<?php
+							$count++;
+						} ?><?php } ?>
 				</div>
 				<div class="block_item_gallery-2">
 					<?php
-//					var_dump($count);
+					//					var_dump($count);
+					$count = 0;
 					foreach ($images as $image) {
+
 						if ($count >= 3 && $count <= 5) { ?>
 							<div class="item_gallery_3_img">
 								<img class="item_gallery_3" src="<?php echo esc_url($image['sizes']['large']); ?>">
 							</div>
-							<?php $count++;
+							<?php
 						}
+						$count++;
 					} ?>
 					<!--                    --><?php //foreach ($images as $image){ $count++; ?>
 					<!--                        --><?php //if ($count == 18){?>
