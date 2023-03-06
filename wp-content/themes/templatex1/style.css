@@ -2357,6 +2357,8 @@ iframe {
 .projects__image{
     width: 649px;
     height: 433px;
+    object-fit: cover;
+    object-position: center;
 }
 .archive__pagination{
     display: none;
