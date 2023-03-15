@@ -1017,7 +1017,7 @@ iframe {
     margin-left: auto;
     transform: rotate(30deg);
     letter-spacing: 0.3mm;
-    opacity: 90%;
+    opacity: 1;
     color:  #54524f;
 }
 
@@ -3411,7 +3411,7 @@ iframe {
         margin-left: auto;
         transform: rotate(30deg);
         letter-spacing: .3mm;
-        opacity: 90%;
+        opacity: 1;
         color: #54524f;
         /* margin-top: 25px; */
     }
@@ -4131,7 +4131,7 @@ iframe {
         margin-left: auto;
         transform: rotate(30deg);
         letter-spacing: .3mm;
-        opacity: 90%;
+        opacity: 1;
         color: #54524f;
         /* margin-top: 25px; */
     }
@@ -4148,7 +4148,7 @@ iframe {
         margin-left: auto;
         transform: rotate(30deg);
         letter-spacing: .3mm;
-        opacity: 90%;
+        opacity: 1;
         color: #54524f;
     }
 
