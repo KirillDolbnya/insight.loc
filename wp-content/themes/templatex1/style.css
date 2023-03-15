@@ -51,7 +51,7 @@ h1 {
     font-style: normal;
     font-style: normal;
     line-height: 77px;
-    color: #757472;
+    color: #54524f;
 }
 
 h2 {
@@ -60,7 +60,7 @@ h2 {
     font-weight: 150;
     font-style: normal;
     margin-top: 0px;
-    color: #757472;
+    color: #54524f;
 }
 
 h3 {
@@ -69,7 +69,7 @@ h3 {
     font-weight: 150;
     font-style: normal;
     line-height: 110%;
-    color: #757472;
+    color: #54524f;
 }
 
 p {
@@ -78,13 +78,19 @@ p {
     font-weight: 100;
     line-height: 1.3;
     letter-spacing: 0.3mm;
-    color: #757472;
+    color: #54524f;
 }
 
 a {
     font-size: 15px;
     text-decoration: none;
-    color: #757472;
+    color: #54524f!important;
+}
+span{
+    color: #54524f;
+}
+li{
+    color: #54524f;
 }
 
 .swiper {
@@ -416,6 +422,7 @@ body {
 .tel { /* position: relative; *//* top:-6px; *//* display: inline-block; *//* margin-left: auto; */
     font-size: 18px;
     opacity: 50%;
+    color: #54524F;
 }
 
 .logo {
@@ -453,7 +460,7 @@ body {
     transform: translateY(-50%);
     text-align: center;
     text-decoration: none;
-    color: #757472;
+    color: #54524f;
     border: none;
     border-radius: 60%;
     background-color: #E0E0E2;
@@ -613,7 +620,7 @@ body {
     font-weight: 400;
     line-height: 140%;
     text-decoration: none;
-    color: #757472;
+    color: #54524f;
     border-bottom: 1px solid #757472;
 }
 
@@ -980,8 +987,6 @@ svg {
     margin-left: auto;
     transform: rotate(30deg);
     text-align: center;
-
-
 }
 
 .individualTwo {
@@ -1010,6 +1015,7 @@ iframe {
     transform: rotate(30deg);
     letter-spacing: 0.3mm;
     opacity: 90%;
+    color:  #54524f;
 }
 
 .textServices {
@@ -1107,7 +1113,7 @@ iframe {
     padding: 30px 0px 15px 0px;
     transform: rotate(30deg);
     text-align: left;
-    color: #757472;
+    color: #54524f;
 }
 
 .uslugi {
@@ -1128,7 +1134,7 @@ iframe {
     width: 319px;
     margin-top: 33px;
     list-style-type: none;
-    color: #757472;
+    color: #54524f;
 }
 
 .uslugiSpisok li:first-child,
@@ -1142,7 +1148,7 @@ iframe {
     list-style-image: url(/wp-content/themes/templatex1/assests/images/Rectangle155.svg);
     cursor: pointer;
     transition: .4s;
-    color: #757472;
+    color: #54524f;
     background-repeat: no-repeat;
 }
 
@@ -1171,7 +1177,7 @@ iframe {
     transform: rotate(55deg);
     text-align: center;
     opacity: 0.8;
-    color: rgb(117 116 114);
+    /*color: rgb(117 116 114);*/
     border: 1px solid #B6B5B2;
     border-color: rgb(176 178 178);
     border-radius: 50%;
@@ -1267,6 +1273,7 @@ iframe {
     position: relative;
     padding-left: 10px;
     list-style: none;
+    color: #54524f;
 }
 
 .spisok_per li:before,
@@ -1712,7 +1719,7 @@ iframe {
     /* margin-bottom: 20px; */
     margin-top: 76px;
     text-align: left;
-    color: #757472;
+    color: #54524f;
 }
 
 .otzyvText {
@@ -1838,7 +1845,7 @@ iframe {
     margin: 40px 40px 20px 20px;
     transform: rotate(30deg);
     letter-spacing: 0.15em;
-    color: #000000;
+    color: #54524f;
 }
 
 .footer__form {
@@ -1895,16 +1902,16 @@ iframe {
     width: 70%;
     margin-left: 70px;
     transform: rotate(30deg);
-    color: #333333;
+    color: #54524f;
 }
 
 .lastBtnText p {
-    color: #333333;
+    color: #54524f;
 }
 
 .lastBtnText h3 {
     margin-bottom: 5px;
-    color: #333333;
+    color: #54524f;
 }
 
 .short {
@@ -2394,7 +2401,7 @@ iframe {
         font-style: normal;
         font-style: normal;
         line-height: 55px;
-        color: #757472;
+        color: #54524f;
     }
 
     h2 {
@@ -2402,7 +2409,7 @@ iframe {
         font-size: 36px;
         font-weight: 150;
         font-style: normal;
-        color: #757472;
+        color: #54524f;
     }
 
     p {
@@ -2411,7 +2418,13 @@ iframe {
         font-weight: 100;
         line-height: 1.3;
         letter-spacing: 0.3mm;
-        color: #757472;
+        color: #54524f;
+    }
+    span{
+        color: #54524f;
+    }
+    li{
+        color: #54524f;
     }
 
     .button {
@@ -2428,7 +2441,7 @@ iframe {
         transform: translateY(-50%);
         text-align: center;
         text-decoration: none;
-        color: #757472;
+        color: #54524f;
         border: none;
         border-radius: 60%;
         background-color: #E0E0E2;
@@ -2479,6 +2492,7 @@ iframe {
         display: flex;
         justify-content: space-between;
         margin-top: 37px;
+        align-items: flex-end;
     }
 
     .left__block {
@@ -3114,9 +3128,9 @@ iframe {
         /*border: 1px solid #D7D7D9;*/
         fill: #757472;
     }
-    /*.proMenu_for_phone{*/
-    /*    display: none;*/
-    /*}*/
+    .block_images {
+        margin-top: 170px;
+    }
 }
 
 @media screen and (max-width: 980px) {
@@ -3131,7 +3145,7 @@ iframe {
         font-style: normal;
         font-style: normal;
         line-height: 48px;
-        color: #757472;
+        color: #54524f;
     }
 
     h2 {
@@ -3139,7 +3153,7 @@ iframe {
         font-size: 30px;
         font-weight: 150;
         font-style: normal;
-        color: #757472;
+        color: #54524f;
     }
 
     p {
@@ -3148,7 +3162,13 @@ iframe {
         font-weight: 100;
         line-height: 1.3;
         letter-spacing: 0.3mm;
-        color: #757472;
+        color: #54524f;
+    }
+    span{
+        color: #54524f;
+    }
+    li{
+        color: #54524f;
     }
 
     .kursiv img {
@@ -3169,7 +3189,7 @@ iframe {
         transform: translateY(-50%);
         text-align: center;
         text-decoration: none;
-        color: #757472;
+        color: #54524f;
         border: none;
         border-radius: 60%;
         background-color: #E0E0E2;
@@ -3389,6 +3409,7 @@ iframe {
         transform: rotate(30deg);
         letter-spacing: .3mm;
         opacity: 90%;
+        color: #54524f;
         /* margin-top: 25px; */
     }
 
@@ -3842,7 +3863,7 @@ iframe {
     }
 
     .footer .swiper-slide {
-        width: 320px !important;
+        width: 100%!important;
         height: 585px !important;
         margin-right: 30px !important;
     }
@@ -3876,7 +3897,7 @@ iframe {
         /* margin-bottom: 20px; */
         margin-top: 42px;
         text-align: left;
-        color: #757472;
+        color: #54524f;
     }
 
     .otzyvText {
@@ -4108,6 +4129,7 @@ iframe {
         transform: rotate(30deg);
         letter-spacing: .3mm;
         opacity: 90%;
+        color: #54524f;
         /* margin-top: 25px; */
     }
 
@@ -4124,6 +4146,7 @@ iframe {
         transform: rotate(30deg);
         letter-spacing: .3mm;
         opacity: 90%;
+        color: #54524f;
     }
 
 
