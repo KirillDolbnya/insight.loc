@@ -3,7 +3,7 @@
         
         <div class="hamburger-menu">
             <a href="/" class="logo_link" ><img class="logo" src="<?=get_template_directory_uri()?>/assests/images/logo.svg"></a>
-            <div class="tel"><?=get_field('phone', 'option')?></div>
+            <div class="tel"><p><?=get_field('phone', 'option')?></p></div>
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
               <span></span>

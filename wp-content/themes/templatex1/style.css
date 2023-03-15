@@ -421,7 +421,10 @@ body {
 
 .tel { /* position: relative; *//* top:-6px; *//* display: inline-block; *//* margin-left: auto; */
     font-size: 18px;
-    opacity: 50%;
+    opacity: 1;
+    color: #54524F;
+}
+.tel p {
     color: #54524F;
 }
 
@@ -973,7 +976,7 @@ svg {
     transform: rotate(-30deg);
     text-align: center;
     vertical-align: bottom;
-    opacity: 0.5;
+    opacity: 1;
     border: 1px solid rgba(117, 116, 114, 0.5);
     border-radius: 50%;
     background: transparent;
@@ -1825,7 +1828,7 @@ iframe {
     transform: rotate(-30deg);
     text-align: center;
     text-decoration: none !important;
-    opacity: 0.5;
+    opacity: 1;
     border: 1px solid #a3a3a3;
     border-radius: 50%;
     background-color: #C9CCCC;
@@ -1892,7 +1895,7 @@ iframe {
     transform: rotate(-30deg);
     text-align: center;
     vertical-align: bottom;
-    opacity: 0.5;
+    opacity: 1;
     border: 1px solid rgb(90 88 88 / 50%);
     border-radius: 50%;
     background-color: transparent;
@@ -2972,7 +2975,7 @@ iframe {
         transform: rotate(-30deg);
         text-align: center;
         text-decoration: none !important;
-        opacity: 0.5;
+        opacity: 1;
         border: 1px solid #B6B5B2;
         border-radius: 50%;
         background-color: transparent;
@@ -2994,7 +2997,7 @@ iframe {
         transform: rotate(-30deg);
         text-align: center;
         vertical-align: bottom;
-        opacity: 0.5;
+        opacity: 1;
         border: 1px solid rgba(117, 116, 114, 0.5);
         border-radius: 50%;
         background-color: transparent;
@@ -3378,7 +3381,7 @@ iframe {
         transform: rotate(-30deg);
         text-align: center;
         vertical-align: bottom;
-        opacity: 0.5;
+        opacity: 1;
         border: 1px solid rgba(117, 116, 114, 0.5);
         border-radius: 50%;
         background: transparent;
@@ -3982,7 +3985,7 @@ iframe {
         transform: rotate(-30deg);
         text-align: center;
         text-decoration: none !important;
-        opacity: 0.5;
+        opacity: 1;
         border: 1px solid #B6B5B2;
         border-radius: 50%;
         background-color: transparent;
