@@ -2389,6 +2389,14 @@ iframe {
 .proMenu_for_phone{
     display: none;
 }
+.uslugi__image{
+    fill: none;
+    margin-top: 30px;
+}
+.block-uslugi__slogan{
+    width: 636.21px;
+    height: 328.39px;
+}
 
 @media screen and (max-width: 1650px) {
     .site {
@@ -3480,7 +3488,9 @@ iframe {
     }
 
     .block-uslugi__slogan {
-        display: unset;
+        display: block;
+        width: 320px;
+        height: 230.22px;
     }
 
     .block-uslugi__slogan .RightServices {
