@@ -2398,10 +2398,12 @@ iframe {
     height: 328.39px;
 }
 
+
 @media screen and (max-width: 1650px) {
     .site {
         width: 960px;
     }
+
 
     h1 {
         font-family: Raleway;
