@@ -977,7 +977,7 @@ svg {
     text-align: center;
     vertical-align: bottom;
     opacity: 1;
-    border: 1px solid rgba(117, 116, 114, 0.5);
+    border: 1px solid rgba(84, 82, 79, 0.2);
     border-radius: 50%;
     background: transparent;
 }
@@ -1054,7 +1054,7 @@ iframe {
     width: 708.21px;
     height: 328.39px;
     transform: rotate(-30deg);
-    border: 1px solid rgb(117 116 114 / 16%);
+    border: 1px solid rgba(84, 82, 79, 0.2);
     border-radius: 50%;
     background-color: rgb(0 0 0 / 0%);
 }
@@ -1829,7 +1829,7 @@ iframe {
     text-align: center;
     text-decoration: none !important;
     opacity: 1;
-    border: 1px solid #a3a3a3;
+    border: 1px solid rgba(84, 82, 79, 0.2);
     border-radius: 50%;
     background-color: #C9CCCC;
 }
@@ -1896,7 +1896,7 @@ iframe {
     text-align: center;
     vertical-align: bottom;
     opacity: 1;
-    border: 1px solid rgb(90 88 88 / 50%);
+    border: 1px solid rgba(84, 82, 79, 0.2);
     border-radius: 50%;
     background-color: transparent;
 }
@@ -2976,7 +2976,7 @@ iframe {
         text-align: center;
         text-decoration: none !important;
         opacity: 1;
-        border: 1px solid #B6B5B2;
+        border: 1px solid rgba(84, 82, 79, 0.2);
         border-radius: 50%;
         background-color: transparent;
     }
@@ -2998,7 +2998,7 @@ iframe {
         text-align: center;
         vertical-align: bottom;
         opacity: 1;
-        border: 1px solid rgba(117, 116, 114, 0.5);
+        border: 1px solid rgba(84, 82, 79, 0.2);
         border-radius: 50%;
         background-color: transparent;
     }
@@ -3382,7 +3382,7 @@ iframe {
         text-align: center;
         vertical-align: bottom;
         opacity: 1;
-        border: 1px solid rgba(117, 116, 114, 0.5);
+        border: 1px solid rgba(84, 82, 79, 0.2);
         border-radius: 50%;
         background: transparent;
     }
@@ -3479,10 +3479,10 @@ iframe {
     }
 
     .block-uslugi__slogan .RightServices {
-        width: 347px;
+        width: 335px;
         height: 191px;
         transform: rotate(-30deg);
-        border: 1px solid rgb(117 116 114 / 16%);
+        border: 1px solid rgba(84, 82, 79, 0.2);
         border-radius: 50%;
         background-color: rgb(0 0 0 / 0%);
     }
@@ -3986,7 +3986,7 @@ iframe {
         text-align: center;
         text-decoration: none !important;
         opacity: 1;
-        border: 1px solid #B6B5B2;
+        border: 1px solid rgba(84, 82, 79, 0.2);
         border-radius: 50%;
         background-color: transparent;
         justify-content: center;
