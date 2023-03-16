@@ -376,11 +376,9 @@ body {
     margin-bottom: 10px;
     padding: 12px 24px;
     text-decoration: none;
-    color: #333;
 }
-
-.menu__item:hover {
-    color: white;
+.menu__item:hover{
+    color: rgba(255, 255, 255, 1)!important;
 }
 
 .menu__btn.active > span {
