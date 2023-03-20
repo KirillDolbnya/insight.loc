@@ -3097,7 +3097,7 @@ iframe {
     }
 
     .post__gallery-block img:last-child {
-        display: none;
+        /*display: none;*/
     }
 
     .post__gallery_title {
