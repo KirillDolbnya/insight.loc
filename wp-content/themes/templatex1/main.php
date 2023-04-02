@@ -70,7 +70,7 @@
 						<?php if ($count % 3 == 1): ?>
 						<div class="winSmall_one">
 							<!-- <p class="projectText"><?= get_the_excerpt() ?></p> -->
-							<p class="projectText">Посмотрите оригинальные проекты, которые команда создала для разных типов жилья.</p>
+<!--							<p class="projectText">Посмотрите оригинальные проекты, которые команда создала для разных типов жилья.</p>-->
 							<a href="<?php the_permalink(); ?>" class="projectSmall project_item_link">
 
 								<img class="projectSmall_img" alt="<?php the_title(); ?>" src="<?= get_the_post_thumbnail_url() ?>">
@@ -150,6 +150,64 @@
 		</div>
 	</div>
 </section>
+<div class="more-about">
+    <section class="site">
+        <div class="more-about__title">
+            <img class="img_kursiv" src="<?= get_template_directory_uri() ?>/assests/images/exclusive.svg">
+            <h2><?= get_field('title_b') ?></h2>
+        </div>
+        <div class="more-about__content _anim-items _anim-no-hide screen_bolche">
+            <div class="more-about__left">
+                <div class="text_bolshe">
+                    <?= get_field('des_b') ?>
+                    <p></p>
+                    <p></p>
+                    <div class="image__bolshe">
+                        <img class="bolshe" src="<?= get_field('img_b1')['url'] ?>">
+                    </div>
+                </div>
+            </div>
+            <div class="more-about__right">
+                <div class="izgotovim">
+                    <h3><?= get_field('title_b2') ?></h3>
+                </div>
+                <div class="dlyaVas">
+                    <button class="RightServices ">
+                        <div class="text_v_btn">
+                            <div class="spisok_per">
+                                <?= get_field('spisok1') ?>
+                            </div>
+                            <div class="spisok_vtor">
+                                <?= get_field('spisok2') ?>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="dlyaVasAdaptiv">
+                    <button class="RightServices dopVtoroy">
+                        <div class="text_v_btn">
+                            <div class="spisok_per">
+                                <?= get_field('spisok1') ?>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="spisok_vtor">
+                        <?= get_field('spisok2') ?>
+                    </div>
+                </div>
+                <div class="borderBottom bottomPics">
+                    <div class="image__smallIzg">
+                        <img class="smallIzg" src="<?= get_field('img_b2')['url'] ?>">
+                    </div>
+                    <div class="image__smallIzg2">
+                        <img class="smallIzg2" src="<?= get_field('img_b3')['url'] ?>">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
 <div class="order-curtains">
 <section class="site _anim-items _anim-no-hide">
 	<div class="order-curtains__wrap">
@@ -174,42 +232,42 @@
 </section><!-- <div class="otstup"></div> -->
 </div>
 <!--<div class="otstup"></div>-->
-<div class="brand__container">
-<section class="site" id="brands">
-	<p></p>
-	<div class=" _anim-items _anim-no-hide">
-		<img src="<?= get_template_directory_uri() ?>/assests/images/Brands.svg">
-		<h2 class="titleBrand"><?= get_field('title_brand') ?></h2>
-		<p class="subtitleBrand"><?= get_field('subtitle_brand') ?></p>
-	</div>
-	<div class="slider ">
-		<div class="textSlider _anim-items _anim-no-hide">
-			<p><?= get_field('des_brand') ?></p>
-		</div>
-		<div class="sliderControl">
-			<button class="leftK brand-next-btn" href="#">
-				<img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 155.svg"></button>
-			<button class="rightK brand-prev-btn" href="#">
-				<img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 155.svg"></button>
-
-		</div>
-	</div>
-	<div class="swiper brand-slider _anim-items _anim-no-hide">
-		<div class="swiper-wrapper">
-			<?php
-			$images = get_field('brands');
-			if ($images): ?><?php foreach ($images as $image): ?>
-				<div class="swiper-slide">
-					<div class="brand">
-						<img class="brandIMG" src="<?php echo esc_url($image['sizes']['medium']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
-					</div>
-				</div>
-			<?php endforeach; ?><?php endif; ?>
-		</div>
-		<div class="swiper-pagination-review pagin-wrapp"></div>
-	</div>
-</section>
-</div>
+<!--<div class="brand__container">-->
+<!--<section class="site" id="brands">-->
+<!--	<p></p>-->
+<!--	<div class=" _anim-items _anim-no-hide">-->
+<!--		<img src="--><?php //= get_template_directory_uri() ?><!--/assests/images/Brands.svg">-->
+<!--		<h2 class="titleBrand">--><?php //= get_field('title_brand') ?><!--</h2>-->
+<!--		<p class="subtitleBrand">--><?php //= get_field('subtitle_brand') ?><!--</p>-->
+<!--	</div>-->
+<!--	<div class="slider ">-->
+<!--		<div class="textSlider _anim-items _anim-no-hide">-->
+<!--			<p>--><?php //= get_field('des_brand') ?><!--</p>-->
+<!--		</div>-->
+<!--		<div class="sliderControl">-->
+<!--			<button class="leftK brand-next-btn" href="#">-->
+<!--				<img src="--><?php //= get_template_directory_uri() ?><!--/assests/images/Rectangle 155.svg"></button>-->
+<!--			<button class="rightK brand-prev-btn" href="#">-->
+<!--				<img src="--><?php //= get_template_directory_uri() ?><!--/assests/images/Rectangle 155.svg"></button>-->
+<!---->
+<!--		</div>-->
+<!--	</div>-->
+<!--	<div class="swiper brand-slider _anim-items _anim-no-hide">-->
+<!--		<div class="swiper-wrapper">-->
+<!--			--><?php
+//			$images = get_field('brands');
+//			if ($images): ?><!----><?php //foreach ($images as $image): ?>
+<!--				<div class="swiper-slide">-->
+<!--					<div class="brand">-->
+<!--						<img class="brandIMG" src="--><?php //echo esc_url($image['sizes']['medium']); ?><!--" alt="--><?php //echo esc_attr($image['alt']); ?><!--">-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			--><?php //endforeach; ?><!----><?php //endif; ?>
+<!--		</div>-->
+<!--		<div class="swiper-pagination-review pagin-wrapp"></div>-->
+<!--	</div>-->
+<!--</section>-->
+<!--</div>-->
 
 <section class="site _anim-items _anim-no-hide hello" id="hello">
 	<div class="hello__row">
@@ -395,61 +453,61 @@
 			</div>
 		</div>
 <!--		<div class="otstup"></div>-->
-        <div class="more-about">
-            <div class="more-about__title">
-	            <img class="img_kursiv" src="<?= get_template_directory_uri() ?>/assests/images/exclusive.svg">
-	            <h2><?= get_field('title_b') ?></h2>
-            </div>
-		    <div class="more-about__content _anim-items _anim-no-hide screen_bolche">
-		    	<div class="more-about__left">
-		    		<div class="text_bolshe">
-		    			<?= get_field('des_b') ?>
-		    			<p></p>
-		    			<p></p>
-                        <div class="image__bolshe">
-                            <img class="bolshe" src="<?= get_field('img_b1')['url'] ?>">
-                        </div>
-		    		</div>
-		    	</div>
-			    <div class="more-about__right">
-			    	<div class="izgotovim">
-			    		<h3><?= get_field('title_b2') ?></h3>
-			    	</div>
-			    	<div class="dlyaVas">
-			    		<button class="RightServices ">
-			    			<div class="text_v_btn">
-			    				<div class="spisok_per">
-			    					<?= get_field('spisok1') ?>
-			    				</div>
-			    				<div class="spisok_vtor">
-			    					<?= get_field('spisok2') ?>
-			    				</div>
-			    			</div>
-			    		</button>
-			    	</div>
-				    <div class="dlyaVasAdaptiv">
-				    	<button class="RightServices dopVtoroy">
-				    		<div class="text_v_btn">
-				    			<div class="spisok_per">
-				    				<?= get_field('spisok1') ?>
-				    			</div>
-				    		</div>
-				    	</button>
-				    	<div class="spisok_vtor">
-				    		<?= get_field('spisok2') ?>
-				    	</div>
-				    </div>
-				    <div class="borderBottom bottomPics">
-				    	<div class="image__smallIzg">
-				    	    <img class="smallIzg" src="<?= get_field('img_b2')['url'] ?>">
-                        </div>
-				    	<div class="image__smallIzg2">
-				    		<img class="smallIzg2" src="<?= get_field('img_b3')['url'] ?>">
-				    	</div>
-				    </div>
-			    </div>
-		    </div>
-        </div>
+<!--        <div class="more-about">-->
+<!--            <div class="more-about__title">-->
+<!--	            <img class="img_kursiv" src="--><?php //= get_template_directory_uri() ?><!--/assests/images/exclusive.svg">-->
+<!--	            <h2>--><?php //= get_field('title_b') ?><!--</h2>-->
+<!--            </div>-->
+<!--		    <div class="more-about__content _anim-items _anim-no-hide screen_bolche">-->
+<!--		    	<div class="more-about__left">-->
+<!--		    		<div class="text_bolshe">-->
+<!--		    			--><?php //= get_field('des_b') ?>
+<!--		    			<p></p>-->
+<!--		    			<p></p>-->
+<!--                        <div class="image__bolshe">-->
+<!--                            <img class="bolshe" src="--><?php //= get_field('img_b1')['url'] ?><!--">-->
+<!--                        </div>-->
+<!--		    		</div>-->
+<!--		    	</div>-->
+<!--			    <div class="more-about__right">-->
+<!--			    	<div class="izgotovim">-->
+<!--			    		<h3>--><?php //= get_field('title_b2') ?><!--</h3>-->
+<!--			    	</div>-->
+<!--			    	<div class="dlyaVas">-->
+<!--			    		<button class="RightServices ">-->
+<!--			    			<div class="text_v_btn">-->
+<!--			    				<div class="spisok_per">-->
+<!--			    					--><?php //= get_field('spisok1') ?>
+<!--			    				</div>-->
+<!--			    				<div class="spisok_vtor">-->
+<!--			    					--><?php //= get_field('spisok2') ?>
+<!--			    				</div>-->
+<!--			    			</div>-->
+<!--			    		</button>-->
+<!--			    	</div>-->
+<!--				    <div class="dlyaVasAdaptiv">-->
+<!--				    	<button class="RightServices dopVtoroy">-->
+<!--				    		<div class="text_v_btn">-->
+<!--				    			<div class="spisok_per">-->
+<!--				    				--><?php //= get_field('spisok1') ?>
+<!--				    			</div>-->
+<!--				    		</div>-->
+<!--				    	</button>-->
+<!--				    	<div class="spisok_vtor">-->
+<!--				    		--><?php //= get_field('spisok2') ?>
+<!--				    	</div>-->
+<!--				    </div>-->
+<!--				    <div class="borderBottom bottomPics">-->
+<!--				    	<div class="image__smallIzg">-->
+<!--				    	    <img class="smallIzg" src="--><?php //= get_field('img_b2')['url'] ?><!--">-->
+<!--                        </div>-->
+<!--				    	<div class="image__smallIzg2">-->
+<!--				    		<img class="smallIzg2" src="--><?php //= get_field('img_b3')['url'] ?><!--">-->
+<!--				    	</div>-->
+<!--				    </div>-->
+<!--			    </div>-->
+<!--		    </div>-->
+<!--        </div>-->
 	</section>
 </div>
 
@@ -536,16 +594,16 @@
 		    		</div>
 		    	<?php endwhile; ?><?php endif; ?>
 		    </div>
-	    	<div class="diplom_wrap _anim-items _anim-no-hide">
-	    		<div class="smallWomanWrapper">
-	    			<div class="smallWomanText">
-	    				<?= get_field('subtitle_v') ?>
-	    			</div>
-                    <div class="diplom">
-                        <img class="smallWoman" src="<?= get_field('img_v')['url'] ?>" alt="<?= get_field('title_v') ?>">
-                    </div>
-	    		</div>
-	    	</div>
+<!--	    	<div class="diplom_wrap _anim-items _anim-no-hide">-->
+<!--	    		<div class="smallWomanWrapper">-->
+<!--	    			<div class="smallWomanText">-->
+<!--	    				--><?php //= get_field('subtitle_v') ?>
+<!--	    			</div>-->
+<!--                    <div class="diplom">-->
+<!--                        <img class="smallWoman" src="--><?php //= get_field('img_v')['url'] ?><!--" alt="--><?php //= get_field('title_v') ?><!--">-->
+<!--                    </div>-->
+<!--	    		</div>-->
+<!--	    	</div>-->
 	    </div>
     </div>
 	<div class="commandInsight _anim-items _anim-no-hide" id="comanda">
@@ -569,6 +627,44 @@
 		</div>
 	</div>
 </section>
+
+<div class="brand__container">
+    <section class="site" id="brands">
+        <p></p>
+        <div class=" _anim-items _anim-no-hide">
+            <img src="<?= get_template_directory_uri() ?>/assests/images/Brands.svg">
+            <h2 class="titleBrand"><?= get_field('title_brand') ?></h2>
+            <p class="subtitleBrand"><?= get_field('subtitle_brand') ?></p>
+        </div>
+        <div class="slider ">
+            <div class="textSlider _anim-items _anim-no-hide">
+                <p><?= get_field('des_brand') ?></p>
+            </div>
+            <div class="sliderControl">
+                <button class="leftK brand-next-btn" href="#">
+                    <img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 155.svg"></button>
+                <button class="rightK brand-prev-btn" href="#">
+                    <img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 155.svg"></button>
+
+            </div>
+        </div>
+        <div class="swiper brand-slider _anim-items _anim-no-hide">
+            <div class="swiper-wrapper">
+                <?php
+                $images = get_field('brands');
+                if ($images): ?><?php foreach ($images as $image): ?>
+                    <div class="swiper-slide">
+                        <div class="brand">
+                            <img class="brandIMG" src="<?php echo esc_url($image['sizes']['medium']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                        </div>
+                    </div>
+                <?php endforeach; ?><?php endif; ?>
+            </div>
+            <div class="swiper-pagination-review pagin-wrapp"></div>
+        </div>
+    </section>
+</div>
+
 <div class="newFon footer">
 	<section class="site" id="otzyv">
 		<div class="zagolovokWrapper _anim-items _anim-no-hide">
