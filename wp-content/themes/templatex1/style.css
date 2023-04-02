@@ -695,7 +695,7 @@ body {
 }
 
 .order-curtains {
-    margin-top: 188px;
+    margin-top: 200px;
 }
 
 .order-curtains__wrap {
@@ -1232,8 +1232,8 @@ iframe {
 }
 
 .more-about {
-    margin-top: 94px;
-    padding-bottom: 200px;
+    margin-top: 193px;
+    /*padding-bottom: 200px;*/
 }
 
 .more-about__content {
@@ -2456,6 +2456,7 @@ iframe {
 .block_text_gallery{
     display: flex;
     justify-content: space-between;
+    margin-top: 35px;
 }
 .projectTextOne{
     text-align: left;
