@@ -48,6 +48,7 @@
 					<?php $count2 = 0; ?>
 					<?php $terms = get_field('rubric_list', get_option('page_on_front')); ?>
 					<?php $featured_posts = get_field('main_projects');
+//                    var_dump(the_permalink());
 					if ($featured_posts): ?><?php foreach ($featured_posts as $post): setup_postdata($post); ?>
 
 						<?php if ($count % 3 == 0): ?>
@@ -56,9 +57,15 @@
 
 
 						<?php if ($count % 3 == 0): ?>
-						<div class="leftscreen left__block">
-						<div class="project_left"><a href="<?php the_permalink(); ?>" class="leftscreen project_item_link">
-							<img class="projectBig" src="<?= get_the_post_thumbnail_url() ?>" alt="<?php the_title(); ?>">
+<!--						<div class="leftscreen left__block">-->
+<!--						<div class="project_left">-->
+                        <div class="main_block_gallery">
+
+
+                        <a href="<?php the_permalink(); ?>" class="leftscreen project_item_link">
+                            <div class="projectBig_block">
+							    <img class="projectBig" src="<?= get_the_post_thumbnail_url() ?>" alt="<?php the_title(); ?>">
+                            </div>
 							<div class="podKartinkoi  button__image">
 								<span><?php the_title(); ?></span>
 								<span><img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 178.svg"></span>
@@ -72,67 +79,66 @@
 							<!-- <p class="projectText"><?= get_the_excerpt() ?></p> -->
 <!--							<p class="projectText">Посмотрите оригинальные проекты, которые команда создала для разных типов жилья.</p>-->
 							<a href="<?php the_permalink(); ?>" class="projectSmall project_item_link">
-
-								<img class="projectSmall_img" alt="<?php the_title(); ?>" src="<?= get_the_post_thumbnail_url() ?>">
+                                <div class="projectSmall_img_block">
+								    <img class="projectSmall_img" alt="<?php the_title(); ?>" src="<?= get_the_post_thumbnail_url() ?>">
+                                </div>
 								<div class="podKartinkoi ">
 									<span><?php the_title(); ?></span>
 									<span><img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 178.svg"></span>
 								</div>
 							</a>
 
-						</div>            </div>
 						</div>
+<!--                        </div>-->
+<!--						</div>-->
 					<?php endif ?>
 
 
 						<?php if ($count % 3 == 2): ?>
-							<div class="rightscreen rigth__block">
-								<div class="project-right">
+<!--							<div class="rightscreen rigth__block">-->
+<!--								<div class="project-right">-->
 									<div class="right__block__image">
 										<a href="<?php the_permalink(); ?>" class="projectMiddle project_item_link">
-											<img class="projectMiddle_img" src="<?= get_the_post_thumbnail_url() ?>" alt="<?php the_title(); ?>">
-
+                                            <div class="projectMiddle_img_block">
+											    <img class="projectMiddle_img" src="<?= get_the_post_thumbnail_url() ?>" alt="<?php the_title(); ?>">
+                                            </div>
 											<div class="podKartinkoi">
 												<span><?php the_title(); ?></span>
 												<span><img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 178.svg"></span>
 											</div>
 										</a>
 									</div>
+                        </div>
+
 									<div class="winSmall_two">
-
-										<?php
-
-										if ($terms): ?>
-
 											<ul class="proMenu">
 												<li>
                                                     <a href="https://insight-art.ru/category/projects/">Все проекты</a>
                                                 </li>
-												<?php foreach ($terms as $term): ?>
-<!--													<li>-->
-<!--														<a class="dopoln" href="--><?php //echo esc_url(get_term_link($term)); ?><!--">--><?php //echo esc_html($term->name); ?><!--</a>-->
-<!--													</li>-->
-												<?php endforeach; ?>
+
 											</ul>
-										<?php endif; ?>
-
-
 										<btn class="strelka itc-slider__btn itc-slider__btn_next">
 											<img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 188.svg">
-											<p>Тяните</p></btn>
-
+											<p>Тяните</p>
+                                        </btn>
 									</div>
-								</div>
-								<div class="poCentru dopCenter">
-									<!-- <p><?= get_the_excerpt() ?> </p> -->
-									<p>Нас не пугают даже сложные заказы, требующие ручной работы. Мы шьем не стандартно, а как требуется клиентам в рамках стиля интерьера, пожеланий к цвету, фактуре материалов и запросов.</p>
-								</div>
-							</div>
+<!--								</div>-->
+<!--								<div class="poCentru dopCenter">-->
+<!--									 <p>--><?php //= get_the_excerpt() ?><!-- </p>-->
+<!--									<p>Нас не пугают даже сложные заказы, требующие ручной работы. Мы шьем не стандартно, а как требуется клиентам в рамках стиля интерьера, пожеланий к цвету, фактуре материалов и запросов.</p>-->
+<!--								</div>-->
+<!--							</div>-->
 						<?php endif ?>
 
 
 						<?php if ($count % 3 == 2): ?>
-							</div></div>    </div>
+							</div>
+                            <div class="block_text_gallery">
+                                <div><p class="projectTextOne">Посмотрите оригинальные проекты, которые команда создала для разных типов жилья.</p></div>
+                                <div><p class="projectTextTwo">Нас не пугают даже сложные заказы, требующие ручной работы. Мы шьем не стандартно, а как требуется клиентам в рамках стиля интерьера, пожеланий к цвету, фактуре материалов и запросов.</p></div>
+                            </div>
+                            </div>
+                            </div>
 						<?php endif ?>
 
 						<?php $count2++;
