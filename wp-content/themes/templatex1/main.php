@@ -303,8 +303,20 @@
 			</div>
 		</div>
 	</div>
-
 </section>
+
+<div style="border: 1px solid red">
+    <div class="site">
+       <?php
+
+       $imagesAwards = get_field('image_awards');
+
+       var_dump($imagesAwards);
+       foreach ($imagesAwards as $imageAward){?>
+          <img style="height: 100px;width: 100px;" src=".<?php echo get_template_directory_uri() ?>/assests/images/services.svg" alt="">
+       <?php } ?>
+    </div>
+</div>
 
 <div class="newFon block-uslugi">
 	<section class="site" id="uslugi">
