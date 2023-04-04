@@ -2462,6 +2462,70 @@ iframe {
 .projectTextTwo{
     text-align: left;
 }
+.hello_svg{
+    display: block;
+    width: 608px;
+    height: 281px;
+}
+.hello_svg svg{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.awards{
+    margin-top: 180px;
+}
+.awards_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.awards_left_block{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    width: 700px;
+}
+.awards_galery{
+    width: 292px;
+    height: 405.56px;
+}
+.image_awards{
+    width: 100%;
+    height: 100%;
+}
+.awards_right_block{
+    width: 584px;
+    margin: auto;
+}
+.awards_text{
+    margin-top: 30px;
+}
+.awards_btn{
+    margin-top: 45px;
+}
+.button_award{
+    width: 224px;
+    height: 64px;
+    border-radius: 60%;
+    background: #E0E0E2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #54524f;
+}
+.awards_preview_image{
+    width: 131px;
+    height: 75px;
+}
+.awards_preview_image svg{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 
 
 @media screen and (max-width: 1650px) {
@@ -3284,6 +3348,19 @@ iframe {
         margin-top: 35px;
         width: 862px;
     }
+    .titleSubtitle{
+        margin-bottom: 35px;
+    }
+    .hello_svg{
+        display: block;
+        width: 563px;
+        height: 261px;
+    }
+    .hello_svg svg{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 980px) {
@@ -3418,10 +3495,10 @@ iframe {
         margin-bottom: auto;
     }
 
-    .projectBig {
-        width: 220px;
-        min-height: 292px;
-    }
+    /*.projectBig {*/
+    /*    width: 220px;*/
+    /*    min-height: 292px;*/
+    /*}*/
 
     .order-curtains {
         margin-top: 86px;
@@ -3580,7 +3657,7 @@ iframe {
     .hello__right {
         flex: 0 0 auto;
         /* margin-left: 10px; */
-        margin-top: 111px;
+        margin-top: 30px;
     }
 
     .hello__wrap-avatar {
@@ -4555,10 +4632,9 @@ iframe {
 
     .podKartinkoi {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         /* margin-left: 5px; */
         margin-top: 10px;
-        gap: 143px;
     }
 
     .menu__item {
@@ -4649,6 +4725,26 @@ iframe {
     }
     .project{
         display: block;
+    }
+    .titleSubtitle{
+        margin-bottom: 39px;
+    }
+    .mySwiper .swiper-wrapper .swiper-slide{
+        width: auto !important;
+        /*margin-right: 0px !important;*/
+    }
+    .main_block_gallery{
+        gap: 16px;
+    }
+    .hello_svg{
+        display: block;
+        width: 318px;
+        height: 306px;
+    }
+    .hello_svg svg{
+        display: block;
+        width: 100%;
+        height: 100%;
     }
 }
 
