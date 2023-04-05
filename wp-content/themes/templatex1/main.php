@@ -109,7 +109,7 @@
 											</div>
 										</a>
 									</div>
-                        </div>
+                                </div>
 
 									<div class="winSmall_two">
 											<ul class="proMenu">
@@ -128,14 +128,14 @@
 
 						<?php if ($count % 3 == 2): ?>
 							</div>
-                            <div class="block_text_gallery">
-                                <div><p class="projectTextOne">Посмотрите оригинальные проекты, которые команда создала для разных типов жилья.</p></div>
-                                <div><p class="projectTextTwo">Нас не пугают даже сложные заказы, требующие ручной работы. Мы шьем не стандартно, а как требуется клиентам в рамках стиля интерьера, пожеланий к цвету, фактуре материалов и запросов.</p></div>
+                                <div class="block_text_gallery">
+                                    <div><p class="projectTextOne">Посмотрите оригинальные проекты, которые команда создала для разных типов жилья.</p></div>
+                                    <div><p class="projectTextTwo">Нас не пугают даже сложные заказы, требующие ручной работы. Мы шьем не стандартно, а как требуется клиентам в рамках стиля интерьера, пожеланий к цвету, фактуре материалов и запросов.</p></div>
+                                </div>
                             </div>
                             </div>
-                            </div>
-						<?php endif ?>
-						<?php $count2++;
+                        <?php endif ?>
+                        <?php $count2++;
 						$count++; endforeach; ?><?php wp_reset_postdata(); ?><?php endif; ?>
 				</div>
 				<div class="swiper-paginations"></div>
@@ -398,11 +398,26 @@
             <div class="awards_left_block">
                 <?php
                 $imagesAwards = get_field('image_awards' );
-                foreach ($imagesAwards as $imageAward){ ?>
-                        <div class="awards_galery">
-                            <img class="image_awards" src="<?php echo  $imageAward['url'] ?>" alt="">
-                        </div>
-                <?php } ?>
+                // Разбивка на блоки в цикле
+                $count_item = 0;//начало счетчика
+                $col_start = '<div class="awards_left_block_image_view">'; //Начало блока
+                $col_end = '</div>'; //Конец блока
+                $notView = '<div class="award_image_not_view">';
+                $notViewend = '</div>';
+
+                echo $col_start;
+                foreach ($imagesAwards as $imagesAward){
+                    if ($count_item == 2){
+                      echo $col_end;
+                      echo $notView;
+                      $count_item = 1;
+                    }else{
+                        $count_item++;
+                    } ?>
+                    <div class="awards_galery">
+                        <img class="image_awards" src="<?php echo $imagesAward['url'] ?>" alt="">
+                    </div>
+               <?php } echo $notViewend;?>
             </div>
             <div class="awards_right_block">
                 <div class="awards_preview_image">

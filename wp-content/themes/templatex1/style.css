@@ -240,7 +240,7 @@ body {
 }
 
 .block-uslugi {
-    margin-top: 197px;
+    margin-top: 180px;
     padding-top: 174px;
 }
 
@@ -2479,11 +2479,15 @@ iframe {
     display: flex;
     justify-content: space-between;
 }
-.awards_left_block{
+.awards_left_block_image_view{
     display: flex;
     gap: 10px;
-    justify-content: flex-end;
-    width: 700px;
+}
+.award_image_not_view{
+    /*display: flex;*/
+    /*gap: 10px;*/
+    display: none;
+    margin: 10px 10px;
 }
 .awards_galery{
     width: 292px;
@@ -4724,13 +4728,14 @@ iframe {
         display: none;
     }
     .project{
-        display: block;
+        display: flex;
+        justify-content: center;
     }
     .titleSubtitle{
         margin-bottom: 39px;
     }
-    .mySwiper .swiper-wrapper .swiper-slide{
-        width: auto !important;
+    .projects_box_main .swiper-slide{
+        width: 100% !important;
         /*margin-right: 0px !important;*/
     }
     .main_block_gallery{

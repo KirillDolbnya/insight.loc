@@ -210,3 +210,15 @@ deliveryBtns.forEach( btn => {
         document.querySelector(`[data-cont="${attr}"]`).classList.add('active')
     })
 })
+
+console.log('скрипт подключен'); //проверка подключения скрипта
+jQuery(document).ready(function($) { //ожидание полной загрузки дом дерева и возвожность работы со знаком доллара, в движках
+    console.log($); //проверка работоспособности JQuery
+    console.log(jQuery.fn.jquery);//узнать версию JQuery
+
+$(".awards_btn").click(()=>{
+    $(".award_image_not_view").slideToggle(1000)
+    $(".award_image_not_view").css('display','flex')
+})
+
+}); //конец ready
