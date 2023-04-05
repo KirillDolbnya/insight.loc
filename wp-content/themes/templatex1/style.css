@@ -2488,10 +2488,11 @@ iframe {
     gap: 10px;
     display: none;
     margin-top: 10px;
+    height: 405px;
 }
 .awards_galery{
     width: 292px;
-    height: 405.56px;
+    height: 405px;
 }
 .image_awards{
     width: 100%;
