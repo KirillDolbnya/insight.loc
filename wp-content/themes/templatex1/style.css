@@ -3387,6 +3387,13 @@ iframe {
         width: 113px;
         height: 55px;
     }
+    .award_image_not_view{
+        /*display: flex;*/
+        gap: 10px;
+        display: none;
+        margin-top: 10px;
+        height: 399px;
+    }
 }
 
 @media screen and (max-width: 980px) {
@@ -4812,6 +4819,12 @@ iframe {
     }
     .awards_btn{
         display: none;
+    }
+    .award_image_not_view {
+        gap: 10px;
+        display: none;
+        margin-top: 10px;
+        height: 214px;
     }
 
 }
