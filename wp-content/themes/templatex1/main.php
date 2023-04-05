@@ -392,7 +392,7 @@
 	</div>
 </section>
 
-<div class="awards" style="border: 1px solid red">
+<div class="awards">
     <div class="site">
         <div class="awards_wrap">
             <div class="awards_left_block">
@@ -435,6 +435,9 @@
                     <button class="button_award">Показать все</button>
                 </div>
             </div>
+        </div>
+        <div class="awards_btn_mobile">
+            <button class="button_award">Показать все</button>
         </div>
     </div>
 </div>

@@ -220,5 +220,8 @@ $(".awards_btn").click(()=>{
     $(".award_image_not_view").slideToggle(1000)
     $(".award_image_not_view").css('display','flex')
 })
-
+    $(".awards_btn_mobile").click(()=>{
+        $(".award_image_not_view").slideToggle(1000)
+        $(".award_image_not_view").css('display','flex')
+    })
 }); //конец ready

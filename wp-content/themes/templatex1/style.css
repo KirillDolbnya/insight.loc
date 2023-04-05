@@ -2485,9 +2485,9 @@ iframe {
 }
 .award_image_not_view{
     /*display: flex;*/
-    /*gap: 10px;*/
+    gap: 10px;
     display: none;
-    margin: 10px 10px;
+    margin-top: 10px;
 }
 .awards_galery{
     width: 292px;
@@ -2528,6 +2528,12 @@ iframe {
     display: block;
     width: 100%;
     height: 100%;
+}
+.awards_left_block{
+    width: 983px;
+}
+.awards_btn_mobile{
+    display: none;
 }
 
 
@@ -3364,6 +3370,21 @@ iframe {
         display: block;
         width: 100%;
         height: 100%;
+    }
+    .awards_galery{
+        width: 275px;
+        height: 399px;
+    }
+    .awards_right_block {
+        width: 346px;
+        margin: auto;
+    }
+    .awards_left_block {
+        width: 631px;
+    }
+    .awards_preview_image{
+        width: 113px;
+        height: 55px;
     }
 }
 
@@ -4751,6 +4772,47 @@ iframe {
         width: 100%;
         height: 100%;
     }
+    .awards_wrap {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .awards_right_block {
+         width: auto;
+        margin: auto;
+    }
+    /*.awards_text {*/
+    /*    margin-top: 30px;*/
+    /*    width: 100%;*/
+    /*}*/
+    .awards_btn_mobile{
+        display: unset;
+    }
+    .awards_left_block {
+        width: auto;
+        margin-top: 25px;
+    }
+    .awards_galery {
+        width: 154px;
+        height: 214px;
+    }
+    .button_award {
+        width: 340px;
+        height: 64px;
+        border-radius: 60%;
+        background: #E0E0E2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-size: 16px;
+        font-weight: 400;
+        color: #54524f;
+        margin-top: 35px;
+    }
+    .awards_btn{
+        display: none;
+    }
+
 }
 
 /*    .tel {*/
