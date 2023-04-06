@@ -158,9 +158,47 @@
                     </div>
                 </div>
             </div>
-		</div>
-	</div>
-</section>
+            <div class="more-about__right">
+                <div class="izgotovim">
+                    <h3><?= get_field('title_b2') ?></h3>
+                </div>
+                <div class="dlyaVas">
+                    <button class="RightServices ">
+                        <div class="text_v_btn">
+                            <div class="spisok_per">
+                                <?= get_field('spisok1') ?>
+                            </div>
+                            <div class="spisok_vtor">
+                                <?= get_field('spisok2') ?>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="dlyaVasAdaptiv">
+                    <button class="RightServices dopVtoroy">
+                        <div class="text_v_btn">
+                            <div class="spisok_per">
+                                <?= get_field('spisok1') ?>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="spisok_vtor">
+                        <?= get_field('spisok2') ?>
+                    </div>
+                </div>
+                <div class="borderBottom bottomPics">
+                    <div class="image__smallIzg">
+                        <img class="smallIzg" src="<?= get_field('img_b2')['url'] ?>">
+                    </div>
+                    <div class="image__smallIzg2">
+                        <img class="smallIzg2" src="<?= get_field('img_b3')['url'] ?>">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
 <div class="order-curtains">
 <section class="site _anim-items _anim-no-hide">
 	<div class="order-curtains__wrap">
