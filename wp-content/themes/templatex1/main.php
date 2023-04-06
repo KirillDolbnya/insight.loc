@@ -199,6 +199,7 @@
     </section>
 </div>
 
+
 <div class="order-curtains">
 <section class="site _anim-items _anim-no-hide">
 	<div class="order-curtains__wrap">
