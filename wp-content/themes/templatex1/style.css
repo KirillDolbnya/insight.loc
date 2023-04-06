@@ -4764,7 +4764,7 @@ iframe {
         margin-bottom: 39px;
     }
     .projects_box_main .swiper-slide{
-        width: 100% !important;
+        width: auto !important;
         /*margin-right: 0px !important;*/
     }
     .main_block_gallery{

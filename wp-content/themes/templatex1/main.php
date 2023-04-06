@@ -30,7 +30,8 @@
 </section>
 
 <div class="otstup"></div>
-<section class="site projects_box_main" id="projects">
+<section class="site" id="projects">
+    <div class="projects_box_main">
 	<div class="_anim-items _anim-no-hide">
 		<h2 class="subZagolovok"><?= get_field('project_title') ?></h2>
 		<p class="titleSubtitle"><?= get_field('project_subtitle') ?></p>
@@ -46,39 +47,31 @@
 
 					<?php $count = 0; ?>
 					<?php $count2 = 0; ?>
-					<?php $terms = get_field('rubric_list', get_option('page_on_front')); ?>
 					<?php $featured_posts = get_field('main_projects');
 					if ($featured_posts): ?><?php foreach ($featured_posts as $post): setup_postdata($post); ?>
 
+
 						<?php if ($count % 3 == 0): ?>
-							<div class="swiper-slide">
-                            <div class="itc-slider__item">
+                    <div class="swiper-slide">
+                        <div class="itc-slider__item">
                             <div class="project">
-						<?php endif ?>
+                            <div class="main_block_gallery">
 
 
-						<?php if ($count % 3 == 0): ?>
-<!--						<div class="leftscreen left__block">-->
-<!--						<div class="project_left">-->
-                        <div class="main_block_gallery">
-
-
-                        <a href="<?php the_permalink(); ?>" class="leftscreen project_item_link">
-                            <div class="projectBig_block">
-							    <img class="projectBig" src="<?= get_the_post_thumbnail_url() ?>" alt="<?php the_title(); ?>">
-                            </div>
-							<div class="podKartinkoi  button__image">
-								<span><?php the_title(); ?></span>
-								<span><img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 178.svg"></span>
-							</div>
-						</a>
-					<?php endif ?>
+                            <a href="<?php the_permalink(); ?>" class="leftscreen project_item_link">
+                                <div class="projectBig_block">
+						    	    <img class="projectBig" src="<?= get_the_post_thumbnail_url() ?>" alt="<?php the_title(); ?>">
+                                </div>
+						    	<div class="podKartinkoi  button__image">
+						    		<span><?php the_title(); ?></span>
+						    		<span><img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 178.svg"></span>
+						    	</div>
+						    </a>
+					    <?php endif ?>
 
 
 						<?php if ($count % 3 == 1): ?>
 						<div class="winSmall_one">
-							<!-- <p class="projectText"><?= get_the_excerpt() ?></p> -->
-<!--							<p class="projectText">Посмотрите оригинальные проекты, которые команда создала для разных типов жилья.</p>-->
 							<a href="<?php the_permalink(); ?>" class="projectSmall project_item_link">
                                 <div class="projectSmall_img_block">
 								    <img class="projectSmall_img" alt="<?php the_title(); ?>" src="<?= get_the_post_thumbnail_url() ?>">
@@ -90,14 +83,10 @@
 							</a>
 
 						</div>
-<!--                        </div>-->
-<!--						</div>-->
 					<?php endif ?>
 
 
 						<?php if ($count % 3 == 2): ?>
-<!--							<div class="rightscreen rigth__block">-->
-<!--								<div class="project-right">-->
 									<div class="right__block__image">
 										<a href="<?php the_permalink(); ?>" class="projectMiddle project_item_link">
                                             <div class="projectMiddle_img_block">
@@ -138,18 +127,20 @@
                         <?php $count2++;
 						$count++; endforeach; ?><?php wp_reset_postdata(); ?><?php endif; ?>
 				</div>
-				<div class="swiper-paginations"></div>
 			</div>
-            <div>
-                <ul class="proMenu_for_phone">
-                    <li>
-                        <a href="https://insight-art.ru/category/projects/">Все проекты</a>
-                    </li>
-                </ul>
-            </div>
 		</div>
 	</div>
+</div>
+    <div class="swiper-paginations"></div>
+    <div>
+        <ul class="proMenu_for_phone">
+            <li>
+                <a href="https://insight-art.ru/category/projects/">Все проекты</a>
+            </li>
+        </ul>
+    </div>
 </section>
+
 <div class="more-about">
     <section class="site">
         <div class="more-about__title">
@@ -167,47 +158,9 @@
                     </div>
                 </div>
             </div>
-            <div class="more-about__right">
-                <div class="izgotovim">
-                    <h3><?= get_field('title_b2') ?></h3>
-                </div>
-                <div class="dlyaVas">
-                    <button class="RightServices ">
-                        <div class="text_v_btn">
-                            <div class="spisok_per">
-                                <?= get_field('spisok1') ?>
-                            </div>
-                            <div class="spisok_vtor">
-                                <?= get_field('spisok2') ?>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-                <div class="dlyaVasAdaptiv">
-                    <button class="RightServices dopVtoroy">
-                        <div class="text_v_btn">
-                            <div class="spisok_per">
-                                <?= get_field('spisok1') ?>
-                            </div>
-                        </div>
-                    </button>
-                    <div class="spisok_vtor">
-                        <?= get_field('spisok2') ?>
-                    </div>
-                </div>
-                <div class="borderBottom bottomPics">
-                    <div class="image__smallIzg">
-                        <img class="smallIzg" src="<?= get_field('img_b2')['url'] ?>">
-                    </div>
-                    <div class="image__smallIzg2">
-                        <img class="smallIzg2" src="<?= get_field('img_b3')['url'] ?>">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
+		</div>
+	</div>
+</section>
 <div class="order-curtains">
 <section class="site _anim-items _anim-no-hide">
 	<div class="order-curtains__wrap">
