@@ -9,7 +9,7 @@ window.onload = () => {
         },
         breakpoints: {
             980: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 pagination: {
                     el: ".swiper-paginations",
                     clickable: true,
@@ -17,7 +17,7 @@ window.onload = () => {
             },
             // when window width is >= 640px
             640: {
-                slidesPerView: 2,
+                slidesPerView: 1.5,
                 pagination: {
                     el: ".swiper-paginations",
                     clickable: true,
@@ -25,7 +25,7 @@ window.onload = () => {
             },
             // when window width is >= 480px
             480: {
-                slidesPerView: 2,
+                slidesPerView: 1.5,
                 pagination: {
                     el: ".swiper-paginations",
                     clickable: true,
