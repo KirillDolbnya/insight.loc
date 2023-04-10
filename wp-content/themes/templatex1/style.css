@@ -242,6 +242,7 @@ body {
 .block-uslugi {
     margin-top: 180px;
     padding-top: 174px;
+    padding-bottom: 100px;
 }
 
 .modal-review .otzyv,
@@ -426,6 +427,7 @@ body {
 
 .tel p {
     color: #54524F;
+    font-weight: 600;
 }
 
 .logo {
@@ -2455,6 +2457,13 @@ iframe {
     display: flex;
     justify-content: space-between;
     margin-top: 35px;
+    width: 1469px;
+}
+.block_project_textOne{
+    width: 433px;
+}
+.block_project_textTwo{
+    width: 1000px;
 }
 .projectTextOne{
     text-align: left;
@@ -3393,6 +3402,9 @@ iframe {
         display: none;
         margin-top: 10px;
         height: 399px;
+    }
+    .block_project_textTwo{
+        width: 913px;
     }
 }
 
@@ -4765,7 +4777,7 @@ iframe {
     }
     .projects_box_main .swiper-slide{
         width: auto !important;
-        /*margin-right: 0px !important;*/
+        margin-right: 35px !important;
     }
     .main_block_gallery{
         gap: 16px;
