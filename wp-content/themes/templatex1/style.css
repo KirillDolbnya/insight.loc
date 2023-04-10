@@ -4777,10 +4777,10 @@ iframe {
     }
     .projects_box_main .swiper-slide{
         width: auto !important;
-        margin-right: 35px !important;
+        margin-right: 30px !important;
     }
     .main_block_gallery{
-        gap: 16px;
+        gap: 20px;
     }
     .hello_svg{
         display: block;
@@ -7335,11 +7335,15 @@ iframe {
     margin-top: 30px !important;
     opacity: 1;
     background: #a4a3a3;
+    width: 5px;
+    height: 5px;
 }
 
 .newFon .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    outline: 2px solid #a4a3a3;
+    outline: 1px solid #a4a3a3;
     background: none;
+    width: 8px;
+    height: 8px;
 }
 
 .footer #otzyv.swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
