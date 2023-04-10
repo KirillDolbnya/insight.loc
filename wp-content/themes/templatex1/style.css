@@ -2546,6 +2546,10 @@ iframe {
 .awards_btn_mobile{
     display: none;
 }
+.smallInter{
+    width: 100%;
+    height: 100%;
+}
 
 
 
