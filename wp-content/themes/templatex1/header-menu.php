@@ -11,7 +11,7 @@
 
             <ul class="menu__box" id="menu__box">
               <li><a class="menu__item" href="/">Главная</a></li>
-              <li><a class="menu__item" href="https://insight-art.ru/category/projects/"  >Проекты Insight</a></li>
+              <li><a class="menu__item" href="/category/projects/"  >Проекты Insight</a></li>
               <li><a class="menu__item" href="/#hello" >Приветсвую вас!</a></li>
               <li><a class="menu__item" href="/#uslugi" >Услуги Insight</a></li>
               <li><a class="menu__item" href="/#comanda">Команда Insight</a></li>
