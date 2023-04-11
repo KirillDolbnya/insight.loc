@@ -41,6 +41,50 @@ window.onload = () => {
             },
         }
     });
+
+    let swiperProject = new Swiper(".swiperProject", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: ".strelka",
+            prevEl: "",
+        },
+        breakpoints: {
+            980: {
+                slidesPerView: 1,
+                pagination: {
+                    el: ".swiper-paginations",
+                    clickable: true,
+                },
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 1.3,
+                pagination: {
+                    el: ".swiper-paginations",
+                    clickable: true,
+                },
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 1.3,
+                pagination: {
+                    el: ".swiper-paginations",
+                    clickable: true,
+                },
+            },
+            // when window width is >= 320px
+            360: {
+                slidesPerView: 1.3,
+                pagination: {
+                    el: ".swiper-paginations",
+                    clickable: true,
+                },
+            },
+        }
+    });
+
     let sliderMobile = new Swiper(".mobile-swiper", {
         slidesPerView: 1.2,
         spaceBetween: 30,

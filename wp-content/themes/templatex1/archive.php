@@ -54,7 +54,7 @@ $currentCatID = $maincategory->term_id;//ID текущей категории
 
 
 				<div class="pc-slider">
-					<div class="swiper mySwiper">
+					<div class="swiper swiperProject">
 						<div class="swiper-wrapper">
 
 							<?php
