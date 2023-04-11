@@ -125,21 +125,52 @@
                             </div>
                         <?php endif ?>
                         <?php $count2++;
-						$count++; endforeach; ?><?php wp_reset_postdata(); ?><?php endif; ?>
+						$count++; ?>
+                    <?php endforeach; ?><?php wp_reset_postdata(); ?><?php endif; ?>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-    <div class="swiper-paginations"></div>
-    <div>
-        <ul class="proMenu_for_phone">
-            <li>
-                <a href="/category/projects/">Все проекты</a>
-            </li>
-        </ul>
+    <div class="mobile-slider">
+        <div class="swiper mobile-swiper_main_page">
+            <div class="swiper-wrapper">
+                <?php $featured_posts = get_field('main_projects');
+                if ($featured_posts): ?><?php foreach ($featured_posts as $post): setup_postdata($post); ?>
+
+
+                    <div class="swiper-slide">
+                        <div class="screen">
+                            <a href="<?php the_permalink(); ?>">
+                                <div class="projectMiddle_img_block">
+                                    <img class="projectMiddle_img" src="<?= get_the_post_thumbnail_url() ?>" alt="<?php the_title(); ?>">
+                                </div>
+                                <div class="podKartinkoi">
+                                    <p><?php the_title(); ?></p>
+                                    <img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 178.svg">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                <?php endforeach; ?><?php wp_reset_postdata(); ?><?php endif; ?>
+
+
+            </div>
+
+            <div class="mobile-pagination pagin-wrapp"></div>
+        </div>
+        <div>
+            <ul class="proMenu_for_phone">
+                <li>
+                    <a href="/category/projects/">Все проекты</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </section>
+
+
+
 
 <div class="more-about">
     <section class="site">

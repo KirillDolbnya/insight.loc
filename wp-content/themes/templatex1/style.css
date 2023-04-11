@@ -4729,6 +4729,7 @@ iframe {
 
     .proMenu_for_phone {
         display: block;
+        margin-top: 20px;
     }
 
     .proMenu_for_phone li {
@@ -4786,12 +4787,12 @@ iframe {
     .titleSubtitle{
         margin-bottom: 39px;
     }
-    .projects_box_main .swiper-slide{
-        width: auto !important;
-        margin-right: 20px !important;
-    }
+    /*.projects_box_main .swiper-slide{*/
+    /*    width: auto !important;*/
+    /*    margin-right: 20px !important;*/
+    /*}*/
     .main_block_gallery{
-        gap: 35px;
+        display: none;
     }
     .hello_svg{
         display: block;
@@ -4867,6 +4868,9 @@ iframe {
         background: #a4a3a3;
         width: 5px;
         height: 5px;
+    }
+    .projects_box_main .mobile-slider .swiper-wrapper .swiper-slide{
+        margin-right: 30px !important;
     }
 }
 
