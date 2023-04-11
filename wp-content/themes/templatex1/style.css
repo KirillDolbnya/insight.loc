@@ -4557,7 +4557,7 @@ iframe {
         flex-wrap: inherit;
         justify-content: space-between;
         width: auto;
-        gap: 20px;
+        gap: 15px;
     }
 
     .projects__image {
