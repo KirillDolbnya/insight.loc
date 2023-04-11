@@ -130,9 +130,9 @@ $currentCatID = $maincategory->term_id;//ID текущей категории
 								<div class="swiper-slide">
 									<div class="screen">
 										<a href="<?php the_permalink(); ?>">
-											<img class="img-project" src="<?= get_the_post_thumbnail_url() ?>">
+											<img class="projects__image" src="<?= get_the_post_thumbnail_url() ?>">
 											<div class="podKartinkoi">
-												<p><?php the_title(); ?>asdfasdfas</p>
+												<p><?php the_title(); ?></p>
 												<img src="<?= get_template_directory_uri() ?>/assests/images/Rectangle 178.svg">
 											</div>
 										</a>
@@ -142,9 +142,9 @@ $currentCatID = $maincategory->term_id;//ID текущей категории
 
 
 						</div>
-						<div class="mobile-pagination pagin-wrapp"></div>
-					</div>
 
+					</div>
+					<div class="mobile-pagination pagin-wrapp"></div>
 				</div>
 			</div>
 		</section>
